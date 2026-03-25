@@ -1,0 +1,13 @@
+node_modules
+.next
+.git
+.agent
+*.log
+lint*
+tsc-errors.txt
+tsconfig.tsbuildinfo
+Dockerfile
+.dockerignore
+.gitignore
+README.md
+vendor

@@ -1,31 +1,34 @@
 # -------- Stage 1: Build --------
 
-FROM node:18-alpine AS builder
- 
+FROM node:20-alpine AS builder
+
 # Set working directory
 
 WORKDIR /app
- 
+
+# Install pnpm globally
+RUN npm install -g pnpm
+
 # Install dependencies
 
-COPY package*.json ./
+COPY package*.json pnpm-lock.yaml ./
 
-RUN npm install --legacy-peer-deps
- 
+RUN pnpm install --frozen-lockfile --legacy-peer-deps
+
 # Copy all source files
 
 COPY . .
- 
+
 # Build Next.js app (standalone)
 
-RUN npm run build
+RUN pnpm run build
 
-RUN npm prune --production
+RUN pnpm prune --production
  
 # -------- Stage 2: Production --------
 
-FROM node:18-alpine AS runner
- 
+FROM node:20-alpine AS runner
+
 WORKDIR /app
 
 ENV NODE_ENV=production
