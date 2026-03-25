@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
 
   // Enable standalone output for Docker-friendly builds
 
-  // output: "standalone",
+  output: "standalone",
 
   // Next.js image optimization config, add remote domains if any external images used
 
