@@ -81,7 +81,7 @@ export default function Landinghero() {
       {/* Background Video */}
       <div className="relative w-full h-[650px] bg-black overflow-hidden">
         <video
-          src="/videos/herovideo1.mp4"
+          src="https://vicasinfo.livnsense.com/media/herovideo11.mp4"
           autoPlay
           loop
           muted
@@ -111,7 +111,7 @@ export default function Landinghero() {
           </a>
 
           {/* Metrics */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-20 text-[#C6D9B7]">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-12 text-[#C6D9B7]">
 
             <MetricItem
               target={160}

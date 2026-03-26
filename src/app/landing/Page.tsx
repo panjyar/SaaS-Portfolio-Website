@@ -16,7 +16,7 @@ export default function Landing() {
   return (
     <>
     <Landinghero />
-      <PartnerMarquee />
+      <PartnerMarquee />   
       <ProductSection />
       <WhatWeSolve />
       <VehicleDetectionSection />

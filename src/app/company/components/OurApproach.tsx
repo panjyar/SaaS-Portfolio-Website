@@ -28,7 +28,7 @@ const OurApproach: React.FC = () => (
       {/* Right side: Text Content */}
       <div className="order-1 lg:order-2">
         <h2 id="our-approach-heading" className="our-approach__heading mb-8 relative">
-          Our <span className="text-[#00A755]">Approach</span>
+          Our <span className="text-[#00A755]">Intelligence Platform</span>
           <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-1 h-12 bg-[#00A755]/40 blur-sm rounded-full hidden lg:block" />
         </h2>
         <p className="our-approach__summary text-lg md:text-xl text-gray-300 mb-10 font-light leading-relaxed max-w-xl">
@@ -49,7 +49,7 @@ const OurApproach: React.FC = () => (
           </li>
         </ul>
         <p className="our-approach__final text-gray-400 mt-12 text-sm italic border-l border-[#00A755]/20 pl-6 leading-loose">
-          Together, they help industries achieve efficiency, safety, and sustainability—intelligently and responsibly.
+          Together, they deliver real-time intelligence across equipment, plants, and enterprise operations.
         </p>
       </div>
     </div>

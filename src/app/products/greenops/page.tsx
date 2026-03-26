@@ -133,16 +133,16 @@ function WhereItWorksSection() {
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
     },
     { 
-      id: "petrochem", 
-      title: "Petrochemicals", 
-      description: "Process heat systems and overall chemical yield improvement.", 
+      id: "chemicalandpharma", 
+      title: "Chemical & Pharma", 
+      description: "Optimizing process heat and improving energy efficiency.", 
       href: "#", 
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
     },
     { 
-      id: "mfg", 
-      title: "Manufacturing facilities", 
-      description: "General enterprise facility energy and equipment efficiency monitoring.", 
+      id: "powerandutilization", 
+      title: "Power & Utilities", 
+      description: "Optimizing power generation and improving energy efficiency.", 
       href: "#", 
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
     },

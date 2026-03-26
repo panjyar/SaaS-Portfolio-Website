@@ -22,9 +22,17 @@ const nextConfig: NextConfig = {
 
     remotePatterns: [
 
-      // Example for flexible remote images pattern
+      {
 
-      // { protocol: 'https', hostname: '**.example.com', port: '', pathname: '/**' },
+        protocol: "https",
+
+        hostname: "vicasinfo.livnsense.com",
+
+        port: "",
+
+        pathname: "/media/**",
+
+      },
 
     ],
 

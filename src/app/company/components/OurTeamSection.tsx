@@ -7,13 +7,13 @@ const teamMembers = [
     role: "Co-Founder & Chairman",
     description: "Visionary leader driving the strategic direction of LivNSense.",
     // Using an abstract placeholder since actual images aren't provided
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400"
+    image: "https://vicasinfo.livnsense.com/media/Avnish.png"
   },
   {
     name: "Priyanka Kumar",
     role: "Co-Founder & COO",
     description: "Focuses on operational excellence and scaling product delivery.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400"
+    image: "https://vicasinfo.livnsense.com/media/PriyankaKumar.jpg"
   },
   {
     name: "Amith Singh",

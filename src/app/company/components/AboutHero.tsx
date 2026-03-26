@@ -10,7 +10,7 @@ const AboutHero: React.FC = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         {/* Hero Top Section */}
-        <div className="max-w-4xl mb-32">
+        {/* <div className="max-w-4xl mb-32">
           <div className="inline-block px-3 py-1 mb-8 text-xs font-semibold tracking-wider text-[#00A755] uppercase border border-[#00A755]/30 rounded-sm bg-[#00A755]/10">
             About LivNSense
           </div>
@@ -23,7 +23,7 @@ const AboutHero: React.FC = () => {
           <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold tracking-wide text-white uppercase transition-colors duration-200 border border-white/20 hover:bg-white hover:text-black rounded-sm">
             Book a Demo
           </Link>
-        </div>
+        </div> */}
 
         {/* Feature Cards Grid (Carbon Re inspired) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-40">
@@ -32,7 +32,7 @@ const AboutHero: React.FC = () => {
             <BookOpen className="w-8 h-8 text-[#00A755] opacity-80 mb-8 group-hover:opacity-100 transition-opacity" />
             <h3 className="text-2xl font-semibold mb-6">The Inspiration</h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-              LivNSense was founded with a bold and deeply personal mission: to save human lives and the planet in the world&apos;s most complex and hazardous industries.
+              We started LivNSense to solve two of the world’s hardest problems—protecting human lives and decarbonizing industry—and realized the answer to both is intelligence.
             </p>
           </div>
 

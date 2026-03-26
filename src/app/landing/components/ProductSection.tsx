@@ -21,7 +21,7 @@ Reduce emissions. Improve efficiency. Act in real time.`,
         "Industry-Agnostic Deploymenterformance",
       ],
       link: "/products/greenops",
-      image: "/images/GreenopsLogo.svg",
+      image: "https://vicasinfo.livnsense.com/media/GreenopsLogo.svg",
     },
     {
       name: "VICAS",
@@ -38,7 +38,7 @@ Prevent incidents. Enforce safety. Act instantly.`,
         "See Risks Before They Become Incidents",
       ],
       link: "/products/vicas",
-      image: "/images/VicasLogo.jpg",
+      image: "https://vicasinfo.livnsense.com/media/VicasLogo.jpg",
     },
   ];
 
@@ -99,7 +99,7 @@ Prevent incidents. Enforce safety. Act instantly.`,
               <div className="absolute inset-0 bg-gradient-to-br from-[#00A755]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
 
               {/* Image Section - Using a dummy placeholder since no specific image was required */}
-              <div className="relative w-full h-[240px] border-b shrink-0 z-10 overflow-hidden" style={{ borderColor: "var(--border)" }}>
+              <div className="relative w-full h-[100px] border-b shrink-0 z-10 overflow-hidden" style={{ borderColor: "var(--border)" }}>
                 <div className="absolute inset-0 flex items-center justify-center opacity-80" style={{ backgroundColor: "var(--background)" }}>
                   {/* A subtle image placeholder pattern */}
                   <div className="absolute inset-0 opacity-10" style={{

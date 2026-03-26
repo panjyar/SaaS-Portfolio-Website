@@ -55,19 +55,18 @@ const CompanyValues = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <ValueCard 
-            title="Act with integrity" 
+            title="Innovation in Industrial Intelligence" 
           />
           <ValueCard 
-            title="Make a difference for our customers" 
+            title="Safety & Sustainability as One" 
           />
           <ValueCard 
-            title="PlaceHolder for now"
-            description="here will be description"/>
-            
+            title="Intelligence Over Monitoring"
+           />
         </div>
       </div>
     </section>
   );
 };
 
-export default CompanyValues;
+export default CompanyValues; 
