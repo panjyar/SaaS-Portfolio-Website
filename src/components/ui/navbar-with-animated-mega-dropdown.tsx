@@ -136,7 +136,7 @@ export const Navbar: React.FC = () => {
                 {/* Desktop CTA */}
                 <div className="hidden lg:flex items-center gap-3 shrink-0 pl-6 h-full border-l" style={{ borderColor: "var(--border)" }}>
                     <Link
-                        href="#"
+                        href="/company/contact"
                         className="text-[0.65rem] font-extrabold px-6 py-2 rounded-sm transition-all duration-200 no-underline uppercase tracking-widest border border-transparent hover:border-border"
                         style={{
                             background: "var(--primary)",

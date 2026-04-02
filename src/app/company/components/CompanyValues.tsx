@@ -55,13 +55,13 @@ const CompanyValues = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <ValueCard 
-            title="Innovation in Industrial Intelligence" 
+            title="Intelligence by Design" 
           />
           <ValueCard 
-            title="Safety & Sustainability as One" 
+            title="Safety Without Compromise" 
           />
           <ValueCard 
-            title="Intelligence Over Monitoring"
+            title="Sustainability at Scale"
            />
         </div>
       </div>

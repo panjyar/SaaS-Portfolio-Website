@@ -1,159 +1,231 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Leaf, ShieldCheck } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 
+const products = [
+  {
+    name: "GreenOps™",
+    tagline: "AI-Powered Industrial Sustainability",
+    shortDesc: "Real-time decarbonization with Digital Twins & Edge AI",
+    stats: [
+      { value: "40%", label: "Emission Reduction" },
+      { value: "3x", label: "Energy Efficiency" },
+      { value: "24/7", label: "Autonomous Ops" },
+    ],
+    link: "/products/greenops",
+    icon: Leaf,
+    // Cinematic industrial video from Pexels (free)
+    video:
+      "https://vicasinfo.livnsense.com/media/videos/greenopsbg.mp4",
+    // Fallback poster image from Unsplash
+    poster:
+      "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=80",
+    gradient: "from-emerald-500/20 via-transparent to-transparent",
+    accentColor: "#00A755",
+  },
+  {
+    name: "VICAS™",
+    tagline: "Vision AI Safety Co-Pilot",
+    shortDesc: "Intelligent video analytics for zero-incident workplaces",
+    stats: [
+      { value: "99.7%", label: "Detection Accuracy" },
+      { value: "<0.1s", label: "Alert Response" },
+      { value: "Zero", label: "Blind Spots" }, 
+    ],
+    link: "/products/vicas",
+    icon: ShieldCheck,
+    // Industrial safety / surveillance video from Pexels (free)
+    video:
+      "https://vicasinfo.livnsense.com/media/videos/vicasbg.mp4",
+    poster:
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+    gradient: "from-cyan-500/20 via-transparent to-transparent",
+    accentColor: "#00A755",
+  },
+];
 
-export default function ProductSection() {
-  const products = [
-    {
-      name: "GreenOps™",
-      description:
-        "AI Platform for Industrial Sustainability Optimization",
-      benefitsTitle: `GreenOps™ is an AI platform for industrial decarbonization.
-It uses AI and Digital Twins to model and optimize energy usage.
-Reduce emissions. Improve efficiency. Act in real time.`,
-      benefitsSubtitle: "GreenOps™ enables enterprises to transition toward sustainable, data-driven, and low-carbon industrial operations.",
-      benefits: [
-        "Powering Intelligent Industries Towards Net-Zero.",
-        "Leverage real-time Digital Twin simulations",
-        "Real-Time Autonomous Optimization",
-        "Industry-Agnostic Deploymenterformance",
-      ],
-      link: "/products/greenops",
-      image: "https://vicasinfo.livnsense.com/media/GreenopsLogo.svg",
-    },
-    {
-      name: "VICAS",
-      description:
-        "Vision AI Co-Pilot for Industrial Safety",
-      benefitsTitle: `VICAS™ is a Vision AI safety co-pilot for industrial environments.
-It analyzes real-time video to detect risks and unsafe behavior.
-Prevent incidents. Enforce safety. Act instantly.`,
-      benefitsSubtitle: "VICAS enables enterprises to build safer, smarter, and more proactive industrial ecosystems.",
-      benefits: [
-        "Intelligent Safety. Zero Blind Spots",
-        "Context-Aware Vision AI",
-        "Root Cause Analysis Engine",
-        "See Risks Before They Become Incidents",
-      ],
-      link: "/products/vicas",
-      image: "https://vicasinfo.livnsense.com/media/VicasLogo.jpg",
-    },
-  ];
+function ProductCard({
+  product,
+  index,
+}: {
+  product: (typeof products)[0];
+  index: number;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+  const Icon = product.icon;
 
   return (
-    <section id="products" className="py-20 w-full overflow-hidden relative" style={{ backgroundColor: "var(--background)", color: "var(--foreground)" }}>
-      {/* Background styling matching the navbar's subtle grid / glow */}
-      <div className="absolute inset-0 z-0 pointer-events-none opacity-20"
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.7, delay: index * 0.2, ease: "easeOut" }}
+      className="group relative flex flex-col rounded-2xl overflow-hidden border border-white/[0.06] bg-[#080a0f] cursor-pointer"
+      style={{ minHeight: "520px" }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Video / Image Background */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={product.poster}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110"
+          style={{
+            filter: isHovered
+              ? "brightness(0.4) saturate(1.2)"
+              : "brightness(0.25) saturate(0.8)",
+            transition: "filter 0.8s ease",
+          }}
+        >
+          <source src={product.video} type="video/mp4" />
+        </video>
+        {/* Color gradient overlay */}
+        <div
+          className={`absolute inset-0 bg-gradient-to-t ${product.gradient} opacity-60 group-hover:opacity-80 transition-opacity duration-700`}
+        />
+        {/* Bottom dark gradient for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#080a0f] via-[#080a0f]/60 to-transparent" />
+      </div>
+
+      {/* Hover glow border effect */}
+      <div
+        className="absolute inset-0 z-10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
         style={{
-          backgroundImage: `
-                linear-gradient(to right, var(--muted) 1px, transparent 1px),
-                linear-gradient(to bottom, var(--muted) 1px, transparent 1px)
-            `,
-          backgroundSize: "32px 32px",
-          WebkitMaskImage:
-            "radial-gradient(ellipse 60% 60% at 50% 50%, #05972e 20%, transparent 80%)",
-          maskImage:
-            "radial-gradient(ellipse 60% 60% at 50% 50%, #05972e 20%, transparent 80%)",
+          boxShadow: `inset 0 0 0 1px ${product.accentColor}40, 0 0 40px ${product.accentColor}15`,
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-20 relative z-10 w-full">
-        {/* Header Animation */}
+      {/* Top badge */}
+      <div className="relative z-20 p-6 pb-0">
         <motion.div
-          className="text-center mb-16"
+          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md"
+          animate={{ y: isHovered ? 0 : 0 }}
+        >
+          <Icon className="w-3.5 h-3.5" style={{ color: product.accentColor }} />
+          <span className="text-[0.65rem] font-semibold tracking-widest uppercase text-white/70">
+            {product.name}
+          </span>
+        </motion.div>
+      </div>
+
+      {/* Main content — anchored to bottom */}
+      <div className="relative z-20 mt-auto p-8 pt-14">
+        {/* Tagline */}
+        <h3 className="text-3xl md:text-4xl font-semibold text-white tracking-tight leading-[1.15] mb-3">
+          {product.tagline}
+        </h3>
+        <p className="text-sm md:text-base text-white/50 mb-8 max-w-md leading-relaxed">
+          {product.shortDesc}
+        </p>
+
+        {/* Stats row */}
+        <div className="flex gap-6 md:gap-10 mb-8">
+          {product.stats.map((stat, i) => (
+            <motion.div
+              key={stat.label}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+              className="flex flex-col"
+            >
+              <span
+                className="text-2xl md:text-3xl font-bold tracking-tight"
+                style={{ color: product.accentColor }}
+              >
+                {stat.value}
+              </span>
+              <span className="text-[0.65rem] md:text-xs text-white/40 tracking-wider uppercase mt-1">
+                {stat.label}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <Link
+          href={product.link}
+          className="inline-flex items-center gap-3 group/btn"
+        >
+          <span
+            className="flex items-center justify-center w-12 h-12 rounded-full border transition-all duration-300 group-hover/btn:scale-110"
+            style={{
+              borderColor: `${product.accentColor}60`,
+              backgroundColor: `${product.accentColor}15`,
+            }}
+          >
+            <ArrowRight
+              className="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-0.5"
+              style={{ color: product.accentColor }}
+            />
+          </span>
+          <span className="text-xs font-bold tracking-[0.2em] uppercase text-white/60 group-hover/btn:text-white transition-colors duration-300">
+            Explore Product
+          </span>
+        </Link>
+      </div>
+    </motion.div>
+  );
+}
+
+export default function ProductSection() {
+  return (
+    <section
+      id="products"
+      className="py-24 w-full overflow-hidden relative"
+      style={{ backgroundColor: "var(--background)" }}
+    >
+      {/* Subtle background grid */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none opacity-[0.07]"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, var(--muted) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--muted) 1px, transparent 1px)
+          `,
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+        {/* Section header — minimal */}
+        <motion.div
+          className="mb-14"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 uppercase tracking-tighter" style={{ color: "var(--primary)" }}>
-            Our Products
+          <div className="flex items-center gap-3 mb-4">
+            <div
+              className="w-8 h-[2px]"
+              style={{ backgroundColor: "var(--primary)" }}
+            />
+            <span
+              className="text-xs font-bold tracking-[0.25em] uppercase"
+              style={{ color: "var(--primary)" }}
+            >
+              Our Products
+            </span>
+          </div>
+          <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-tight leading-tight">
+            Built for Heavy Industry.
+            <br />
+            <span className="text-white/40">Powered by Intelligence.</span>
           </h2>
-          <p className="text-lg max-w-3xl mx-auto" style={{ color: "var(--muted-foreground)" }}>
-            Discover our world-class AI platforms designed for heavy industries.
-          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+        {/* Product cards grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {products.map((product, idx) => (
-            <motion.div
-              key={product.name}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: idx * 0.2, ease: "easeOut" }}
-              className="group relative flex flex-col rounded-xl overflow-hidden border backdrop-blur-sm transition-all duration-300"
-              style={{
-                borderColor: "var(--border)",
-                backgroundColor: "rgba(1, 2, 6, 0.6)",
-              }}
-              whileHover={{
-                scale: 1.02,
-                borderColor: "var(--accent)",
-                boxShadow: "0 0 30px rgba(0, 167, 85, 0.15)",
-              }}
-            >
-              {/* Glow behind card content */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00A755]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
-
-              {/* Image Section - Using a dummy placeholder since no specific image was required */}
-              <div className="relative w-full h-[100px] border-b shrink-0 z-10 overflow-hidden" style={{ borderColor: "var(--border)" }}>
-                <div className="absolute inset-0 flex items-center justify-center opacity-80" style={{ backgroundColor: "var(--background)" }}>
-                  {/* A subtle image placeholder pattern */}
-                  <div className="absolute inset-0 opacity-10" style={{
-                    backgroundImage: `repeating-linear-gradient(45deg, var(--muted) 0, var(--muted) 1px, transparent 0, transparent 50%)`,
-                    backgroundSize: `10px 10px`
-                  }}></div>
-                  {/* <span className="font-bold text-xl tracking-widest uppercase z-10" style={{ color: "var(--muted-foreground)" }}>PREVIEW IMAGE</span> */}
-                  {product.image ? (
-                    <img src={product.image} alt={`${product.name} Logo`} className="max-h-full max-w-full object-contain" />
-                  ) : (
-                    <div className="w-16 h-16 bg-muted rounded-full" />
-                  )}
-                </div>
-              </div>
-
-              {/* Content Section */}
-              <div className="p-8 flex flex-col flex-1 z-10">
-                <h3 className="text-3xl font-extrabold mb-4 tracking-tight" style={{ color: "var(--foreground)" }}>
-                  {product.name}
-                </h3>
-
-                <p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: "var(--muted-foreground)" }}>
-                  {product.description}
-                </p>
-
-                <div className="mb-10 flex-1">
-                  <h4 className="  mb-2  tracking-widest text-[0.9rem]" style={{ color: "var(--foreground)" }}>
-                    {product.benefitsTitle}
-                  </h4>
-                  {product.benefitsSubtitle && (
-                    <p className="text-sm mb-3" style={{ color: "var(--primary)" }}>
-                      {product.benefitsSubtitle}
-                    </p>
-                  )}
-                  <ul className="space-y-2">
-                    {product.benefits.map((benefit, bIdx) => (
-                      <li key={bIdx} className="flex items-start gap-2 text-sm" style={{ color: "var(--muted-foreground)" }}>
-                        <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "var(--accent)" }} />
-                        {benefit}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <a
-                  href={product.link}
-                  className="mt-auto inline-flex items-center gap-2 group/btn font-bold uppercase tracking-widest text-[0.7rem] transition-colors"
-                  style={{ color: "var(--primary)" }}
-                >
-                  <span className="group-hover/btn:underline underline-offset-4">Explore Our Product</span>
-                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </a>
-              </div>
-            </motion.div>
+            <ProductCard key={product.name} product={product} index={idx} />
           ))}
         </div>
       </div>

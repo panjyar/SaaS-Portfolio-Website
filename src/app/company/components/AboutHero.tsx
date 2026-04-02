@@ -32,7 +32,7 @@ const AboutHero: React.FC = () => {
             <BookOpen className="w-8 h-8 text-[#00A755] opacity-80 mb-8 group-hover:opacity-100 transition-opacity" />
             <h3 className="text-2xl font-semibold mb-6">The Inspiration</h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-              We started LivNSense to solve two of the world’s hardest problems—protecting human lives and decarbonizing industry—and realized the answer to both is intelligence.
+              We started LivNSense to solve two of the world’s hardest problems, protecting human lives and decarbonizing industry, and realized that the answer to both is intelligence.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ const AboutHero: React.FC = () => {
           {/* Card 4 */}
           <div className="p-8 md:p-10 bg-[#0c0c0c] border border-white/5 hover:border-white/10 transition-colors group relative overflow-hidden">
             <Hash className="w-8 h-8 text-[#00A755] opacity-80 mb-8 group-hover:opacity-100 transition-opacity" />
-            <h3 className="text-2xl font-semibold mb-6">Why AI</h3>
+            <h3 className="text-2xl font-semibold mb-6">Why LivNSense? </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base md:pr-8">
               Most industrial systems today still only monitor operations — they don’t make industry intelligent. If Palantir Technologies created the intelligence layer for enterprise data, LivNSense is building the AI brain for industry.
             </p>
@@ -75,7 +75,7 @@ const AboutHero: React.FC = () => {
             <Shield className="w-8 h-8 text-[#00A755] opacity-80 mb-8 group-hover:opacity-100 transition-opacity" />
             <h3 className="text-2xl font-semibold mb-6">The Vision</h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base md:pr-8">
-              By transforming fragmented data into actionable, real-time decisions, LivNSense is creating a new category of Industrial Intelligence Platforms—the foundation for safe and net-zero industry.
+              Our mission is to improve the safety and well-being of 100 million people by the end of this decade through transformative technology solutions powered by LivNSense.
             </p>
             <div className="mt-12">
               <Link href="/company/vision" className="text-xs font-bold tracking-widest uppercase text-white hover:text-[#00A755] transition-colors inline-flex items-center">

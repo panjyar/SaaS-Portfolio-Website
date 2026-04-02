@@ -7,7 +7,8 @@ import PartnerMarquee from "@/components/PartnerMarquee";
 // Lazy load below-fold sections
 const ProductSection = dynamic(() => import("./components/ProductSection"));
 const WhatWeSolve = dynamic(() => import("./components/WhatWeSolve"));
-const VehicleDetectionSection = dynamic(() => import("./components/VehicleDetectionSection"));
+const IndustriesGrid = dynamic(() => import("./components/IndustriesGrid"));
+// const VehicleDetectionSection = dynamic(() => import("./components/VehicleDetectionSection"));
 const HowPlatformWorks = dynamic(() => import("./components/HowPlatformWorks"));
 const TestimonialCarousel = dynamic(() => import("./components/TestimonialSection"));
 const Map = dynamic(() => import("@/components/Map"), { ssr: false });
@@ -19,7 +20,8 @@ export default function Landing() {
       <PartnerMarquee />   
       <ProductSection />
       <WhatWeSolve />
-      <VehicleDetectionSection />
+      <IndustriesGrid />
+      {/* <VehicleDetectionSection /> */}
       <HowPlatformWorks />
       <TestimonialCarousel />
       <Map />

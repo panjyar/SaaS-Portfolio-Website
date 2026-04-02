@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import AboutSection from "@/components/ui/about-section";
 import { ArrowDown } from "lucide-react";
-
+ 
 // Lazy load below-fold components
 const WhyGreenOps = dynamic(() => import("@/components/ui/why-greenops"));
 const DatabaseWithRestApi = dynamic(() => import("@/components/ui/database-with-rest-api"), { ssr: false });
@@ -12,7 +12,7 @@ const Gallery4 = dynamic(() => import("@/components/ui/gallery4").then(mod => ({
 
 function TheSolutionSection() {
   return (
-    <section className="relative bg-[#010206] text-white overflow-hidden py-24 sm:py-32 border-t border-white/5">
+    <section id="ai-industrial-copilot" className="relative bg-[#010206] text-white overflow-hidden py-24 sm:py-32 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="z-10">
@@ -70,7 +70,7 @@ function TheSolutionSection() {
 
 function HowItWorksSection() {
   return (
-    <section className="relative bg-[#0a0f14] text-white overflow-hidden py-24 sm:py-32 border-t border-white/5">
+    <section id="carbon-intelligence" className="relative bg-[#0a0f14] text-white overflow-hidden py-24 sm:py-32 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <h2 className="text-center text-sm font-semibold text-[#00A755] tracking-wider uppercase mb-3">How It Works</h2>
         <h3 className="text-center text-3xl md:text-4xl font-bold mb-16 tracking-tight">
@@ -116,35 +116,35 @@ function WhereItWorksSection() {
       title: "Cement plants", 
       description: "Optimizing kiln temperatures and alternative fuel management for continuous production.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/cement-plant.jpg" 
     },
     { 
       id: "steel", 
       title: "Steel and metals", 
       description: "Enhancing furnace performance and melt shop optimization.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/steel_and_metal.png" 
     },
     { 
       id: "oilgas", 
       title: "Oil & gas", 
       description: "Refinery unit optimization and significant energy intensity reduction.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/oil_and_gas.jpg" 
     },
     { 
       id: "chemicalandpharma", 
       title: "Chemical & Pharma", 
       description: "Optimizing process heat and improving energy efficiency.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/pharma-and-chemical.jpg" 
     },
     { 
       id: "powerandutilization", 
       title: "Power & Utilities", 
       description: "Optimizing power generation and improving energy efficiency.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/power-and-utilization.jpg" 
     },
   ];
 
@@ -257,12 +257,12 @@ export default function GreenOpsPage() {
         productSubtitle="AI Platform for Industrial Decarbonisation & Process Efficiency"
         ctaText="REQUEST A DEMO"
         ctaMessage="Ready to optimize your industrial operations with AI?"
-        ctaHref="/contact"
+        ctaHref="/company/contact"
         accentColor="#00A755"
       />
       <TheSolutionSection />
       <HowItWorksSection />
-      <WhyGreenOps />
+      <div id="energy-optimization"><WhyGreenOps /></div>
       <WhereItWorksSection />
       <ProofTractionSection />
       <PositioningLineSection />

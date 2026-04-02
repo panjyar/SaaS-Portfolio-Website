@@ -224,7 +224,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                                 className="mt-6 flex flex-col gap-3"
                             >
                                 <Link
-                                    href="#"
+                                    href="/company/contact"
                                     className="text-center text-[0.65rem] tracking-widest font-extrabold px-6 py-3 rounded-sm no-underline uppercase"
                                     style={{
                                         background: "var(--primary)",

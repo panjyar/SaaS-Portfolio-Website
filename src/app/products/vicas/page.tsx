@@ -12,7 +12,7 @@ const DatabaseWithRestApi = dynamic(() => import("@/components/ui/database-with-
 
 function TheSolutionSectionVicas() {
   return (
-    <section className="relative bg-[#010206] text-white overflow-hidden py-24 sm:py-32 border-t border-white/5">
+    <section id="collision-avoidance" className="relative bg-[#010206] text-white overflow-hidden py-24 sm:py-32 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="z-10">
@@ -70,7 +70,7 @@ function TheSolutionSectionVicas() {
 
 function HowItWorksSectionVicas() {
   return (
-    <section className="relative bg-[#0a0f14] text-white overflow-hidden py-24 sm:py-32 border-t border-white/5">
+    <section id="computer-vision-ai" className="relative bg-[#0a0f14] text-white overflow-hidden py-24 sm:py-32 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <h2 className="text-center text-sm font-semibold text-[#FF4000] tracking-wider uppercase mb-3">How It Works</h2>
         <h3 className="text-center text-3xl md:text-4xl font-bold mb-16 tracking-tight">
@@ -117,42 +117,42 @@ function WhereItWorksSection() {
       title: "Railways", 
       description: "Real-time monitoring of rolling stock health and infrastructure integrity.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/railways.jpg" 
     },
     { 
       id: "port", 
       title: "Ports", 
       description: "Optimizing crane operations and vessel traffic management.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/ports.jpg" 
     },
     { 
       id: "manufacturing", 
       title: "Manufacturing", 
       description: "Real-time quality control and production monitoring.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/manufacturing.jpg" 
     },
     { 
       id: "warehouses", 
       title: "Warehouses", 
       description: "Optimizing storage conditions and inventory management.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/warehouse.jpg" 
     },
     { 
       id: "food", 
       title: "Food & Beverage", 
       description: "Ensuring quality control and production efficiency.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/food-and-beverages.jpg" 
     },
     { 
       id: "construction", 
       title: "Construction", 
       description: "Optimizing construction operations and improving safety.", 
       href: "#", 
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" 
+      image: "https://vicasinfo.livnsense.com/media/industries/construction.jpg" 
     },
   ];
 
@@ -272,7 +272,7 @@ export default function VicasPage() {
       />
       <TheSolutionSectionVicas />
       <HowItWorksSectionVicas />
-      <WhyVicas />
+      <div id="safety-monitoring"><WhyVicas /></div>
       <WhereItWorksSection />
       <ProofTractionSection />
       <PositioningLineSection />

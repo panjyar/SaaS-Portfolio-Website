@@ -71,7 +71,8 @@ export default function WhyGreenOps() {
       <div className="mx-auto max-w-full">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-4 px-5 text-center md:px-10">
           <h2 className="max-w-3xl font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-neutral-900 uppercase">
-            Measurable Impact Across Operations
+            Continuously Optimizing Energy, Efficiency, and Emissions in Real Time
+            
           </h2>
           <p className="max-w-2xl text-base md:text-lg text-neutral-700">
             GreenOps™ integrates AI and digital twin models to drive continuous improvements across all facets of industrial operations.
@@ -122,6 +123,11 @@ export default function WhyGreenOps() {
               </Marquee>
             </div>
           </div>
+        </div>
+         <div className="flex items-center justify-center">
+          <h2 className="max-w-3xl font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-neutral-900 mt-10">
+            The GreenOps™ Advantage
+          </h2>
         </div>
 
         <div className="mt-20 grid grid-cols-1 divide-dashed divide-neutral-900/10 border-neutral-900/10 border-t border-dashed sm:grid-cols-2 sm:divide-x lg:grid-cols-3">

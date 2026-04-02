@@ -39,18 +39,18 @@ const productsDropdown: DropdownData = [
         heading: "GreenOps",
         links: [
             { text: "Overview", href: "/products/greenops" },
-            { text: "Energy Optimization", href: "#" },
-            { text: "Carbon Intelligence", href: "#" },
-            { text: "AI Industrial Copilot", href: "#" },
+            { text: "Energy Optimization", href: "/products/greenops#energy-optimization" },
+            { text: "Carbon Intelligence", href: "/products/greenops#carbon-intelligence" },
+            { text: "AI Industrial Copilot", href: "/products/greenops#ai-industrial-copilot" },
         ],
     },
     {
         heading: "VICAS",
         links: [
             { text: "Overview", href: "/products/vicas" },
-            { text: "Safety Monitoring", href: "#" },
-            { text: "Collision Avoidance", href: "#" },
-            { text: "Computer Vision AI", href: "#" },
+            { text: "Safety Monitoring", href: "/products/vicas#safety-monitoring" },
+            { text: "Collision Avoidance", href: "/products/vicas#collision-avoidance" },
+            { text: "Computer Vision AI", href: "/products/vicas#computer-vision-ai" },
         ],
     },
 ];
@@ -147,7 +147,7 @@ export const careersDropdown: DropdownData = [
 
 export const menuItems: MenuItem[] = [
     { label: "Products", href: "/#products", dropdownData: productsDropdown, previewImage: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" },
-    { label: "Solutions", href: "#", dropdownData: solutionsDropdown, previewImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" },
+    { label: "Solutions", href: "/solutions", dropdownData: solutionsDropdown, previewImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" },
     { label: "Industries", href: "/industries", dropdownData: industriesDropdown, previewImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" },
     { label: "Technology", href: "#", dropdownData: technologyDropdown, previewImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" },
     { label: "Case Studies", href: "#", dropdownData: caseStudiesDropdown, previewImage: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800" },

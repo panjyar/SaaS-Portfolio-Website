@@ -29,10 +29,10 @@ export function Footer({ className, ...props }: Omit<FooterProps, 'children'>) {
 							titleHref="/#products"
 							links={[
 								{ title: 'GreenOps', href: '/products/greenops' },
-								{ title: 'Energy Optimization', href: '#' },
-								{ title: 'Carbon Intelligence', href: '#' },
+								{ title: 'Energy Optimization', href: '/products/greenops#energy-optimization' },
+								{ title: 'Carbon Intelligence', href: '/products/greenops#carbon-intelligence' },
 								{ title: 'VICAS', href: '/products/vicas' },
-								{ title: 'Safety Monitoring', href: '#' },
+								{ title: 'Safety Monitoring', href: '/products/vicas#safety-monitoring' },
 							]} 
 						/>
 					</div>
@@ -43,6 +43,7 @@ export function Footer({ className, ...props }: Omit<FooterProps, 'children'>) {
 						<div className="flex flex-col">
               <LinksGroup
                 title="Solutions"
+                titleHref="/solutions"
                 links={[
                   { title: 'Safety & PPE', href: '#' },
                   { title: 'Quality Inspection', href: '#' },

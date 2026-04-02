@@ -1,18 +1,15 @@
 import Header from "@/components/Header";
 import type { Metadata } from "next";
-import { Poppins, Geist } from "next/font/google";
+import { Poppins } from "next/font/google";
 import ContentWrapper from "@/components/ContentWrapper";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const poppins = Poppins({
-  variable: "--font-poppins",
+  variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 export const metadata: Metadata = {
   title: "Livnsense",
@@ -27,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={cn("font-sans", geist.variable)}>
-      <body className={`${poppins.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning className={poppins.variable}>
+      <body className="antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

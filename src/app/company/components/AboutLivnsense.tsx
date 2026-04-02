@@ -8,15 +8,16 @@ const AboutLivnsense = () => {
           {/* Left Text */}
           <div className="z-10">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-              Hello, we&apos;re <span className="text-[#00A755]">LivNSense.</span>
+              {/* Hello, we&apos;re */}
+               <span className="text-[#00A755]">LivNSense</span>
             </h2>
             <p className="text-xl md:text-2xl font-light leading-relaxed mb-8">
-              We&apos;re building the AI brain for industry—enabling heavy industries to operate safer, more efficiently, and with lower emissions.
+              We&apos;re building the AI brain for industry
             </p>
             <p className="text-sm md:text-base text-gray-300 leading-relaxed font-light">
-              LivNSense is a climate-tech and industrial AI company transforming how industrial operations run. While most platforms only monitor data, LivNSense turns fragmented industrial data into real-time operational intelligence using Artificial Intelligence, Digital Twins, Industrial IoT, and Vision Intelligence.
+              LivNSense is a industrial AI company enabling heavy industries to operate safer, more efficiently, and with lower emissions. By combining Artificial Intelligence, Digital Twins, Industrial IoT, and Vision Intelligence, it transforms fragmented industrial data into real-time operational intelligence creating a unified intelligence layer that drives safer, autonomous, and net-zero operations.
             </p>
-            <h1 className="pt-4">Together, they create a unified intelligence layer that helps industries transition toward safe, autonomous, and net-zero operations.</h1>
+            {/* <h1 className="pt-4">Together, they create a unified intelligence layer that helps industries transition toward safe, autonomous, and net-zero operations.</h1> */}
           </div>
 
           {/* Right Graphics (Intersecting Circles) */}

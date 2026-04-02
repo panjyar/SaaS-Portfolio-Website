@@ -15,28 +15,28 @@ const testimonialsList = [
       "Congratulation LivNSense for the NetApp Excellerator startup awards for the Globle cause Net Zero challenges with your unique idea focus to technologies solution for the SAAS based AI ML platform.",
     name: "Harnath Babu",
     title: "Partner and CIO KPMG",
-    avatar: "Testimonials/Harnath-Babu.jpg",
+    avatar: "https://vicasinfo.livnsense.com/media/testimonials/Harnath-Babu.jpg",
   },
   {
     quote:
       "Appreciable Platform and product innovation in mining looking forward for next innovation. Best of Luck. We will soon collaboration with government bodies for scaling the product to address Safety and Sustainability challenges of industry.",
     name: "Pralhad Joshi",
     title: "Ministry of Mining",
-    avatar: "Testimonials/Pralhad_Joshi.webp",
+    avatar: "https://vicasinfo.livnsense.com/media/testimonials/Pralhad_Joshi.webp",
   },
   {
     quote:
       "It was a pleasure to share my perspectives and witness Electraverse—a brilliant initiative that supports startups and fosters the country's entrepreneurship ecosystem. Congratulations to IEEMA on organizing a successful event that brings together diverse stakeholders to drive progress and growth. Congratulation LivNSense for brilliant innovation in Sustainability and Decarbonization.",
     name: "Amit Jain",
     title: "Car Dekho",
-    avatar: "https://dev-sigma.livnsense.com/media/images/Amit-Jain-Cardekho.jpg",
+    avatar: "https://vicasinfo.livnsense.com/media/testimonials/Amit-Jain-Cardekho%201.jpg",
   },
   {
     quote:
       "The team did a great job.The use case targets many industries that utilize high energy assets like kilns and furnaces. It presents tremendous opportunities to reduce overall costs and environmental impact. The business case and market analysis were thorough. The business obvious and wide ranging and the technology a beautiful blend of applied science, loT and SAS analytics. This is a strong proposal, and we look forward to seeing what comes next.",
     name: "Kevin Kalish & Jane Howell",
     title: "SAS Track Lead",
-    avatar: "Testimonials/Kevin-and-jane.png",
+    avatar: "https://vicasinfo.livnsense.com/media/testimonials/Kevin-and-jane%201.png",
   },
   {
     quote:
@@ -50,28 +50,28 @@ const testimonialsList = [
       "LivNSense is one the rising startup to challenge and sharing their sustainable ideas at Elecrama 2023. Congratulations for Winning the award in the category of Future Engines of Decarbonization.",
     name: "Jitender Kumar Agarwal",
     title: "JMD, Genus Power Infrastructures Ltd || Chairman, ELECRAMA 2023.",
-    avatar: "Testimonials/Jitendra-Kumar-Agarwal.jpg",
+    avatar: "https://vicasinfo.livnsense.com/media/testimonials/Jitendra-Kumar-Agarwal.jpg",
   },
   {
     quote:
       "It is such an honor to be part of Austin where all employee-owners diligently pursue a Piloting AI technology on our equipment is just another example of embracing innovation to advance the safety of our workers and all other stakeholders who enter our work zones.",
     name: "Richard Mills",
     title: "President Austin Bridge & Road",
-    avatar: "Testimonials/Richard-Mills.jpg",
+    avatar: "https://vicasinfo.livnsense.com/media/testimonials/Richard-Mills.jpg",
   },
   {
     quote:
       "I am intrigued by LivNSense as the way they the solved problem that is addressing Carbon Emissions from Smelting to Cement Industries, with unique solution by capturing more data points with better AI models and Digital Twins. GreenOps™ is not only changing the energy efficiency but the optimizing raw materials the way its consumed.",
     name: "Matt Hurford",
     title: "Vice President, Solutions Engineering, NetApp",
-    avatar: "Testimonials/Matt-Hurford.jpeg",
+    avatar: "https://vicasinfo.livnsense.com/media/testimonials/Matt-Hurford.jpeg",
   },
   {
     quote:
       "LivNSense has been our innovation partner for digital factory initiatives since pasty one year. This encompasses a strong domain led team in IIOT with a deep understanding of Industry4.0 concepts, quick adoption across business use cases from sensor to cloud and are able to bring out innovative IoT solutions which are reliable and secured to help our customers improve machine utilization, efficiency, operator productivity, safety and predictive maintenance. We, at Leadec Industrial Services, are happy to embark on a digital journey with LivNSense to offer value added solutions to our customers.",
     name: "Sudhir Gurtoo",
     title: "Managing Director at Leadec India",
-    avatar: "Testimonials/sudhir-gurtoo.jpg",
+    avatar: "https://vicasinfo.livnsense.com/media/testimonials/sudhir-gurtoo.jpg",
   },
 ];
 

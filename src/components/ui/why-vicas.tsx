@@ -71,7 +71,7 @@ export default function WhyVicas() {
       <div className="mx-auto max-w-full">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-4 px-5 text-center md:px-10">
           <h2 className="max-w-3xl font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-neutral-900">
-            Removing the roadblocks to industrial safety
+            Eliminating barriers to Industrial Safety with AI-Driven Intelligence
           </h2>
           <p className="max-w-2xl text-base md:text-lg text-neutral-700">
             VICAS™ (Virtual Intelligence Creating Augmented Safety) replicates human perception to identify patterns and drive real-time decision-making in high-risk zones, overcoming the limitations of traditional safety methods.
@@ -123,8 +123,13 @@ export default function WhyVicas() {
             </div>
           </div>
         </div>
-
+        <div className="flex items-center justify-center">
+          <h2 className="max-w-3xl font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-neutral-900 mt-10">
+            The VICAS Advantage
+          </h2>
+        </div>
         <div className="mt-20 grid grid-cols-1 divide-dashed divide-neutral-900/10 border-neutral-900/10 border-t border-dashed sm:grid-cols-2 sm:divide-x lg:grid-cols-3">
+
           {features.map((feature) => {
             const Icon = feature.icon;
             return (
