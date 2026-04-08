@@ -12,9 +12,9 @@ interface StatItem {
 interface AboutSectionProps {
   tagline: string;
   heroImage: string;
-  statsRow: StatItem[];
-  statHighlight: { value: string; label: string };
-  statExtra: StatItem;
+  // statsRow: StatItem[];
+  // statHighlight: { value: string; label: string };
+  // statExtra: StatItem;
   headline: string;
   descriptionLeft: string;
   descriptionRight?: string;
@@ -29,9 +29,9 @@ interface AboutSectionProps {
 export default function AboutSection({
   tagline,
   heroImage,
-  statsRow,
-  statHighlight,
-  statExtra,
+  // statsRow,
+  // statHighlight,
+  // statExtra,
   headline,
   descriptionLeft,
   descriptionRight,
@@ -87,7 +87,7 @@ export default function AboutSection({
                 timelineRef={heroRef}
                 customVariants={revealVariants}
                 className="text-sm font-medium"
-                style={{ color: "#94a3b8", fontSize: "40px"}}
+                style={{ color: "#94a3b8", fontSize: "40px" }}
               >
                 {tagline}
               </TimelineContent>
@@ -129,7 +129,7 @@ export default function AboutSection({
           </TimelineContent>
 
           {/* Stats */}
-          <div className="flex flex-wrap lg:justify-start justify-between items-center py-3 text-sm">
+          {/* <div className="flex flex-wrap lg:justify-start justify-between items-center py-3 text-sm">
             <TimelineContent
               as="div"
               animationNum={2}
@@ -170,7 +170,7 @@ export default function AboutSection({
                 <span className="lg:hidden block" style={{ color: "#334155" }}>|</span>
               </TimelineContent>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* Main Content */}
         <div className="grid md:grid-cols-3 gap-8">

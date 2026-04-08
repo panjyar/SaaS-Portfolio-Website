@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
                 {/* Logo */}
                 <Link href="/" className="flex items-center shrink-0">
                     <Image
-                        src="/images/lnslogo.png"
+                        src="https://vicasinfo.livnsense.com/media/images/lnslogo.png"
                         alt="LivNSense Logo"
                         width={60}
                         height={20}

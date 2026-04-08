@@ -67,7 +67,9 @@ export default function WhatWeSolve() {
             text="The Industrial Challenges Holding Back Sustainable Operations"
             containerClassName="justify-center"
           /> */}
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#ededed] w-full max-w-[1400px] mx-auto px-4 md:px-12">The Industrial Challenges Holding Back Sustainable Operations</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl text-[#ededed] text-center whitespace-nowrap overflow-hidden text-ellipsis">
+  The Industrial Challenges Holding Back Sustainable Operations
+</h1>
         </div>
       </div>
 
@@ -90,8 +92,8 @@ export default function WhatWeSolve() {
 
         <div className="mt-16 text-center max-w-3xl mx-auto flex justify-center">
           <TextBlockAnimation delay={0.2} duration={0.6} blockColor="#0f792a">
-            <p className="text-xl font-medium text-[#ededed]">
-              Industries need intelligent systems that connect operations, safety, and sustainability — enabling smarter decisions in real time.
+            <p className="text-2xl md:text-3xl lg:text-4xl text-[#ededed]">
+              Industries need intelligent systems that connect operations, safety, and sustainability, enabling smarter decisions in real time.
             </p>
           </TextBlockAnimation>
         </div>

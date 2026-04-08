@@ -14,7 +14,7 @@ const teamMembers = [
     name: "Priyanka Kumar",
     role: "Co-Founder & COO",
     description: "Focuses on operational excellence and scaling product delivery.",
-    image: "https://vicasinfo.livnsense.com/media/PriyankaKumar.jpg",
+    image: "https://vicasinfo.livnsense.com/media/team/PriyankaKumar-1.jpg",
     clipId: "clip-another2"
   },
   {

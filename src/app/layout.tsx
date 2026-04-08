@@ -12,10 +12,10 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 export const metadata: Metadata = {
-  title: "Livnsense",
+  title: "Livnsense GreenOps Pvt Ltd",
   description: "Real-Time EHS Risk Intelligence — Powered by VICAS",
   icons: {
-     icon: "images/LivNSenseLogo.svg",
+     icon: "https://vicasinfo.livnsense.com/media/images/LivNSenseLogo.svg",
   },
 };
 export default function RootLayout({

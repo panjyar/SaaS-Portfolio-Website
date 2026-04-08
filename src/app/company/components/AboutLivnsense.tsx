@@ -40,7 +40,7 @@ const AboutLivnsense = () => {
             <div className="absolute left-32 z-10 w-72 h-72 rounded-full border border-[#00A755] flex items-center justify-center overflow-hidden shadow-[0_0_30px_rgba(0,167,85,0.2)]">
               <div className="w-full h-full bg-gradient-to-tr from-[#00A755]/20 to-transparent relative">
                 {/* Simulated industrial image effect */}
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-overlay opacity-60 grayscale" />
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-overlay" />
                 <div className="absolute inset-0 bg-[#00A755] mix-blend-color opacity-20" />
               </div>
             </div>

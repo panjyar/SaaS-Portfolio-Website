@@ -16,7 +16,7 @@ const Map = dynamic(() => import("@/components/Map"), { ssr: false });
 export default function Landing() {
   return (
     <>
-    <Landinghero />
+      <Landinghero />
       <PartnerMarquee />   
       <ProductSection />
       <WhatWeSolve />

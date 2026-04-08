@@ -56,19 +56,19 @@ export function Footer({ className, ...props }: Omit<FooterProps, 'children'>) {
               />
               <LinksGroup 
                 title="Industries"
+                titleHref="/industries"
                 links={[
-                  { title: 'Cement', href: '/industries' },
-                  { title: 'Steel & Mining', href: '/industries' },
-                  { title: 'Oil & Gas', href: '/industries' },
-                  { title: 'Chemicals & Pharma', href: '/industries' },
-				  { title: 'Railways', href: '/industries'},
-				  { title: 'Ports', href: '/industries'},
-				  { title: 'Manufacturing', href: '/industries'},
-				  { title: 'Warehouses', href: '/industries'},
-				  { title: 'Food', href: '/industries'},
-				  { title: 'Construction', href: '/industries'},
-				  { title: 'Power & Utilization', href: '/industries'},
-				  { title: 'Chemical', href: '/industries'}
+                  { title: 'Cement', href: '/industries/cement' },
+                  { title: 'Steel & Mining', href: '/industries/steel-mining' },
+                  { title: 'Oil & Gas', href: '/industries/oil-gas' },
+                  { title: 'Chemicals & Pharma', href: '/industries/chemicals-pharma' },
+				  { title: 'Railways', href: '/industries/railways'},
+				  { title: 'Ports', href: '/industries/ports'},
+				  { title: 'Manufacturing', href: '/industries/manufacturing'},
+				  { title: 'Warehouses', href: '/industries/warehouses'},
+				  { title: 'Food', href: '/industries/food'},
+				  { title: 'Construction', href: '/industries/construction'},
+				  { title: 'Power & Utilities', href: '/industries/power-utilities'}
                 ]} 
               />
             </div>
@@ -105,7 +105,7 @@ export function Footer({ className, ...props }: Omit<FooterProps, 'children'>) {
                 title="Company"
                 links={[
                   { title: 'About Us', href: '/company/about' },
-                  { title: 'Leadership', href: '#' },
+                  { title: 'Leadership', href: '/company/about#leadership' },
                   { title: 'Partners', href: '/company/partner' },
                   { title: 'Careers', href: '/company/careers' },
                   { title: 'Contact', href: '/company/contact' },

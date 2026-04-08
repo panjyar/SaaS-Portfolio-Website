@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import AboutHero from "../components/AboutHero";
+import { SolutionsCTA } from "@/components/solutions/SolutionsCTA";
 
 // Lazy load below-fold sections
 const AboutLivnsense = dynamic(() => import("../components/AboutLivnsense"));
@@ -15,7 +16,7 @@ export default function AboutPage() {
       <AboutLivnsense />
       <AboutHero />
       <CompanyValues />
-      <OurTeamSection />
+      <div id="leadership"></div><OurTeamSection />
       <ElegantCarousel />
       <OurApproach />
       {/* <PartnerMarquee /> */}
@@ -29,6 +30,7 @@ export default function AboutPage() {
         </h3>
         <img src="/partners/allpartners.png" alt="" className="w-[80%] mx-auto object-cover" />
       </div>
+      <div id="contact"> </div><SolutionsCTA />
     </>
   );
 }

@@ -60,13 +60,15 @@ const industriesDropdown: DropdownData = [
     {
         heading: "Industries",
         links: [
-            { text: "Cement", href: "#" },
-            { text: "Steel", href: "#" },
-            { text: "Chemicals", href: "#" },
-            { text: "Mining", href: "#" },
-            { text: "Oil & Gas", href: "#" },
-            { text: "Pharma", href: "#" },
-
+            { text: "Cement", href: "/industries/cement" },
+            { text: "Steel & Mining", href: "/industries/steel-mining" },
+            { text: "Oil & Gas", href: "/industries/oil-gas" },
+            { text: "Chemicals & Pharma", href: "/industries/chemicals-pharma" },
+            { text: "Railways", href: "/industries/railways" },
+            { text: "Ports", href: "/industries/ports" },
+            { text: "Manufacturing", href: "/industries/manufacturing" },
+            { text: "Construction", href: "/industries/construction" },
+            { text: "Power & Utilities", href: "/industries/power-utilities" },
         ],
     },
 ];
