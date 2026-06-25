@@ -4,11 +4,11 @@ const nextConfig: NextConfig = {
 
   // Disable ESLint during build to avoid build breaks from lint errors
 
-  eslint: {
+  // eslint: {
 
-    ignoreDuringBuilds: true,
+  //   ignoreDuringBuilds: true,
 
-  },
+  // },
 
   // Enable standalone output for Docker-friendly builds
 
