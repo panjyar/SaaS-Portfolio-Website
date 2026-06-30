@@ -38,7 +38,6 @@
   --card-foreground: var(----card-foreground);
   --card: var(----card);
   --foreground: var(----foreground);
-  --background: var(----background);
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -84,6 +83,34 @@
   --success-foreground: var(--color-emerald-700);
   --warning: var(--color-amber-500);
   --warning-foreground: var(--color-amber-700);
+
+  /* ========================================
+     VICAS Product Page — Color Variables
+     ======================================== */
+  --vicas-page-bg: #0a0a0a;                        /* Main dark background for sections */
+  --vicas-page-bg-alt: #0a0f0a;                     /* Hero section green-tinted dark bg */
+  --vicas-card-bg: #1a1d1f;                          /* Problem card surface background */
+  --vicas-card-bg-hover: #22262a;                    /* Problem card hover background */
+  --vicas-card-border: #2a2d30;                      /* Problem card default border */
+  --vicas-card-border-hover: #3a3d40;                /* Problem card border on hover */
+  --vicas-accent-red: #ef4444;                       /* Red accent for indicator dots */
+  --vicas-accent-red-glow: rgba(239, 68, 68, 0.25); /* Red glow shadow on hover */
+  --vicas-text-primary: #ffffff;                     /* Primary text color (white) */
+  --vicas-text-secondary: #b8b8b8;                   /* Secondary/muted text */
+  --vicas-text-label: #8a8f94;                       /* Small label text */
+  --vicas-section-label: #00c85a;                    /* Section label accent (e.g. WHY VICAS EXISTS) */
+  --vicas-metric-text: #ffffff;                      /* Metric counter number color */
+  --vicas-metric-label: #b8b8b8;                     /* Metric label text below counter */
+  --vicas-metrics-bg: #181E22;                       /* Metrics section background */
+  --vicas-metrics-divider: #2a2d30;                  /* Divider line in metrics */
+  --vicas-hero-green: #00c85a;                       /* Hero accent green text */
+  --vicas-hero-btn-primary: #00a755;                 /* Primary CTA button green */
+  --vicas-hero-btn-primary-hover: #008f48;           /* Primary CTA button hover */
+  --vicas-bullet-dot: #ef4444;                       /* Bullet point red dot */
+  --vicas-radar-ring-border: rgba(255, 255, 255, 0.18); /* Radar concentric ring border */
+  --vicas-radar-center-dot: rgba(0, 200, 80, 0.5);  /* Radar center dot color */
+  --vicas-radar-blip: #ff4040;                       /* Radar red blip dot */
+  --vicas-radar-blip-border: rgba(255, 60, 60, 0.5);/* Radar blip ring border */
 }
 
 /* @theme inline {

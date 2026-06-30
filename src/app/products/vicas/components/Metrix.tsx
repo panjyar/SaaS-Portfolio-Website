@@ -51,12 +51,20 @@ export default function MetricItem({
 
   return (
     <div ref={ref} className="flex flex-col items-center text-center">
-      <p className="text-5xl md:text-6xl font-medium flex items-center justify-center text-white">
+      <p
+        className="text-5xl md:text-6xl font-medium flex items-center justify-center"
+        style={{ color: "var(--vicas-metric-text)" }}
+      >
         {count.toLocaleString()}
         {suffix}
       </p>
 
-      <p className="text-sm mt-1 text-white font-medium">{label}</p>
+      <p
+        className="text-sm mt-1 font-medium"
+        style={{ color: "var(--vicas-metric-label)" }}
+      >
+        {label}
+      </p>
     </div>
   );
 }

@@ -1,35 +1,35 @@
 import { Button } from "@/components/ui/neon-button"
 
 const Default = () => {
-    return (
-        <>
-            <div className="flex flex-col gap-3">
-                <Button>Button</Button>
-                <WithNoNeon />
-                <Solid />
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="flex flex-col gap-3">
+        <Button>Button</Button>
+        <WithNoNeon />
+        <Solid />
+      </div>
+    </>
+  )
 }
 
 const WithNoNeon = () => {
-    return (
-        <>
-            <div className="flex flex-col gap-2">
-                <Button neon={false}>normal button</Button>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="flex flex-col gap-2">
+        <Button neon={false}>normal button</Button>
+      </div>
+    </>
+  )
 }
 
 const Solid = () => {
-    return (
-        <>
-            <div className="flex flex-col gap-2">
-                <Button variant={"solid"}>solid</Button>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="flex flex-col gap-2">
+        <Button variant={"solid"}>solid</Button>
+      </div>
+    </>
+  )
 }
 
 export { Default, WithNoNeon, Solid }
@@ -45,7 +45,7 @@ export { Default, WithNoNeon, Solid }
 
 export default function VisualRisk() {
   return (
-    <div className="relative overflow-hidden bg-black pt-10 pb-20 flex flex-col items-center">
+    <div className="relative overflow-hidden pt-10 pb-20 flex flex-col items-center">
       {/* Background gradients */}
       <div className="absolute inset-0 -z-10">
         {/* Purple glow at the top */}
@@ -55,16 +55,20 @@ export default function VisualRisk() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_90%,rgba(34,197,94,0.2),transparent)]" />
       </div>
 
-      <div className="relative z-10 mx-auto mt-16 max-w-5xl px-6 text-center md:mt-32">
-        <Button
+      <div className="relative z-10 mx-auto mt-16 w-[100%] px-6 text-center md:mt-32">
+        {/* <Button
           size="xs"
           className="px-8 py-4 uppercase tracking-[0.3em]"
         >
           FROM VISUAL DATA TO RISK INTELLIGENCE
-        </Button>
+        </Button> */}
+        <div className="inline-block bg-gradient-to-r from-[#00B050] to-[#046839] bg-clip-text text-transparent font-semibold">
+
+          FROM VISUAL DATA TO RISK INTELLIGENCE
+        </div>
 
 
-        <p className="mx-auto mt-6 max-w-4xl text-xl text-white md:text-3xl md:leading-relaxed">
+        <p className="mx-auto mt-6 w-[90%] text-xl text-white md:text-3xl md:leading-relaxed text-left">
           VICAS transforms industrial camera feeds into real-time risk intelligence, enabling organizations to continuously identify hazards, automate safety monitoring, and respond to emerging risks before they impact operations.
         </p>
       </div>

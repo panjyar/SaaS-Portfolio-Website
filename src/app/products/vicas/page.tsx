@@ -1,50 +1,55 @@
-"use client"
+"use client";
 
 import VicasHero from "./components/VicasHero";
-import ImageSlider from "./components/image-slider";
-import MetricItem from "./components/Metrix"
-import VicasExits from "./components/whyVicasExists"
-import ProblemInVicas from "./components/ProblemInVicas"
-import VisualRisk from "./components/VisualRisk"
-export default function VicasLanding(){
-  return(
-  <>
-  <VicasHero/>
-  <div className="pt-16 md:pt-24 pb-8 md:pb-12 ">
-    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-gray-900">
-      <MetricItem
-        target={95}
-        suffix="%+"
-        label="Detection Accuracy"
-      />
+import MetricsSection from "./components/MetricsSection";
+import VicasExits from "./components/WhyVicasExists";
+import ProblemInVicas from "./components/ProblemInVicas";
+import VisualRisk from "./components/VisualRisk";
+import FeatureStack from "./components/FeatureStack";
 
-            <MetricItem
-              target={50000}
-              suffix="+"
-              label="Safety Events Detected"
-              // type="up"
+export default function VicasLanding() {
+  return (
+    <>
+      {/* Hero stays sticky so content scrolls OVER it like a shutter */}
+      <div
+        className="sticky top-0 z-0"
+        style={{ height: "100vh" }}
+      >
+        <VicasHero />
+      </div>
+
+      {/* Everything below scrolls over the hero */}
+      <div className="relative z-20">
+        {/* Master container for all sections below hero, with curved top and gradient */}
+        <div
+          className="rounded-t-[100px] relative flex flex-col"
+          style={{ backgroundColor: "var(--vicas-page-bg)" }}
+        >
+          {/* Subtle gradient overlay at the top — does NOT affect content opacity */}
+          <div
+            className="absolute top-0 left-0 right-0 h-[400px] pointer-events-none rounded-t-[100px]"
+            style={{
+              background: "linear-gradient(90deg, rgba(42, 42, 42, 1) 0%, rgba(8, 11, 13, 1) 100%)",
+              opacity: 0.6,
+            }}
+          />
+
+          {/* Metrics Section */}
+          <div className="relative z-10 pt-8">
+            <div
+              className="mx-auto h-1 w-[200px] rounded-full mb-8"
+              style={{ backgroundColor: "var(--vicas-metrics-divider)" }}
             />
+            <MetricsSection />
+          </div>
 
-            <MetricItem
-              target={5}
-              suffix="B+"
-              label="Video Frames Analyzed"
-              // type="up"
-            />
-
-            <MetricItem
-        target={24}
-        suffix="×7"
-        label="Real-Time Monitoring"
-      />
-    </div>
-
-    <VicasExits/>
-    <ProblemInVicas/>
-    <VisualRisk/>
-    </div>
-    
-  {/* <ImageSlider/> */}
-  </>
-  )
+          {/* Other sections — they should not have background colors that cover the master container */}
+          <VicasExits />
+          <ProblemInVicas />
+          <VisualRisk />
+          <FeatureStack />
+        </div>
+      </div>
+    </>
+  );
 }

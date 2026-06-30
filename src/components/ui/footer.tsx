@@ -28,11 +28,11 @@ export function Footer({ className, ...props }: Omit<FooterProps, 'children'>) {
 							title="Products"
 							titleHref="/#products"
 							links={[
+								{ title: 'VICAS', href: '/products/vicas' },
+								{ title: 'Safety Monitoring', href: '/products/vicas#safety-monitoring' },
 								{ title: 'GreenOps', href: '/products/greenops' },
 								{ title: 'Energy Optimization', href: '/products/greenops#energy-optimization' },
 								{ title: 'Carbon Intelligence', href: '/products/greenops#carbon-intelligence' },
-								{ title: 'VICAS', href: '/products/vicas' },
-								{ title: 'Safety Monitoring', href: '/products/vicas#safety-monitoring' },
 							]} 
 						/>
 					</div>

@@ -133,7 +133,7 @@ export const DesktopDropdown: React.FC<DesktopDropdownProps> = ({
                                                                 <Link
                                                                     href={link.href}
                                                                     className="block py-1 text-sm font-medium no-underline transition-all duration-200 hover:translate-x-1"
-                                                                    style={{ color: "var(--foreground)" }}
+                                                                    style={{ color: "var(--foreground)"}}
                                                                     onMouseEnter={(e) =>
                                                                     (e.currentTarget.style.color =
                                                                         "var(--accent)")

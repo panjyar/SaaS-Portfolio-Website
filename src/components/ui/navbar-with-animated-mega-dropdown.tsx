@@ -100,7 +100,7 @@ export const Navbar: React.FC = () => {
                         return (
                             <li
                                 key={`desktop-menu-${index}`}
-                                className={`flex items-center justify-center h-full relative cursor-pointer font-extrabold uppercase tracking-widest transition-colors shrink-0 ${isActive
+                                className={`flex items-center justify-center h-full relative cursor-pointer font-medium uppercase tracking-widest transition-colors shrink-0 ${isActive
                                     ? "bg-accent/10 text-foreground"
                                     : "text-muted-foreground hover:bg-accent/5 hover:text-foreground"
                                     }`}
@@ -137,7 +137,7 @@ export const Navbar: React.FC = () => {
                 <div className="hidden lg:flex items-center gap-3 shrink-0 pl-6 h-full border-l" style={{ borderColor: "var(--border)" }}>
                     <Link
                         href="/company/contact"
-                        className="text-[0.65rem] font-extrabold px-6 py-2 rounded-sm transition-all duration-200 no-underline uppercase tracking-widest border border-transparent hover:border-border"
+                        className="text-[0.65rem] font-medium px-6 py-2 rounded-sm transition-all duration-200 no-underline uppercase tracking-widest border border-transparent hover:border-border"
                         style={{
                             background: "var(--primary)",
                             color: "var(--background)",

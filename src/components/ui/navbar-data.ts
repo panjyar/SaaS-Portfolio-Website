@@ -36,15 +36,6 @@ export const platformDropdown: DropdownData = [
 
 const productsDropdown: DropdownData = [
     {
-        heading: "GreenOps",
-        links: [
-            { text: "Overview", href: "/products/greenops" },
-            { text: "Energy Optimization", href: "/products/greenops#energy-optimization" },
-            { text: "Carbon Intelligence", href: "/products/greenops#carbon-intelligence" },
-            { text: "AI Industrial Copilot", href: "/products/greenops#ai-industrial-copilot" },
-        ],
-    },
-    {
         heading: "VICAS",
         links: [
             { text: "Overview", href: "/products/vicas" },
@@ -53,6 +44,16 @@ const productsDropdown: DropdownData = [
             { text: "Computer Vision AI", href: "/products/vicas#computer-vision-ai" },
         ],
     },
+    {
+        heading: "GreenOps",
+        links: [
+            { text: "Overview", href: "/products/greenops" },
+            { text: "Energy Optimization", href: "/products/greenops#energy-optimization" },
+            { text: "Carbon Intelligence", href: "/products/greenops#carbon-intelligence" },
+            { text: "AI Industrial Copilot", href: "/products/greenops#ai-industrial-copilot" },
+        ],
+    },
+    
 ];
 
 
