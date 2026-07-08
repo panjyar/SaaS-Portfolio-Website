@@ -8,10 +8,10 @@ import { vicasProblems } from "../data/vicasProblems";
  * Positions are calculated relative to an 1100px × 550px container.
  */
 const cardPositions = [
-  { left: "4%",  top: "32%",  width: "280px" },  // Limited Visibility
-  { left: "30%", top: "5%",   width: "280px" },  // Reactive Risk Management
-  { left: "62%", top: "12%",  width: "280px" },  // Untapped Operational Data
-  { left: "38%", top: "58%",  width: "280px" },  // Manual Compliance Monitoring
+  { left: "4%", top: "32%", width: "280px" },  // Limited Visibility
+  { left: "30%", top: "5%", width: "280px" },  // Reactive Risk Management
+  { left: "62%", top: "12%", width: "280px" },  // Untapped Operational Data
+  { left: "38%", top: "58%", width: "280px" },  // Manual Compliance Monitoring
 ];
 
 function ProblemCard({
@@ -130,6 +130,18 @@ function ProblemCard({
 }
 
 export default function ProblemInVicas() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    if (!sectionRef.current) return;
+    const rect = sectionRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    sectionRef.current.style.setProperty("--mouse-x", `${x}px`);
+    sectionRef.current.style.setProperty("--mouse-y", `${y}px`);
+  };
+
   return (
     <>
       <style>{`
@@ -145,7 +157,7 @@ export default function ProblemInVicas() {
           border: 1px solid rgba(255, 255, 255, 0.08); /* Thin glass border */
           box-shadow: 
             0 8px 32px rgba(0, 0, 0, 0.2),       /* Outer drop shadow */
-            inset 4px 4px 41.5px -13px rgba(0, 176, 80, 0.22); /* Figma inner shadow */
+            inset 4px 4px 41.5px -13px rgba(0, 176, 80, 0.22); /* Inner shadow */
         }
 
         .vicas-glass-card:hover {
@@ -157,12 +169,27 @@ export default function ProblemInVicas() {
         }
       `}</style>
 
-      <section className="relative w-full overflow-hidden py-16 lg:py-24">
+      <section
+        ref={sectionRef}
+        onMouseMove={handleMouseMove}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className="relative w-full overflow-hidden py-16 lg:py-10"
+      >
+        {/* Glow layer for the entire section */}
+        <div
+          className="absolute inset-0 pointer-events-none transition-opacity duration-300"
+          style={{
+            opacity: isHovered ? 1 : 0,
+            background: "radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.06), transparent 40%)",
+            zIndex: 0,
+          }}
+        />
+
         {/* Desktop: absolute-positioned cards over grid background */}
         <div
-          className="hidden lg:block relative w-full mx-auto"
+          className="hidden lg:block relative vicas-container"
           style={{
-            maxWidth: "1100px",
             height: "580px",
             backgroundImage:
               "linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px)",
@@ -176,7 +203,7 @@ export default function ProblemInVicas() {
         </div>
 
         {/* Mobile: stacked layout */}
-        <div className="lg:hidden flex flex-col items-center gap-6 px-6">
+        <div className="lg:hidden flex flex-col items-center gap-6 vicas-container">
           {vicasProblems.map((problem, index) => (
             <div
               key={problem.id}

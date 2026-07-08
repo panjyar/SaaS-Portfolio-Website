@@ -37,25 +37,16 @@ export { Default, WithNoNeon, Solid };
 export default function VicasExists() {
   return (
     <div
-      className="relative overflow-hidden pt-10 pb-20 flex flex-col items-center"
+      className="relative overflow-hidden pt-10 pb-10 flex flex-col items-center"
     >
-      {/* Background gradients */}
-      <div className="absolute inset-0 -z-10">
-        {/* Purple glow at the top */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_50%_-10%,rgba(139,92,246,0.35),transparent)]" />
-
-        {/* Green glow at the bottom */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_90%,rgba(34,197,94,0.2),transparent)]" />
-      </div>
-
-      <div className="relative z-10 mt-16 w-[80%] text-center md:mt-32">
+      <div className="relative z-10 mt-16 text-center md:mt-32 vicas-container">
         <div className="inline-block bg-gradient-to-r from-[#00B050] to-[#046839] bg-clip-text text-transparent font-semibold">
           WHY VICAS EXISTS
         </div>
 
         <p
-          className="mt-6 text-xl md:text-3xl md:leading-relaxed text-left"
-          style={{ color: "var(--vicas-text-primary)" }}
+          className="mt-6  md:text-3xl md:leading-relaxed text-left font-thin"
+          style={{ color: "var(--vicas-text-primary)"  }}
         >
           Industrial environments are becoming increasingly complex, while
           safety and operational decisions continue to depend on limited

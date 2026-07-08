@@ -35,7 +35,7 @@ export default function MetricsSection() {
   return (
     <section
       ref={sectionRef}
-      className="max-w-7xl mx-auto px-6 pt-16 md:pt-24 pb-8 md:pb-12"
+      className="vicas-container pt-16 md:pt-24 pb-8 md:pb-12"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {vicasMetrics.map((metric) => (

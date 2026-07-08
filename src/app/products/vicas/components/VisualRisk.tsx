@@ -45,17 +45,8 @@ export { Default, WithNoNeon, Solid }
 
 export default function VisualRisk() {
   return (
-    <div className="relative overflow-hidden pt-10 pb-20 flex flex-col items-center">
-      {/* Background gradients */}
-      <div className="absolute inset-0 -z-10">
-        {/* Purple glow at the top */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_50%_-10%,rgba(139,92,246,0.35),transparent)]" />
-
-        {/* Green glow at the bottom */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_90%,rgba(34,197,94,0.2),transparent)]" />
-      </div>
-
-      <div className="relative z-10 mx-auto mt-16 w-[100%] px-6 text-center md:mt-32">
+    <div className="relative overflow-hidden flex flex-col items-center">
+      <div className="relative z-10 mt-6 text-center md:mt-16 max-w-[1280px]">
         {/* <Button
           size="xs"
           className="px-8 py-4 uppercase tracking-[0.3em]"
@@ -68,7 +59,7 @@ export default function VisualRisk() {
         </div>
 
 
-        <p className="mx-auto mt-6 w-[90%] text-xl text-white md:text-3xl md:leading-relaxed text-left">
+        <p className="mx-auto mt-6 w-[90%] text-xl text-white md:text-3xl md:leading-relaxed text-left font-thin">
           VICAS transforms industrial camera feeds into real-time risk intelligence, enabling organizations to continuously identify hazards, automate safety monitoring, and respond to emerging risks before they impact operations.
         </p>
       </div>

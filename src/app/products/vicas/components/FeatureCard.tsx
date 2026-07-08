@@ -17,14 +17,14 @@ export default function FeatureCard({
 }: FeatureCardProps) {
   return (
     <div
-      className="flex gap-8 rounded-3xl border border-white/10 bg-[#111814] p-8 shadow-[0_20px_80px_rgba(0,0,0,0.35)]"
-      style={{
-        backgroundImage: `
-          linear-gradient(rgba(0,180,80,0.04) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(0,180,80,0.04) 1px, transparent 1px)
-        `,
-        backgroundSize: "40px 40px",
-      }}
+      className="flex gap-8 rounded-3xl border border-white/10 bg-[#1f1f1f] p-8 shadow-[0_20px_80px_rgba(0,0,0,0.35)]"
+      // style={{
+      //   backgroundImage: `
+      //     linear-gradient(rgba(0,180,80,0.04) 1px, transparent 1px),
+      //     linear-gradient(90deg, rgba(0,180,80,0.04) 1px, transparent 1px)
+      //   `,
+      //   backgroundSize: "40px 40px",
+      // }}
     >
       <div className="w-[360px] shrink-0 overflow-hidden rounded-2xl">
         <Image

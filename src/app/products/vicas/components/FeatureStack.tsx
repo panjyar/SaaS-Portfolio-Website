@@ -38,14 +38,15 @@ export default function FeatureStack() {
   return (
     <section
       ref={containerRef}
-      className="relative py-32"
+      className="relative max-w-[1340px] mx-auto flex flex-col items-center"
     >
       {features.map((feature, index) => (
         <div
           key={feature.id}
-          className="stack-card sticky top-24 mb-24"
+          className="stack-card sticky top-14 mb-14"
           style={{
             zIndex: index + 1,
+            padding: "5rem 5rem",
           }}
         >
           <FeatureCard {...feature} />

@@ -111,6 +111,23 @@
   --vicas-radar-center-dot: rgba(0, 200, 80, 0.5);  /* Radar center dot color */
   --vicas-radar-blip: #ff4040;                       /* Radar red blip dot */
   --vicas-radar-blip-border: rgba(255, 60, 60, 0.5);/* Radar blip ring border */
+  --vicas-env-panel-bg: #14181a;
+  --vicas-env-panel-bg-dark: #101315;
+  --vicas-env-panel-border: rgba(255, 255, 255, 0.22);
+  --vicas-env-card-bg: #232729;
+  --vicas-env-card-border: rgba(255, 255, 255, 0.04);
+  --vicas-impact-card-bg: #171a1c;
+  --vicas-impact-card-bg-dark: #121517;
+  --vicas-impact-card-border: rgba(255, 255, 255, 0.22);
+  --vicas-impact-arrow-bg: rgba(255, 255, 255, 0.06);
+  --vicas-impact-arrow-border: rgba(255, 255, 255, 0.2);
+ 
+  --vicas-cta-bg: #121619;
+  --vicas-cta-bg-dark: #0e1214;
+  --vicas-cta-btn-secondary-border: rgba(0, 200, 90, 0.35);
+  --vicas-cta-btn-primary: #00a755;
+  --vicas-cta-btn-primary-dark: #007a3f;
+  
 }
 
 /* @theme inline {
@@ -125,6 +142,7 @@
   }
 } */
 
+ 
 
 .offices-section {
   max-width: 90vw;
@@ -777,3 +795,26 @@
   100% { transform: rotate(0deg) scale(1); }
 }
 
+/* VICAS Standard Container for consistent layout alignment */
+.vicas-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .vicas-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vicas-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}

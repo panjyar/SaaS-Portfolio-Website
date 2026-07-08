@@ -78,8 +78,8 @@ export default function VicasHero() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 flex h-screen items-center">
-          <div className=" px-12 py-14">
+        <div className="relative z-10 flex h-screen items-center vicas-container">
+          <div className="py-14">
             <h1
               className="mb-5 text-[42px] font-extrabold leading-[1.12] tracking-tight"
               style={{ color: "var(--vicas-text-primary)" }}
@@ -90,18 +90,18 @@ export default function VicasHero() {
               <span style={{ color: "var(--vicas-hero-green)" }}>Incidents</span>
             </h1>
 
-            <p className="mb-9 max-w-[420px] text-[15px] leading-relaxed text-white/60">
+            <p className="mb-9 max-w-[500px] text-[15px] leading-relaxed text-white/60">
               VICAS is an AI-powered vision intelligence platform that helps
               industrial organizations detect hazards, automate safety
               compliance, and respond to risks in real time.
             </p>
 
             <div className="flex flex-wrap gap-3">
-              <button className="rounded-md border border-white/30 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white/60 hover:bg-white/5">
+              <button className="rounded-md border border-white/30 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white/60 hover:bg-white/5 cursor-pointer">
                 Watch Demo
               </button>
               <button
-                className="rounded-md px-5 py-2.5 text-sm font-medium text-white transition"
+                className="rounded-md px-5 py-2.5 text-sm font-medium text-white transition cursor-pointer"
                 style={{
                   backgroundColor: "var(--vicas-hero-btn-primary)",
                 }}
