@@ -18,10 +18,11 @@ const nextConfig: NextConfig = {
 
   images: {
 
-    domains: ["images.unsplash.com"], // Add external domains here if needed e.g. ['example.com']
-
     remotePatterns: [
-
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
       {
 
         protocol: "https",
