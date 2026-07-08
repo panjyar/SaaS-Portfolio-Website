@@ -2,7 +2,7 @@
 
 import VicasHero from "./components/VicasHero";
 import MetricsSection from "./components/MetricsSection";
-import VicasExits from "./components/WhyVicasExists";
+import VicasExists from "./components/WhyVicasExists";
 import ProblemInVicas from "./components/ProblemInVicas";
 import VisualRisk from "./components/VisualRisk";
 import FeatureStack from "./components/FeatureStack";
@@ -125,7 +125,7 @@ export default function VicasLanding() {
           </div>
 
           {/* All sections below — no individual background gradients */}
-          <VicasExits />
+          <VicasExists />
           <ProblemInVicas />
           <VisualRisk />
           <FeatureStack />
