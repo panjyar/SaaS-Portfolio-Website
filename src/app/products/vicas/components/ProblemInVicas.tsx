@@ -67,62 +67,63 @@ function ProblemCard({
         />
 
         {/* Content layer (relative z-10 so it sits above the background glow) */}
-        <div className="relative z-10">
-          {/* Red dot indicator + Title */}
-          <div className="flex items-center gap-2.5 mb-2">
-            <span
-              className="w-2.5 h-2.5 rounded-full shrink-0"
-              style={{
-                backgroundColor: "var(--vicas-accent-red)",
-                boxShadow: "0 0 8px var(--vicas-accent-red-glow)",
-              }}
-            />
-            <h4
-              className="text-sm font-semibold tracking-tight"
-              style={{ color: "var(--vicas-text-primary)" }}
-            >
-              {problem.title}
-            </h4>
-          </div>
+        <div className="flex items-center gap-3 mb-2">
+          <span className="relative flex h-3 w-3 shrink-0">
+            {/* Wave */}
+            <span className="absolute inline-flex h-full w-full rounded-full animate-ping bg-red-500/10"></span>
 
-          {/* Description */}
-          <p
-            className="text-[13px] leading-relaxed mb-0"
-            style={{ color: "var(--vicas-text-secondary)" }}
-          >
-            {problem.description}
-          </p>
+            {/* Outer glow */}
+            <span className="absolute inset-0 rounded-full bg-red-500/10 scale-[1.6]"></span>
 
-          {/* Bullet points — hover-expand only */}
-          <div
-            className="overflow-hidden transition-all duration-500 ease-out"
-            style={{
-              maxHeight: showBullets ? "200px" : "0px",
-              opacity: showBullets ? 1 : 0,
-              marginTop: showBullets ? "14px" : "0px",
-            }}
+            {/* Red dot */}
+            <span className="relative inline-flex h-3 w-3 rounded-full bg-red-500 shadow-[0_0_12px_rgba(255,60,60,0.1)]"></span>
+          </span>
+
+          <h4
+            className="text-sm font-semibold tracking-tight"
+            style={{ color: "var(--vicas-text-primary)" }}
           >
-            <ul className="space-y-2.5">
-              {problem.bullets.map((bullet, idx) => (
-                <li
-                  key={idx}
-                  className="text-[13px] flex items-center gap-2.5"
-                  style={{
-                    color: "var(--vicas-text-primary)",
-                    transform: showBullets ? "translateX(0)" : "translateX(-10px)",
-                    opacity: showBullets ? 1 : 0,
-                    transition: `all 0.4s ease-out ${idx * 0.1}s`,
-                  }}
-                >
-                  <span
-                    className="w-[5px] h-[5px] rounded-full shrink-0"
-                    style={{ backgroundColor: "var(--vicas-text-secondary)" }}
-                  />
-                  <span className="font-medium tracking-tight">{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+            {problem.title}
+          </h4>
+        </div>
+
+        {/* Description */}
+        <p
+          className="text-[13px] leading-relaxed mb-0"
+          style={{ color: "var(--vicas-text-secondary)" }}
+        >
+          {problem.description}
+        </p>
+
+        {/* Bullet points — hover-expand only */}
+        <div
+          className="overflow-hidden transition-all duration-500 ease-out"
+          style={{
+            maxHeight: showBullets ? "200px" : "0px",
+            opacity: showBullets ? 1 : 0,
+            marginTop: showBullets ? "14px" : "0px",
+          }}
+        >
+          <ul className="space-y-2.5">
+            {problem.bullets.map((bullet, idx) => (
+              <li
+                key={idx}
+                className="text-[13px] flex items-center gap-2.5"
+                style={{
+                  color: "var(--vicas-text-primary)",
+                  transform: showBullets ? "translateX(0)" : "translateX(-10px)",
+                  opacity: showBullets ? 1 : 0,
+                  transition: `all 0.4s ease-out ${idx * 0.1}s`,
+                }}
+              >
+                <span
+                  className="w-[5px] h-[5px] rounded-full shrink-0"
+                  style={{ backgroundColor: "var(--vicas-text-secondary)" }}
+                />
+                <span className="font-medium tracking-tight">{bullet}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

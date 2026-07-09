@@ -141,16 +141,16 @@ function IntegrationRow({
 
 export default function VicasAIArchitectureDiagram() {
   return (
-    <section className="relative overflow-hidden bg-[#050b0b] px-6 py-14">
+    <section className="relative overflow-hidden bg-[#050b0b] px-6 py-10">
       <div className="mx-auto max-w-[1128px]">
         <div
           className="relative min-h-[620px] overflow-hidden rounded-[2px]"
-          style={{
-            backgroundColor: "#050b0b",
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)",
-            backgroundSize: "36px 53px",
-          }}
+          // style={{
+          //   backgroundColor: "#050b0b",
+          //   backgroundImage:
+          //     "linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)",
+          //   backgroundSize: "36px 53px",
+          // }}
         >
           {/* subtle fade edges */}
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,transparent_55%,rgba(5,11,11,0.65)_100%)]" />

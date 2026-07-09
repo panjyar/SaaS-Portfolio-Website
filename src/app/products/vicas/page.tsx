@@ -89,7 +89,7 @@ export default function VicasLanding() {
               Re-appears near the bottom of the page around the CTA section.
               This uses the same color/opacity/spread as Zone 2 for visual consistency.
             */}
-            <div
+            {/* <div
               className="absolute"
               style={{
                 bottom: "0px",
@@ -99,10 +99,10 @@ export default function VicasLanding() {
                 height: "1100px",
                 background: "radial-gradient(ellipse 70% 50% at 50% 65%, rgba(0, 120, 60, 0.08), transparent 70%)",
               }}
-            />
+            /> */}
 
             {/* Subtle secondary glow near CTA — offset for depth */}
-            <div
+            {/* <div
               className="absolute"
               style={{
                 bottom: "100px",
@@ -112,7 +112,7 @@ export default function VicasLanding() {
                 height: "800px",
                 background: "radial-gradient(ellipse 55% 40% at 50% 50%, rgba(0, 100, 50, 0.05), transparent 60%)",
               }}
-            />
+            /> */}
           </div>
 
           {/* Metrics Section */}
