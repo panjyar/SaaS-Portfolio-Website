@@ -25,79 +25,67 @@ interface Problem {
 const problems: Problem[] = [
   {
     number: "01",
-    title: "Carbon Intensive Operations",
-    subtitle: "The Emissions Challenge",
+    title: "Manual Planning Bottlenecks",
+    subtitle: "The Efficiency Challenge",
     description:
-      "Heavy industries account for over 30% of global CO₂ emissions. Without real-time monitoring and AI-driven optimization, enterprises remain blind to their true environmental footprint.",
+      "Travel agencies lose countless hours manually cross-referencing flights, hotels, and activities. Without AI, scaling operations and maintaining high personalization is impossible.",
     keyPoints: [
-      "Real-time emission tracking across all operations",
-      "AI-optimized energy consumption models",
-      "Automated carbon reporting & compliance",
+      "Instant itinerary generation from simple prompts",
+      "Automated cross-referencing of global inventories",
+      "Seamless integration with agency booking engines",
     ],
-    icon: <Flame className="w-5 h-5" />,
+    icon: <BarChart3 className="w-5 h-5" />,
     accentColor: "#ef4444",
-    // Industrial chimney / factory emissions
-    video:
-      "https://vicasinfo.livnsense.com/media/videos/greenopsbg.mp4",
-    poster:
-      "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=80",
+    video: "https://videos.pexels.com/video-files/3121459/3121459-uhd_2560_1440_24fps.mp4",
+    poster: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     number: "02",
-    title: "Unseen Safety Hazards",
-    subtitle: "The Blind Spot Problem",
+    title: "Complex Group Logistics",
+    subtitle: "The Coordination Problem",
     description:
-      "Manual safety audits catch less than 40% of real-time hazards. Workers are exposed to risks every day that traditional monitoring simply cannot detect.",
+      "Planning for corporate retreats or multi-generational families involves balancing conflicting schedules, preferences, and physical constraints. Manual coordination inevitably leads to compromise.",
     keyPoints: [
-      "Vision AI for continuous PPE compliance",
-      "Instant hazard detection & alerts",
-      "Zero-incident workplace transformation",
+      "Multi-persona schedule optimization",
+      "Automated buffer times and accessibility routing",
+      "Conflict-free event alignment",
     ],
     icon: <AlertTriangle className="w-5 h-5" />,
     accentColor: "#f59e0b",
-    // Workers with safety helmets in industrial environment
-    video:
-      "https://vicasinfo.livnsense.com/media/videos/vicasbg.mp4",
-    poster:
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
+    video: "https://videos.pexels.com/video-files/3121459/3121459-uhd_2560_1440_24fps.mp4",
+    poster: "https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     number: "03",
-    title: "Production Inefficiencies",
-    subtitle: "The Hidden Cost Crisis",
+    title: "Suboptimal Routing & Cost",
+    subtitle: "The Transit Crisis",
     description:
-      "Unoptimized production lines leak millions in operational costs. Without digital twin modeling, bottlenecks remain invisible until they cascade into major losses.",
+      "Geographically scattered activities lead to wasted transit time and inflated costs. Traditional planning fails to optimize geographical paths across complex cities.",
     keyPoints: [
-      "Digital Twin simulations of entire plants",
-      "Edge AI for predictive maintenance",
-      "Autonomous process optimization",
+      "Dynamic spatial sequencing and routing",
+      "Real-time transit cost minimization",
+      "Predictive delay avoidance",
     ],
-    icon: <BarChart3 className="w-5 h-5" />,
+    icon: <Droplets className="w-5 h-5" />,
     accentColor: "#3b82f6",
-    // High-tech manufacturing / production line
-    video:
-      "https://vicasinfo.livnsense.com/media/videos/greenopsbg.mp4",
-    poster:
-      "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80",
+    video: "https://videos.pexels.com/video-files/3121459/3121459-uhd_2560_1440_24fps.mp4",
+    poster: "https://images.pexels.com/photos/1004582/pexels-photo-1004582.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     number: "04",
-    title: "Undetected Leakages",
-    subtitle: "The Silent Disaster",
+    title: "Information Overload",
+    subtitle: "The Curation Disaster",
     description:
-      "A single undetected pipeline leak can cost millions and endanger lives. Traditional inspection methods are slow, periodic, and miss micro-fractures that AI vision can catch instantly.",
+      "Travelers face paradox of choice when booking trips. Finding authentic, highly-rated experiences among thousands of options requires intense, time-consuming research.",
     keyPoints: [
-      "Continuous pipeline integrity monitoring",
-      "Anomaly detection at micro-level",
-      "Instant leak alerts across infrastructure",
+      "Context-aware recommendation engine",
+      "Exclusive access and VIP matching",
+      "Crowd-avoidance and peak-hour predictions",
     ],
-    icon: <Droplets className="w-5 h-5" />,
+    icon: <Flame className="w-5 h-5" />,
     accentColor: "#06b6d4",
-    // Pipeline / industrial infrastructure
-    video:
-      "https://vicasinfo.livnsense.com/media/videos/vicasbg.mp4",
-    poster:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    video: "https://videos.pexels.com/video-files/3121459/3121459-uhd_2560_1440_24fps.mp4",
+    poster: "https://images.pexels.com/photos/2108845/pexels-photo-2108845.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
 ];
 
@@ -310,20 +298,19 @@ export const SolutionsWhatWeSolve: React.FC = () => {
           transition={{ duration: 0.7 }}
         >
           <div className="flex items-center justify-center gap-3 mb-5">
-            <div className="w-8 h-[2px] bg-[#00A755]" />
-            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#00A755]">
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
+            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#FE9A00]">
               Challenges We Solve
             </span>
-            <div className="w-8 h-[2px] bg-[#00A755]" />
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
           </div>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight mb-5">
-            Transforming Industrial
+            Transforming Travel Planning
             <br />
-            <span className="text-white/30">Blind Spots into Intelligence</span>
+            <span className="text-white/30">From Hours to Seconds</span>
           </h2>
           <p className="text-white/40 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-            Real-time AI solutions that turn the biggest operational challenges
-            into competitive advantages.
+            AI-driven solutions that eliminate logistical friction, automate scheduling, and curate unforgettable experiences.
           </p>
         </motion.div>
 

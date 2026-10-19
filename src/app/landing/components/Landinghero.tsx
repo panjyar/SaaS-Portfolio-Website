@@ -62,7 +62,7 @@ function MetricItem({
     <div ref={ref} className="flex flex-col items-start">
       <p className="text-4xl md:text-5xl font-semibold flex items-center gap-2">
         {type !== "neutral" && (
-          <span className={type === "up" ? "text-green-400" : "text-green-400"}>
+          <span className={type === "up" ? "text-orange-400" : "text-orange-400"}>
             {arrow[type]}
           </span>
         )}
@@ -81,10 +81,10 @@ export default function Landinghero() {
       {/* Background Video */}
       <div className="relative w-full h-[650px] bg-black overflow-hidden">
         <video
-          src="https://vicasinfo.livnsense.com/media/herovideo11.mp4"
+          src="https://www.pexels.com/download/video/8744970/"
           autoPlay
           loop
-          muted
+          muted 
           playsInline
           preload="none"
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -97,16 +97,16 @@ export default function Landinghero() {
         <div className="max-w-7xl mx-auto px-6 md:px-20 text-white">
 
           <h1 className="text-[34px] md:text-[56px] font-semibold leading-tight max-w-4xl">
-            The World’s First AI-Powered Industrial Intelligence Platform
+            The World’s First AI-Powered Travel & Tourism Intelligence Platform
           </h1>
           <h2 className="text-2xl md:text-3xl font-bold mt-8 mb-4">Our Mission</h2>
           <p className="mt-6 text-[16px] md:text-[20px] text-gray-300 max-w-3xl">
-            Improve the safety and well-being of 100 million people by the end of this decade through transformative technology solutions powered by LivNSense™.
+            Redefine the future of exploration for millions of travelers worldwide through transformative, AI-driven itinerary planning and dynamic routing solutions powered by YatraGen™.
           </p>
 
           <a href="/company/about">
-            <button className="mt-8 bg-[#00A755] hover:bg-green-700 px-8 py-3 rounded-full text-white font-medium transition">
-              Explore LivNSense
+            <button className="mt-8 bg-[#FE9A00] hover:bg-orange-700 px-8 py-3 rounded-full text-white font-medium transition">
+              Explore Our Platform
             </button>
           </a>
 
@@ -114,34 +114,32 @@ export default function Landinghero() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-12 text-[#C6D9B7]">
 
             <MetricItem
-              target={160}
+              target={100}
               suffix="+"
-              label="AI Models"
+              label="Countries Supported"
               type="up"
             />
 
             <MetricItem
-              target={30}
+              target={40}
               suffix="%"
-              label="Energy Efficiency"
+              label="Time Saved Planning"
               type="up"
             />
 
             <MetricItem
-              target={20}
+              target={25}
               suffix="%"
-              label="CO₂ Reduction"
+              label="Travel Cost Optimized"
               type="down"
             />
 
             <MetricItem
-              target={0}
+              target={99}
               suffix="%"
-              label="Fatalities"
-              type="neutral"
+              label="User Satisfaction"
+              type="up"
             />
-
-
 
           </div>
 

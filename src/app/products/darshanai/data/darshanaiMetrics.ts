@@ -1,10 +1,10 @@
-export interface VicasMetric {
+export interface DarshanAIMetric {
   target: number;
   suffix: string;
   label: string;
 }
 
-export const vicasMetrics: VicasMetric[] = [
+export const darshanaiMetrics: DarshanAIMetric[] = [
   {
     target: 99,
     suffix: "%+",

@@ -15,7 +15,7 @@ export default function KeyCapabilities() {
       desc: "Gain instant operational insights powered by AI to drive smarter decisions.",
       greenops:
         "Optimizes energy consumption and reduces carbon footprint in industrial operations.",
-      vicas:
+      darshanai:
         "Predicts safety incidents and operational risks for proactive prevention.",
       icon: BrainCircuit,
     },
@@ -23,7 +23,7 @@ export default function KeyCapabilities() {
       title: "Carbon & Energy Optimization",
       desc: "Intelligently monitor and optimize energy usage across processes.",
       greenops: "Reduces emissions and improves sustainability KPIs.",
-      vicas: "Ensures energy-efficient safety systems and automated monitoring.",
+      darshanai: "Ensures energy-efficient safety systems and automated monitoring.",
       icon: Sprout,
     },
     {
@@ -31,7 +31,7 @@ export default function KeyCapabilities() {
       desc: "AI predicts potential hazards before they occur.",
       greenops:
         "Supports sustainable operations by preventing equipment failures.",
-      vicas: "Enhances workplace safety and minimizes incident risk.",
+      darshanai: "Enhances workplace safety and minimizes incident risk.",
       icon: ShieldAlert,
     },
     {
@@ -39,7 +39,7 @@ export default function KeyCapabilities() {
       desc: "Automate reporting and compliance workflows with AI.",
       greenops:
         "Ensures regulatory sustainability reporting is accurate and timely.",
-      vicas: "Streamlines EHS audits, reporting, and compliance adherence.",
+      darshanai: "Streamlines EHS audits, reporting, and compliance adherence.",
       icon: ClipboardCheck,
     },
   ];
@@ -55,11 +55,11 @@ export default function KeyCapabilities() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#00A755]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#FE9A00]">
             Key Capabilities
           </h2>
           <p className="text-white/60 max-w-3xl mx-auto text-lg">
-            Unified AI capabilities designed to empower both GreenOps and VICAS.
+            Unified AI capabilities designed to empower both YatraGen and Darshan AI and DarshanAI.
           </p>
         </motion.div>
 
@@ -82,8 +82,8 @@ export default function KeyCapabilities() {
                 }}
                 whileHover={{
                   scale: 1.05,
-                  borderColor: "#00A755",
-                  boxShadow: "0 0 40px rgba(0, 167, 85, 0.25)",
+                  borderColor: "#FE9A00",
+                  boxShadow: "0 0 40px rgba(254, 154, 0, 0.25)",
                   transition: {
                     type: "spring",
                     stiffness: 300,
@@ -92,16 +92,16 @@ export default function KeyCapabilities() {
                 }}
               >
                 {/* Green Glow Hover Accent */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#00A755]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FE9A00]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 {/* Icon */}
-                <div className="relative z-10 mb-4 flex items-center justify-center w-16 h-16 rounded-2xl bg-[#00A755]/10 group-hover:bg-[#00A755]/20 transition-colors duration-300 border border-[#00A755]/20 group-hover:shadow-[0_0_20px_rgba(0,167,85,0.3)]">
-                  <Icon className="w-8 h-8 text-[#00A755]" strokeWidth={1.5} />
+                <div className="relative z-10 mb-4 flex items-center justify-center w-16 h-16 rounded-2xl bg-[#FE9A00]/10 group-hover:bg-[#FE9A00]/20 transition-colors duration-300 border border-[#FE9A00]/20 group-hover:shadow-[0_0_20px_rgba(254, 154, 0,0.3)]">
+                  <Icon className="w-8 h-8 text-[#FE9A00]" strokeWidth={1.5} />
                 </div>
 
                 {/* Text Content */}
                 <div className="relative z-10">
-                  <h3 className="text-xl font-bold mb-2 text-[#00A755] group-hover:text-white transition-colors duration-300">
+                  <h3 className="text-xl font-bold mb-2 text-[#FE9A00] group-hover:text-white transition-colors duration-300">
                     {item.title}
                   </h3>
                   <p className="text-white/60 text-sm mb-4 group-hover:text-white/80 transition-colors duration-300">
@@ -110,22 +110,22 @@ export default function KeyCapabilities() {
 
                   <div className="space-y-2 text-xs border-t border-white/10 pt-4">
                     <div>
-                      <span className="text-[#00A755] font-semibold">
-                        GreenOps:
+                      <span className="text-[#FE9A00] font-semibold">
+                        YatraGen and Darshan AI:
                       </span>
                       <p className="text-white/50 mt-1">{item.greenops}</p>
                     </div>
                     <div>
-                      <span className="text-[#00A755] font-semibold">
-                        VICAS:
+                      <span className="text-[#FE9A00] font-semibold">
+                        DarshanAI:
                       </span>
-                      <p className="text-white/50 mt-1">{item.vicas}</p>
+                      <p className="text-white/50 mt-1">{item.darshanai}</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Bottom Line Hover Animation */}
-                <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#00A755] to-emerald-400 w-0 group-hover:w-full transition-all duration-500 ease-out" />
+                <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#FE9A00] to-orange-400 w-0 group-hover:w-full transition-all duration-500 ease-out" />
               </motion.div>
             );
           })}

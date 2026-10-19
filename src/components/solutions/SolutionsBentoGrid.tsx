@@ -8,10 +8,10 @@ const solutions = [
     {
         title: "AI for Decarbonization",
         description: "Reduce carbon footprint and achieve net-zero targets using AI-driven continuous intelligence.",
-        icon: <Leaf className="w-8 h-8 text-green-500" />,
+        icon: <Leaf className="w-8 h-8 text-orange-500" />,
         colSpan: "col-span-1 md:col-span-2",
         rowSpan: "row-span-1",
-        gradient: "from-green-500/10 to-transparent border-green-500/20"
+        gradient: "from-orange-500/10 to-transparent border-orange-500/20"
     },
     {
         title: "Safety Monitoring",

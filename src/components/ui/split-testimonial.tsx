@@ -144,15 +144,15 @@ export function TestimonialsSplit({ testimonials }: TestimonialsSplitProps) {
                   block w-2 h-2 rounded-full transition-all duration-300
                   ${
                     index === activeIndex
-                      ? "bg-[#00A755] scale-100"
-                      : "bg-[#00A755]/30 scale-75 hover:bg-[#00A755]/50 hover:scale-100"
+                      ? "bg-[#FE9A00] scale-100"
+                      : "bg-[#FE9A00]/30 scale-75 hover:bg-[#FE9A00]/50 hover:scale-100"
                   }
                 `}
               />
               {index === activeIndex && (
                 <motion.span
                   layoutId="activeDot"
-                  className="absolute inset-0 border border-[#00A755]/30 rounded-full"
+                  className="absolute inset-0 border border-[#FE9A00]/30 rounded-full"
                   transition={{ duration: 0.3 }}
                 />
               )}

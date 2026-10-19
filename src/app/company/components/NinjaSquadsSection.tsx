@@ -112,9 +112,9 @@ function SquadCard({
         />
       </div>
       <div className="flex flex-col">
-        <div className="text-sm uppercase tracking-[2px] text-[#00A755] mb-4">{codename}</div>
+        <div className="text-sm uppercase tracking-[2px] text-[#FE9A00] mb-4">{codename}</div>
         <p className="text-white-400 leading-relaxed max-w-xl text-sm text-justify">{description}</p>
-        <div className="italic text-[#00A755] font-semibold max-w-lg text-xs mt-3">{tagline}</div>
+        <div className="italic text-[#FE9A00] font-semibold max-w-lg text-xs mt-3">{tagline}</div>
       </div>
     </article>
   );
@@ -132,7 +132,7 @@ export default function NinjaSquadsSection() {
       >
         Our Ninjas
       </h2>
-      <p className="text-xl text-[#00A755] text-center mb-12 font-semibold max-w-xl">
+      <p className="text-xl text-[#FE9A00] text-center mb-12 font-semibold max-w-xl">
         Elite squads mastering code, silence, and the art of technology.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl w-full px-6">

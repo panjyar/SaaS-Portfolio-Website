@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ShieldAlert, Eye, Users, Bell, Zap } from "lucide-react";
 
-export default function VicasSection() {
+export default function DarshanAISection() {
   const features = [
     { title: "PPE Compliance", desc: "Automated monitoring of safety gear and protocols.", icon: <ShieldAlert className="w-5 h-5" /> },
     { title: "Hazard Detection", desc: "Real-time identification of unsafe conditions.", icon: <Eye className="w-5 h-5" /> },
@@ -31,19 +31,19 @@ export default function VicasSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-[#00A755] font-bold tracking-wider uppercase text-sm mb-4">VICAS™ – Vision AI Co-Pilot</h2>
+            <h2 className="text-[#FE9A00] font-bold tracking-wider uppercase text-sm mb-4">DarshanAI™ – Vision AI Co-Pilot</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Transforming Industrial <span className="text-[#00A755]">EHS</span> with AI Intelligence
+              Transforming Industrial <span className="text-[#FE9A00]">EHS</span> with AI Intelligence
             </h3>
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              VICAS™ is the world’s first AI-powered industrial safety co-pilot, designed to monitor industrial environments in real time and ensure proactive safety compliance.
+              DarshanAI™ is the world’s first AI-powered industrial safety co-pilot, designed to monitor industrial environments in real time and ensure proactive safety compliance.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {features.map((feat, i) => (
                 <div key={i} className="relative group">
                   <div className="flex items-center gap-4 mb-2">
-                    <div className="p-2 rounded-lg bg-[#00A755]/10 border border-[#00A755]/20 text-[#00A755]">
+                    <div className="p-2 rounded-lg bg-[#FE9A00]/10 border border-[#FE9A00]/20 text-[#FE9A00]">
                       {feat.icon}
                     </div>
                     <h4 className="text-white font-bold">{feat.title}</h4>
@@ -53,8 +53,8 @@ export default function VicasSection() {
               ))}
             </div>
 
-            <div className="mt-12 flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-[#00A755]/20 to-transparent border-l-4 border-[#00A755]">
-               <Zap className="w-8 h-8 text-[#00A755] shrink-0" />
+            <div className="mt-12 flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-[#FE9A00]/20 to-transparent border-l-4 border-[#FE9A00]">
+               <Zap className="w-8 h-8 text-[#FE9A00] shrink-0" />
                <p className="text-white font-medium italic">&quot;Intelligence for a safer, sustainable, industrial planet.&quot;</p>
             </div>
           </motion.div>

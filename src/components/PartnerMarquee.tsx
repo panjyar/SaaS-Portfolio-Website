@@ -9,7 +9,7 @@ export default function PartnerMarquee() {
         style={{ color: "#b8b8b8" }}
       >
         Companies we{" "}
-        <span className="font-semibold" style={{ color: "#00A755" }}>
+        <span className="font-semibold" style={{ color: "#FE9A00" }}>
           collaborate
         </span>{" "}
         with.

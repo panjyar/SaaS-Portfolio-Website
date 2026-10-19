@@ -2,57 +2,48 @@
 
 import { WhatWeSolveCards } from "@/components/ui/what-we-solve-cards";
 import TextBlockAnimation from "@/components/ui/text-block-animation";
-import { Zap, Factory, BarChart3, HardHat } from "lucide-react";
+import { MapPin, Clock, Globe, ShieldAlert } from "lucide-react";
 export default function WhatWeSolve() {
   const problems = [
     {
-      title: "High Energy Consumption",
+      title: "Fragmented Planning",
       description: (
         <>
-          <p className="mb-2">Energy-intensive industrial processes drive excessive power usage, increasing costs and reducing sustainability. </p>
-          {/* <p>Without intelligent optimization, plants lose efficiency and increase operational costs.</p> */}
+          <p className="mb-2">Juggling multiple booking sites, reviews, and disjointed itineraries leads to decision fatigue and missed opportunities.</p>
         </>
       ),
-      icon: <Zap className="w-8 h-8 text-[#00A755]" />,
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
+      icon: <MapPin className="w-8 h-8 text-[#FE9A00]" />,
+      image: "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?auto=format&fit=crop&q=80&w=800",
     },
     {
-      title: "Industrial Carbon Emissions",
+      title: "Inefficient Routing",
       description: (
         <>
-          <p className="mb-2">Heavy reliance on fossil fuels makes industries a major source of greenhouse emissions and environmental impact. </p>
-          {/* <p>Decarbonizing heavy industry is one of the most difficult yet critical steps toward achieving global net-zero targets.</p> */}
+          <p className="mb-2">Wasting time and money on unoptimized travel routes and suboptimal layovers reduces the overall joy of the trip.</p>
         </>
       ),
-      icon: <Factory className="w-8 h-8 text-[#00A755]" />,
-      image: "https://plus.unsplash.com/premium_photo-1770255852820-9ec54e96f388?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      icon: <Clock className="w-8 h-8 text-[#FE9A00]" />,
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800",
     },
     {
-      title: "Operational Inefficiencies",
+      title: "Contextual Blindspots",
       description: (
         <>
-          <p className="mb-2">Lack of intelligent data utilization leads to inefficiencies, downtime, and lost productivity in industrial operations.</p>
-          {/* <p className="mb-1">This results in:</p>
-          <ul className="list-disc pl-4 space-y-1">
-            <li>energy waste</li>
-            <li>unstable production processes</li>
-            <li>reduced equipment efficiency</li>
-          </ul> */}
+          <p className="mb-2">Lack of localized intelligence, language barriers, and cultural context often leads to inauthentic experiences.</p>
         </>
       ),
-      icon: <BarChart3 className="w-8 h-8 text-[#00A755]" />,
-      image: "https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/3e/2d/b8/3b/19/v1_E10/E104FLLQ.jpg?w=800&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=3b9eb47908df40c3a098adfbad60123ec4f8ffc28819d8aabff884719ea3f5a6",
+      icon: <Globe className="w-8 h-8 text-[#FE9A00]" />,
+      image: "https://images.unsplash.com/photo-1517868478426-3832d431f471?auto=format&fit=crop&q=80&w=800",
     },
     {
-      title: "Workplace Safety Risks",
+      title: "Dynamic Disruptions",
       description: (
         <>
-          <p className="mb-2">Hazardous industrial environments expose workers to risks due to limited real-time monitoring and delayed response.</p>
-          {/* <p>Without real-time monitoring and predictive safety intelligence, accidents and unsafe conditions can go unnoticed until it is too late.</p> */}
+          <p className="mb-2">Inability to adapt in real-time to flight changes, weather delays, or sudden closures ruins meticulously planned vacations.</p>
         </>
       ),
-      icon: <HardHat className="w-8 h-8 text-[#00A755]" />,
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
+      icon: <ShieldAlert className="w-8 h-8 text-[#FE9A00]" />,
+      image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&q=80&w=800",
     },
   ];
 
@@ -61,15 +52,15 @@ export default function WhatWeSolve() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
           <TextBlockAnimation delay={0.1} duration={0.6}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#00A755]">What We Solve</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#FE9A00]">What We Solve</h2>
           </TextBlockAnimation>
           {/* <ScrollRevealText
             text="The Industrial Challenges Holding Back Sustainable Operations"
             containerClassName="justify-center"
           /> */}
           <h1 className="text-2xl md:text-3xl lg:text-4xl text-[#ededed] text-center whitespace-nowrap overflow-hidden text-ellipsis">
-  The Industrial Challenges Holding Back Sustainable Operations
-</h1>
+            The Challenges Holding Back Modern Travel Planning
+          </h1>
         </div>
       </div>
 
@@ -93,7 +84,7 @@ export default function WhatWeSolve() {
         <div className="mt-16 text-center max-w-3xl mx-auto flex justify-center">
           <TextBlockAnimation delay={0.2} duration={0.6} blockColor="#0f792a">
             <p className="text-2xl md:text-3xl lg:text-4xl text-[#ededed]">
-              Industries need intelligent systems that connect operations, safety, and sustainability, enabling smarter decisions in real time.
+              Travelers and agencies need intelligent systems that connect bookings, preferences, and real-time data for smarter journeys.
             </p>
           </TextBlockAnimation>
         </div>

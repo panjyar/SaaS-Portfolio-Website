@@ -18,7 +18,7 @@ export default function TextBlockAnimation({
   children,
   animateOnScroll = true,
   delay = 0,
-  blockColor = "#00A755", // Changed default to LivNSense green
+  blockColor = "#FE9A00", // Changed default to LivNSense green
   duration = 0.6,
   className,
 }: TextBlockAnimationProps) {

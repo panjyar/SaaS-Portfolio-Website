@@ -15,21 +15,21 @@ const slides: SlideData[] = [
     title: 'Headquarters',
     subtitle: 'Bangalore, India',
     description: 'Reflecting dedication to progress and innovation in a rapidly evolving global market.',
-    accent: '#00A755',
+    accent: '#FE9A00',
     imageUrl: 'https://images.unsplash.com/photo-1548345680-f5475ea90f11?w=900&h=1200&fit=crop&q=80', // generic bangalore/tech building
   },
   {
     title: 'Global Offices',
     subtitle: 'USA & Japan',
     description: 'From Lake Zurich in the United States to Kawasaki in Japan, expanding presence and spreading innovation globally.',
-    accent: '#00A755',
+    accent: '#FE9A00',
     imageUrl: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=900&h=1200&fit=crop&q=80', // generic global city
   },
   {
     title: 'Our Journey',
     subtitle: 'Founded in 2018',
     description: 'Since 2018, on a mission to transform workplace safety while championing a greener, low-carbon future.',
-    accent: '#00A755',
+    accent: '#FE9A00',
     imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&h=1200&fit=crop&q=80', // tech/innovation
   },
 ];
@@ -168,7 +168,7 @@ export default function ElegantCarousel() {
             <div className="carousel-nav-arrows">
               <button
                 onClick={goPrev}
-                className="carousel-arrow-btn hover:text-[#00A755] hover:border-[#00A755]"
+                className="carousel-arrow-btn hover:text-[#FE9A00] hover:border-[#FE9A00]"
                 aria-label="Previous slide"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -177,7 +177,7 @@ export default function ElegantCarousel() {
               </button>
               <button
                 onClick={goNext}
-                className="carousel-arrow-btn hover:text-[#00A755] hover:border-[#00A755]"
+                className="carousel-arrow-btn hover:text-[#FE9A00] hover:border-[#FE9A00]"
                 aria-label="Next slide"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -230,7 +230,7 @@ export default function ElegantCarousel() {
                 }}
               />
             </div>
-            <span className="carousel-progress-label hover:text-[#00A755] transition-colors">{slide.title}</span>
+            <span className="carousel-progress-label hover:text-[#FE9A00] transition-colors">{slide.title}</span>
           </button>
         ))}
       </div>

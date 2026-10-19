@@ -10,52 +10,52 @@ type CaptureItem = {
 
 const captureTop: CaptureItem[] = [
   {
-    image: `https://vicasinfo.livnsense.com/media/architect/RTSPCamera.svg`,
+    image: `https://api.iconify.design/lucide/camera.svg?color=white`,
     title: "IP Cameras",
     lines: ["RTSP Cameras", "Multi-USB Cameras", "PoE Cameras"],
   },
   {
-    image: `https://vicasinfo.livnsense.com/media/architect/5Gcamera.svg`,
+    image: `https://api.iconify.design/lucide/video.svg?color=white`,
     title: "5G/4G Cameras",
   },
 ];
 
 const captureBottom: CaptureItem[] = [
   {
-    image: `https://vicasinfo.livnsense.com/media/architect/IMU.svg`,
+    image: `https://api.iconify.design/lucide/navigation.svg?color=white`,
     title: "IMU/Tilt Sensor",
   },
   {
-    image: `https://vicasinfo.livnsense.com/media/architect/GPSSensor.svg`,
+    image: `https://api.iconify.design/lucide/map-pin.svg?color=white`,
     title: "GPS Sensor",
   },
   {
-    image: `https://vicasinfo.livnsense.com/media/architect/OtherSensors.svg`,
-    title: "Other Industrial Sensors",
+    image: `https://api.iconify.design/lucide/cpu.svg?color=white`,
+    title: "Other Site Sensors",
   },
 ];
 
 const integrateTop = [
-  { image: `https://vicasinfo.livnsense.com/media/architect/scada.svg`, title: "SCADA" },
-  { image: `https://vicasinfo.livnsense.com/media/architect/plc.svg`, title: "PLC / DCS" },
-  { image: `https://vicasinfo.livnsense.com/media/architect/mes.svg`, title: "MES" },
-  { image: `https://vicasinfo.livnsense.com/media/architect/erp.svg`, title: "ERP" },
-  { image: `https://vicasinfo.livnsense.com/media/architect/cmms.svg`, title: "CMMS" },
+  { image: `https://api.iconify.design/lucide/ticket.svg?color=white`, title: "Ticketing Systems" },
+  { image: `https://api.iconify.design/lucide/door-open.svg?color=white`, title: "Access Control" },
+  { image: `https://api.iconify.design/lucide/users.svg?color=white`, title: "CRM" },
+  { image: `https://api.iconify.design/lucide/database.svg?color=white`, title: "ERP" },
+  { image: `https://api.iconify.design/lucide/monitor.svg?color=white`, title: "Digital Signage" },
 ];
 
 const integrateBottom = [
-  { image: `https://vicasinfo.livnsense.com/media/architect/rest-api.svg`, title: "REST API" },
-  { image: `https://vicasinfo.livnsense.com/media/architect/opc.svg`, title: "OPC UA" },
-  { image: `https://vicasinfo.livnsense.com/media/architect/mqtt.svg`, title: "MQTT" },
-  { image: `https://vicasinfo.livnsense.com/media/architect/azure.svg`, title: "Azure" },
+  { image: `https://api.iconify.design/lucide/network.svg?color=white`, title: "REST API" },
+  { image: `https://api.iconify.design/lucide/shield-check.svg?color=white`, title: "OPC UA" },
+  { image: `https://api.iconify.design/lucide/rss.svg?color=white`, title: "MQTT" },
+  { image: `https://api.iconify.design/lucide/cloud.svg?color=white`, title: "Azure" },
 ];
 
 const actItems = [
-  "Real-time\nDashboards",
-  "Alerts &\nNotifications",
-  "Incident\nManagement",
-  "Reports &\nAnalytics",
-  "Audit &\nCompliance",
+  "Live Crowd\nDashboards",
+  "Capacity\nAlerts",
+  "Flow\nManagement",
+  "Footfall\nAnalytics",
+  "Visitor\nExperience",
   "Trend\nAnalysis &\nInsights",
 ];
 
@@ -63,7 +63,7 @@ function SectionLabel({ children, className = "" }: { children: React.ReactNode;
   return (
     <p
       className={`absolute text-[12px] font-semibold uppercase tracking-[-0.02em] ${className}`}
-      style={{ color: "var(--vicas-green, #009c5b)" }}
+      style={{ color: "var(--darshanai-green, #009c5b)" }}
     >
       {children}
     </p>
@@ -139,7 +139,7 @@ function IntegrationRow({
   );
 }
 
-export default function VicasAIArchitectureDiagram() {
+export default function DarshanAIArchitectureDiagram() {
   return (
     <section className="relative overflow-hidden bg-[#050b0b] px-6 py-10">
       <div className="mx-auto max-w-[1128px]">
@@ -177,7 +177,7 @@ export default function VicasAIArchitectureDiagram() {
           <DarkPanel className="absolute left-[258px] top-[200px] flex h-[300px] w-[198px] flex-col items-center justify-center gap-8">
             {/* <div className="flex h-[94px] w-[112px] items-center justify-center rounded-[12px] border border-white/10 bg-white/5"> */}
               {/* <div className="h-16 w-20 rounded-md border border-white/30 bg-[linear-gradient(135deg,rgba(255,255,255,0.45),rgba(255,255,255,0.08))]" /> */}
-              <img src="https://vicasinfo.livnsense.com/media/architect/AIBox.svg" alt="AI Box" width={100} height={100} />
+              <img src="https://api.iconify.design/lucide/server.svg?color=white" alt="AI Box" width={100} height={100} />
             {/* </div> */}
 
             <p className="-mt-6 text-[11px] font-medium text-white/45">
@@ -186,7 +186,7 @@ export default function VicasAIArchitectureDiagram() {
 
             <div className="flex h-[96px] w-[164px] items-center justify-center rounded-[18px] border border-[#00a45e]/20 bg-[#062a1d]/40">
               <div className="text-center">
-                <img src="https://vicasinfo.livnsense.com/media/architect/pngwing.com.svg" alt="NVIDIA" width={90} height={90} />
+                <img src="https://api.iconify.design/lucide/cpu.svg?color=white" alt="NVIDIA" width={90} height={90} />
                 {/* <p className="mt-1 text-[20px] font-black leading-none text-white">
                   nvidia
                 </p> */}
@@ -205,7 +205,7 @@ export default function VicasAIArchitectureDiagram() {
             }}
           >
             <p className="text-center text-[16px] font-semibold leading-[1.45] text-white">
-              VICAS AI
+              DarshanAI AI
               <br />
               PLATFORM
             </p>

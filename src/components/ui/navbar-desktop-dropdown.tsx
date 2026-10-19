@@ -109,7 +109,7 @@ export const DesktopDropdown: React.FC<DesktopDropdownProps> = ({
                                         <Link
                                             href={menuItems[activeIndex]?.href ?? "#"}
                                             className="text-xs font-bold uppercase tracking-widest hover:opacity-80 no-underline transition-opacity flex items-center gap-2"
-                                            style={{ color: "#00A755" }}
+                                            style={{ color: "#FE9A00" }}
                                         >
                                             Explore All <span className="text-lg leading-none">→</span>
                                         </Link>
@@ -133,7 +133,7 @@ export const DesktopDropdown: React.FC<DesktopDropdownProps> = ({
                                                                 <Link
                                                                     href={link.href}
                                                                     className="block py-1 text-sm font-medium no-underline transition-all duration-200 hover:translate-x-1"
-                                                                    style={{ color: "var(--foreground)"}}
+                                                                    style={{ color: "var(--foreground)" }}
                                                                     onMouseEnter={(e) =>
                                                                     (e.currentTarget.style.color =
                                                                         "var(--accent)")

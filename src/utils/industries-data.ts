@@ -1,5 +1,5 @@
 // ─── Industries Data ─────────────────────────────────────
-// Single source of truth for all industry pages
+// Single source of truth for all industry/experience pages
 
 export interface IndustryStat {
   value: string;
@@ -40,756 +40,375 @@ export interface Industry {
 
 export const industries: Industry[] = [
   {
-    slug: "cement",
-    name: "Cement",
-    tagline: "AI-driven kiln optimization and deep decarbonization for cement manufacturing.",
-    description:
-      "The cement industry accounts for approximately 8% of global CO₂ emissions. LivNSense empowers cement plants with AI-driven kiln optimization, alternative fuel management, and real-time process intelligence to reduce energy consumption and emissions — without compromising throughput or quality.",
-    heroImage: "/Industries/cement.jpg",
-    cardImage: "/Industries/cement.jpg",
+    slug: "luxury-wellness",
+    name: "Luxury & Wellness",
+    tagline: "Curated premium experiences and AI-optimized relaxation journeys.",
+    description: "The luxury and wellness travel segment demands impeccable personalization and seamless transitions. YatraGen leverages advanced AI to curate exclusive itineraries that balance spa retreats, private tours, and five-star dining without overwhelming the traveler.",
+    heroImage: "https://images.pexels.com/photos/3209045/pexels-photo-3209045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    cardImage: "https://images.pexels.com/photos/3209045/pexels-photo-3209045.jpeg?auto=compress&cs=tinysrgb&w=800",
     challenges: [
       {
-        title: "High Energy Consumption",
-        description:
-          "Cement kilns are among the most energy-intensive industrial equipment, consuming massive amounts of thermal and electrical energy.",
-        icon: "Flame",
+        title: "High Personalization Demand",
+        description: "Luxury travelers expect itineraries tailored explicitly to their unique preferences and dietary requirements.",
+        icon: "UserCheck",
       },
       {
-        title: "Carbon-Intensive Process",
-        description:
-          "Calcination and fuel combustion generate significant CO₂ emissions, making decarbonization a critical challenge.",
-        icon: "Cloud",
-      },
-      {
-        title: "Inconsistent Quality",
-        description:
-          "Variations in raw material composition and process parameters lead to unpredictable product quality.",
-        icon: "AlertTriangle",
-      },
-    ],
-    solutions: [
-      {
-        title: "AI-Powered Kiln Optimization",
-        description:
-          "GreenOps uses digital twin models to continuously monitor and optimize kiln operations, reducing specific heat consumption by up to 5% while maintaining clinker quality.",
-        keyPoints: [
-          "Real-time thermal profile optimization",
-          "Predictive control for kiln stability",
-          "Alternative fuel ratio optimization",
-        ],
-        image: "https://vicasinfo.livnsense.com/media/industries/cement-plant.jpg",
-      },
-      {
-        title: "Emissions Monitoring & Reduction",
-        description:
-          "Continuous tracking of CO₂, NOx, and SOx emissions with AI-driven recommendations for process adjustments that minimize environmental impact.",
-        keyPoints: [
-          "Real-time emissions dashboard",
-          "Automated compliance reporting",
-          "Carbon credit optimization",
-        ],
-        image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&q=80",
-      },
-    ],
-    stats: [
-      { value: "5-8%", label: "Reduction in Specific Heat Consumption" },
-      { value: "15%", label: "Reduction in Carbon Emissions" },
-      { value: "10%", label: "Improvement in Alternative Fuel Usage" },
-      { value: "99.5%", label: "Kiln Uptime Achieved" },
-    ],
-    products: [
-      {
-        name: "GreenOps™",
-        description: "AI-driven energy optimization and decarbonization platform.",
-        href: "/products/greenops",
-      },
-    ],
-  },
-  {
-    slug: "steel-mining",
-    name: "Steel & Mining",
-    tagline: "Enhance furnace performance and operational safety across steel and mining operations.",
-    description:
-      "Steel manufacturing and mining are pillars of global infrastructure — but they also carry significant energy, safety, and environmental challenges. LivNSense deploys AI and digital twin technologies to optimize furnace operations, improve energy efficiency, and enable proactive safety monitoring across mines and steel plants.",
-    heroImage: "/Industries/steel.jpg",
-    cardImage: "/Industries/steel.jpg",
-    challenges: [
-      {
-        title: "Extreme Operating Conditions",
-        description:
-          "Furnaces operate at extreme temperatures with highly variable inputs, making consistent optimization difficult.",
-        icon: "Thermometer",
-      },
-      {
-        title: "Worker Safety Risks",
-        description:
-          "Mining and steel operations pose significant hazards from heavy equipment, confined spaces, and toxic exposure.",
-        icon: "ShieldAlert",
-      },
-      {
-        title: "Resource Inefficiency",
-        description:
-          "Suboptimal resource utilization leads to waste, higher costs, and increased environmental footprint.",
-        icon: "TrendingDown",
-      },
-    ],
-    solutions: [
-      {
-        title: "Furnace & Melt Shop Optimization",
-        description:
-          "AI models analyze real-time sensor data from EAFs and BOFs to optimize energy input, flux addition, and tap-to-tap times.",
-        keyPoints: [
-          "Electric Arc Furnace energy optimization",
-          "Slag chemistry prediction",
-          "Tap-to-tap cycle time reduction",
-        ],
-        image: "https://vicasinfo.livnsense.com/media/industries/steel_and_metal.png",
-      },
-      {
-        title: "Smart Safety Monitoring",
-        description:
-          "VICAS provides real-time computer vision-based safety monitoring across mines and production floors.",
-        keyPoints: [
-          "PPE compliance detection",
-          "Restricted zone intrusion alerts",
-          "Vehicle-person proximity warnings",
-        ],
-        image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
-      },
-    ],
-    stats: [
-      { value: "12%", label: "Energy Savings in Furnace Ops" },
-      { value: "40%", label: "Reduction in Safety Incidents" },
-      { value: "14%", label: "Downtime Reduction" },
-      { value: "8%", label: "Yield Improvement" },
-    ],
-    products: [
-      {
-        name: "GreenOps™",
-        description: "Furnace optimization and energy intelligence.",
-        href: "/products/greenops",
-      },
-      {
-        name: "VICAS™",
-        description: "AI-powered safety monitoring for mines and plants.",
-        href: "/products/vicas",
-      },
-    ],
-  },
-  {
-    slug: "oil-gas",
-    name: "Oil & Gas",
-    tagline: "Predictive maintenance and process optimization for safe, efficient oil & gas operations.",
-    description:
-      "The oil and gas industry operates in high-stakes environments where equipment failure can mean catastrophic safety hazards and massive financial losses. LivNSense brings AI-powered predictive maintenance, real-time process optimization, and safety intelligence to upstream, midstream, and downstream operations.",
-    heroImage: "https://vicasinfo.livnsense.com/media/industries/oil_and_gas.jpg",
-    cardImage: "https://vicasinfo.livnsense.com/media/industries/oil_and_gas.jpg",
-    challenges: [
-      {
-        title: "Equipment Failure Risk",
-        description:
-          "Aging infrastructure and harsh operating conditions lead to frequent unplanned shutdowns and safety hazards.",
-        icon: "AlertOctagon",
-      },
-      {
-        title: "Flare & Emission Management",
-        description:
-          "Regulatory pressure to reduce flaring and fugitive emissions is increasing rapidly worldwide.",
-        icon: "Wind",
-      },
-      {
-        title: "Pipeline Integrity",
-        description:
-          "Thousands of kilometers of pipelines are vulnerable to corrosion, leaks, and third-party damage.",
-        icon: "Droplets",
-      },
-    ],
-    solutions: [
-      {
-        title: "Predictive Equipment Maintenance",
-        description:
-          "AI models analyze vibration, temperature, and flow data to predict equipment failures weeks in advance.",
-        keyPoints: [
-          "Rotating equipment health scoring",
-          "Compressor and pump anomaly detection",
-          "Maintenance schedule optimization",
-        ],
-        image: "https://vicasinfo.livnsense.com/media/industries/oil_and_gas.jpg",
-      },
-      {
-        title: "Refinery Unit Optimization",
-        description:
-          "Digital twin models of distillation columns, reactors, and heat exchangers optimize energy and throughput simultaneously.",
-        keyPoints: [
-          "Crude unit optimization",
-          "Heat integration improvement",
-          "Energy intensity reduction",
-        ],
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
-      },
-    ],
-    stats: [
-      { value: "18%", label: "Reduction in Incidents" },
-      { value: "25%", label: "Less Unplanned Downtime" },
-      { value: "10%", label: "Energy Cost Savings" },
-      { value: "3x", label: "Faster Anomaly Detection" },
-    ],
-    products: [
-      {
-        name: "GreenOps™",
-        description: "Refinery optimization and energy management.",
-        href: "/products/greenops",
-      },
-      {
-        name: "VICAS™",
-        description: "Safety monitoring for oil & gas facilities.",
-        href: "/products/vicas",
-      },
-    ],
-  },
-  {
-    slug: "chemicals-pharma",
-    name: "Chemicals & Pharma",
-    tagline: "Optimize process heat, improve batch quality, and ensure regulatory compliance.",
-    description:
-      "Chemical and pharmaceutical manufacturing demands precise process control, strict quality standards, and rigorous regulatory compliance. LivNSense's AI platform monitors reactor conditions, optimizes energy usage across batch and continuous processes, and ensures environmental compliance — enabling safer, greener, and more profitable operations.",
-    heroImage: "https://vicasinfo.livnsense.com/media/industries/pharma-and-chemical.jpg",
-    cardImage: "https://vicasinfo.livnsense.com/media/industries/pharma-and-chemical.jpg",
-    challenges: [
-      {
-        title: "Batch Quality Variability",
-        description:
-          "Complex reaction kinetics and multiple input variables make consistent batch quality a persistent challenge.",
-        icon: "Beaker",
-      },
-      {
-        title: "Energy-Intensive Processes",
-        description:
-          "Distillation, drying, and reaction processes consume significant thermal and electrical energy.",
-        icon: "Zap",
-      },
-      {
-        title: "Regulatory Compliance",
-        description:
-          "Strict GMP, FDA, and environmental regulations require continuous monitoring and documentation.",
-        icon: "ClipboardCheck",
-      },
-    ],
-    solutions: [
-      {
-        title: "Process Heat Optimization",
-        description:
-          "AI-driven optimization of heat exchangers, boilers, and steam systems to reduce specific energy consumption.",
-        keyPoints: [
-          "Steam network balancing",
-          "Heat integration analysis",
-          "Boiler efficiency maximization",
-        ],
-        image: "https://vicasinfo.livnsense.com/media/industries/pharma-and-chemical.jpg",
-      },
-      {
-        title: "Intelligent Quality Control",
-        description:
-          "Real-time process analytics predict batch outcomes and recommend parameter adjustments to maintain quality targets.",
-        keyPoints: [
-          "Predictive batch quality scoring",
-          "In-process adjustment recommendations",
-          "Automated compliance documentation",
-        ],
-        image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
-      },
-    ],
-    stats: [
-      { value: "12%", label: "Reduction in Energy Costs" },
-      { value: "30%", label: "Fewer Batch Rejections" },
-      { value: "99%", label: "Regulatory Compliance Rate" },
-      { value: "8%", label: "Improvement in OEE" },
-    ],
-    products: [
-      {
-        name: "GreenOps™",
-        description: "Process optimization for chemical & pharma manufacturing.",
-        href: "/products/greenops",
-      },
-    ],
-  },
-  {
-    slug: "railways",
-    name: "Railways",
-    tagline: "AI-powered safety intelligence and operational efficiency for modern rail infrastructure.",
-    description:
-      "Railway operations span vast networks with complex scheduling, safety requirements, and infrastructure maintenance challenges. LivNSense brings computer vision and AI analytics to rail operations — enabling real-time safety monitoring at stations, predictive maintenance for tracks and rolling stock, and intelligent traffic management.",
-    heroImage: "/Industries/railways.jpg",
-    cardImage: "/Industries/railways.jpg",
-    challenges: [
-      {
-        title: "Platform Safety",
-        description:
-          "Crowded platforms, gap hazards, and trespassing require constant human monitoring — an inherently unreliable approach.",
-        icon: "Users",
-      },
-      {
-        title: "Track Maintenance",
-        description:
-          "Thousands of kilometers of track require continuous inspection to prevent failures and derailments.",
-        icon: "Wrench",
-      },
-      {
-        title: "Operational Delays",
-        description:
-          "Unplanned equipment failures and poor scheduling cascade into system-wide delays and revenue loss.",
+        title: "Seamless Logistics",
+        description: "Transitions between private jets, limousines, and yachts must be flawless with zero wait times.",
         icon: "Clock",
       },
-    ],
-    solutions: [
       {
-        title: "Platform & Station Safety",
-        description:
-          "VICAS deploys computer vision at platforms and crossings to detect unsafe behavior, overcrowding, and trespassing in real time.",
-        keyPoints: [
-          "Crowd density monitoring",
-          "Platform gap detection",
-          "Unauthorized crossing alerts",
-        ],
-        image: "/Industries/railways.jpg",
-      },
-      {
-        title: "Predictive Track Maintenance",
-        description:
-          "AI analytics on track sensor data predict wear patterns and identify maintenance needs before failures occur.",
-        keyPoints: [
-          "Rail wear prediction models",
-          "Switch and signal health monitoring",
-          "Maintenance schedule optimization",
-        ],
-        image: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800&q=80",
-      },
-    ],
-    stats: [
-      { value: "35%", label: "Faster Incident Response" },
-      { value: "50%", label: "Reduction in Track Failures" },
-      { value: "20%", label: "Improvement in On-Time Performance" },
-      { value: "24/7", label: "Continuous Safety Monitoring" },
-    ],
-    products: [
-      {
-        name: "VICAS™",
-        description: "AI safety intelligence for rail infrastructure.",
-        href: "/products/vicas",
-      },
-    ],
-  },
-  {
-    slug: "ports",
-    name: "Ports",
-    tagline: "Smart port operations with AI-driven safety, logistics, and environmental monitoring.",
-    description:
-      "Ports are complex logistical hubs where heavy equipment, large vessels, and thousands of workers interact in dynamic environments. LivNSense brings AI-powered surveillance, vessel traffic intelligence, and environmental monitoring to modern port operations — improving safety, throughput, and compliance.",
-    heroImage: "/Industries/port.jpg",
-    cardImage: "/Industries/port.jpg",
-    challenges: [
-      {
-        title: "Complex Safety Environment",
-        description:
-          "Heavy cranes, container handling, and vehicle movements create multiple simultaneous hazard zones.",
-        icon: "ShieldAlert",
-      },
-      {
-        title: "Cargo Handling Efficiency",
-        description:
-          "Inefficient berth allocation and crane scheduling lead to vessel waiting times and revenue losses.",
-        icon: "Package",
-      },
-      {
-        title: "Environmental Compliance",
-        description:
-          "Air quality, water discharge, and noise regulations require continuous monitoring in port areas.",
-        icon: "Leaf",
+        title: "Exclusive Access",
+        description: "Securing reservations at high-demand, exclusive venues requires predictive planning.",
+        icon: "Key",
       },
     ],
     solutions: [
       {
-        title: "Port Safety Intelligence",
-        description:
-          "Computer vision monitors quay areas, container yards, and gate zones for PPE compliance, vehicle proximity, and unauthorized access.",
+        title: "AI-Curated Exclusivity",
+        description: "YatraGen cross-references VIP availability networks with traveler profiles to secure exclusive access automatically.",
         keyPoints: [
-          "Crane operation zone monitoring",
-          "Vehicle-pedestrian collision avoidance",
-          "PPE compliance across port zones",
+          "Automated VIP reservation requests",
+          "Dietary and preference synchronization",
+          "Dynamic luxury routing",
         ],
-        image: "/Industries/port.jpg",
+        image: "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=800",
       },
       {
-        title: "Operational Analytics",
-        description:
-          "AI-driven analytics optimize berth allocation, crane scheduling, and truck turnaround times.",
+        title: "Wellness Schedule Optimization",
+        description: "The AI ensures wellness activities are optimally spaced for maximum relaxation, avoiding travel fatigue.",
         keyPoints: [
-          "Berth scheduling optimization",
-          "Container yard efficiency",
-          "Gate-in/gate-out time reduction",
+          "Circadian rhythm-based scheduling",
+          "Built-in buffer times for spa transitions",
+          "Real-time weather adjustments for outdoor wellness",
         ],
-        image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=800&q=80",
+        image: "https://images.pexels.com/photos/373883/pexels-photo-373883.jpeg?auto=compress&cs=tinysrgb&w=800",
       },
     ],
     stats: [
-      { value: "30%", label: "Fewer Safety Incidents" },
-      { value: "22%", label: "Improvement in Throughput" },
-      { value: "15%", label: "Reduction in Turnaround Time" },
-      { value: "100%", label: "Environmental Compliance" },
+      { value: "98%", label: "Client Satisfaction" },
+      { value: "3x", label: "Faster Booking Concierge" },
+      { value: "Zero", label: "Scheduling Conflicts" },
+      { value: "100%", label: "Preference Match" },
     ],
     products: [
       {
-        name: "VICAS™",
-        description: "Safety and surveillance for port operations.",
-        href: "/products/vicas",
+        name: "YatraGen™",
+        description: "AI-driven itinerary and preference optimization.",
+        href: "/products/yatragen",
       },
     ],
   },
   {
-    slug: "manufacturing",
-    name: "Manufacturing",
-    tagline: "Reduce emissions, optimize production, and improve energy efficiency across manufacturing.",
-    description:
-      "Manufacturing facilities face relentless pressure to improve efficiency, reduce waste, and meet sustainability targets. LivNSense's AI platform brings real-time process intelligence, energy optimization, and safety monitoring to discrete and process manufacturing environments — driving operational excellence and measurable ESG impact.",
-    heroImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1200&q=80",
-    cardImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80",
+    slug: "adventure-trekking",
+    name: "Adventure & Trekking",
+    tagline: "Dynamic routing and safety-first planning for extreme explorations.",
+    description: "Adventure travel requires meticulous planning for varying terrain, weather conditions, and physical exertion levels. YatraGen provides dynamic, adaptive itineraries that adjust in real-time to mountain conditions, ensuring safety while maximizing thrill.",
+    heroImage: "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    cardImage: "https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?auto=compress&cs=tinysrgb&w=800",
     challenges: [
       {
-        title: "Production Downtime",
-        description:
-          "Unplanned equipment failures and changeover inefficiencies cost manufacturers millions annually.",
-        icon: "AlertTriangle",
+        title: "Unpredictable Weather",
+        description: "Mountain and trail conditions can change rapidly, necessitating instant itinerary shifts.",
+        icon: "CloudRain",
       },
       {
-        title: "Energy Waste",
-        description:
-          "Compressed air leaks, HVAC inefficiency, and motor overuse waste 20-30% of total energy consumption.",
-        icon: "Zap",
-      },
-      {
-        title: "Quality Defects",
-        description:
-          "Process variations lead to scrap, rework, and warranty claims that erode margins.",
-        icon: "X",
-      },
-    ],
-    solutions: [
-      {
-        title: "Smart Factory Energy Management",
-        description:
-          "AI monitors every energy-consuming asset across the factory floor and optimizes usage in real time.",
-        keyPoints: [
-          "Motor and drive efficiency optimization",
-          "Compressed air leak detection",
-          "HVAC demand-based control",
-        ],
-        image: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80",
-      },
-      {
-        title: "Production Floor Safety",
-        description:
-          "VICAS monitors assembly lines and shop floors for PPE compliance, ergonomic risks, and unsafe behaviors.",
-        keyPoints: [
-          "Real-time PPE detection",
-          "Ergonomic risk assessment",
-          "Near-miss incident capture",
-        ],
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-      },
-    ],
-    stats: [
-      { value: "12%", label: "CO₂ Reduction" },
-      { value: "18%", label: "Energy Cost Savings" },
-      { value: "25%", label: "Fewer Safety Incidents" },
-      { value: "15%", label: "OEE Improvement" },
-    ],
-    products: [
-      {
-        name: "GreenOps™",
-        description: "Factory energy optimization platform.",
-        href: "/products/greenops",
-      },
-      {
-        name: "VICAS™",
-        description: "Shop floor safety intelligence.",
-        href: "/products/vicas",
-      },
-    ],
-  },
-  {
-    slug: "warehouses",
-    name: "Warehouses",
-    tagline: "AI-powered safety and operational intelligence for warehouse and logistics operations.",
-    description:
-      "Modern warehouses are high-velocity environments with forklifts, conveyor systems, and workers operating in close proximity. LivNSense deploys computer vision and IoT intelligence to detect safety hazards, optimize material handling, and monitor environmental conditions — creating safer and more efficient distribution centers.",
-    heroImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80",
-    cardImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
-    challenges: [
-      {
-        title: "Forklift Collisions",
-        description:
-          "Forklift-pedestrian incidents are one of the leading causes of warehouse injuries and fatalities.",
-        icon: "Car",
-      },
-      {
-        title: "Ergonomic Injuries",
-        description:
-          "Repetitive lifting, bending, and carrying lead to musculoskeletal disorders and high absenteeism.",
+        title: "Physical Pacing",
+        description: "Overpacking an itinerary leads to exhaustion and altitude sickness on challenging treks.",
         icon: "Activity",
       },
       {
-        title: "Inventory Accuracy",
-        description:
-          "Manual counting and barcode scanning are slow and error-prone, leading to stockouts and overstock.",
-        icon: "Package",
-      },
-    ],
-    solutions: [
-      {
-        title: "Collision Avoidance",
-        description:
-          "VICAS computer vision detects forklift-pedestrian proximity in real time and triggers instant alerts.",
-        keyPoints: [
-          "Real-time collision zone monitoring",
-          "Forklift speed compliance tracking",
-          "Pedestrian pathway enforcement",
-        ],
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
-      },
-      {
-        title: "Warehouse Safety Analytics",
-        description:
-          "AI-driven analytics identify high-risk zones, peak traffic periods, and recurring safety patterns.",
-        keyPoints: [
-          "Heat maps of safety incidents",
-          "Shift-based risk scoring",
-          "Compliance trend reporting",
-        ],
-        image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80",
-      },
-    ],
-    stats: [
-      { value: "60%", label: "Reduction in Near-Miss Incidents" },
-      { value: "45%", label: "Fewer Forklift Collisions" },
-      { value: "24/7", label: "Continuous Safety Monitoring" },
-      { value: "3x", label: "Faster Incident Detection" },
-    ],
-    products: [
-      {
-        name: "VICAS™",
-        description: "Warehouse safety and collision avoidance.",
-        href: "/products/vicas",
-      },
-    ],
-  },
-  {
-    slug: "food",
-    name: "Food",
-    tagline: "Ensure food safety, optimize process energy, and maintain regulatory compliance.",
-    description:
-      "The food and beverage industry faces unique challenges in maintaining product safety, process consistency, and energy efficiency across diverse production lines. LivNSense brings AI-powered process monitoring, energy optimization, and compliance intelligence to food manufacturing — ensuring quality, safety, and sustainability.",
-    heroImage: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1200&q=80",
-    cardImage: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&q=80",
-    challenges: [
-      {
-        title: "Product Safety & Hygiene",
-        description:
-          "Contamination risks and strict hygiene standards require continuous monitoring of personnel and equipment.",
-        icon: "ShieldCheck",
-      },
-      {
-        title: "Energy-Intensive Processing",
-        description:
-          "Cooking, pasteurization, refrigeration, and packaging consume large amounts of energy.",
-        icon: "Flame",
-      },
-      {
-        title: "Regulatory Compliance",
-        description:
-          "FSSAI, FDA, and HACCP standards require rigorous documentation and traceability.",
-        icon: "ClipboardCheck",
-      },
-    ],
-    solutions: [
-      {
-        title: "Hygiene & Compliance Monitoring",
-        description:
-          "Computer vision monitors worker hygiene compliance — hairnets, gloves, handwashing — and flags violations in real time.",
-        keyPoints: [
-          "PPE and hygiene compliance detection",
-          "Handwashing protocol monitoring",
-          "Clean-in-place verification",
-        ],
-        image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&q=80",
-      },
-      {
-        title: "Process Energy Optimization",
-        description:
-          "AI optimizes refrigeration, cooking, and HVAC systems to reduce energy waste while maintaining food safety standards.",
-        keyPoints: [
-          "Refrigeration efficiency optimization",
-          "Cooking process energy modeling",
-          "Cold chain integrity monitoring",
-        ],
-        image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
-      },
-    ],
-    stats: [
-      { value: "99.8%", label: "Hygiene Compliance Rate" },
-      { value: "15%", label: "Energy Cost Reduction" },
-      { value: "Zero", label: "Contamination Incidents" },
-      { value: "100%", label: "Traceability Coverage" },
-    ],
-    products: [
-      {
-        name: "GreenOps™",
-        description: "Energy optimization for food processing.",
-        href: "/products/greenops",
-      },
-      {
-        name: "VICAS™",
-        description: "Hygiene and safety compliance monitoring.",
-        href: "/products/vicas",
-      },
-    ],
-  },
-  {
-    slug: "construction",
-    name: "Construction",
-    tagline: "Enhance construction site safety and reduce workplace hazards with AI vision.",
-    description:
-      "Construction sites are among the most hazardous work environments, with falls, struck-by incidents, and equipment-related injuries causing thousands of fatalities annually. LivNSense deploys VICAS computer vision at construction sites to provide real-time safety monitoring, PPE compliance tracking, and hazard detection — protecting workers and reducing incident rates.",
-    heroImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
-    cardImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
-    challenges: [
-      {
-        title: "Fall Hazards",
-        description:
-          "Working at heights without proper safety measures remains the leading cause of construction fatalities.",
-        icon: "ArrowDown",
-      },
-      {
-        title: "PPE Non-Compliance",
-        description:
-          "Workers frequently neglect hard hats, harnesses, and high-visibility gear, especially in unsupervised areas.",
+        title: "Safety & Monitoring",
+        description: "Remote locations require stringent safety check-ins and emergency routing.",
         icon: "ShieldAlert",
       },
-      {
-        title: "Heavy Equipment Risks",
-        description:
-          "Cranes, excavators, and heavy vehicles create blind spots that endanger workers on site.",
-        icon: "Truck",
-      },
     ],
     solutions: [
       {
-        title: "Real-Time PPE Compliance",
-        description:
-          "VICAS detects hard hats, safety harnesses, high-vis vests, safety boots, and goggles in real time across construction zones.",
+        title: "Dynamic Weather Re-Routing",
+        description: "YatraGen continuously monitors micro-climate data and automatically proposes alternative safe routes when storms approach.",
         keyPoints: [
-          "Multi-class PPE detection",
-          "Zone-specific compliance rules",
-          "Instant violation alerts to supervisors",
+          "Live weather API integration",
+          "Instant rerouting algorithms",
+          "Automated shelter identification",
         ],
-        image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+        image: "https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg?auto=compress&cs=tinysrgb&w=800",
       },
       {
-        title: "Hazard Zone Monitoring",
-        description:
-          "AI-powered cameras monitor exclusion zones near heavy equipment, edges, and excavations to prevent unauthorized access.",
+        title: "Exertion-Optimized Scheduling",
+        description: "The AI calculates elevation gains and distances to ensure daily treks remain within the traveler's physical limits.",
         keyPoints: [
-          "Geofenced exclusion zones",
-          "Person-equipment proximity alerts",
-          "Edge and fall zone monitoring",
+          "Elevation and grade analysis",
+          "Adaptive pacing based on traveler fitness",
+          "Acclimatization day scheduling",
         ],
-        image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+        image: "https://images.pexels.com/photos/627163/pexels-photo-627163.jpeg?auto=compress&cs=tinysrgb&w=800",
       },
     ],
     stats: [
-      { value: "22%", label: "Reduction in Incident Rate" },
-      { value: "95%", label: "PPE Compliance Achieved" },
-      { value: "50%", label: "Faster Hazard Response" },
-      { value: "Zero", label: "Fatalities on Monitored Sites" },
+      { value: "40%", label: "Reduction in Weather Delays" },
+      { value: "100%", label: "Safety Protocol Compliance" },
+      { value: "85%", label: "Optimal Pace Matching" },
+      { value: "24/7", label: "Real-time Route Monitoring" },
     ],
     products: [
       {
-        name: "VICAS™",
-        description: "AI-powered construction site safety monitoring.",
-        href: "/products/vicas",
+        name: "YatraGen™",
+        description: "Dynamic routing and physical exertion optimization.",
+        href: "/products/yatragen",
+      },
+      {
+        name: "Darshan AI",
+        description: "Visual landmark recognition for trail navigation.",
+        href: "/products/darshanai",
       },
     ],
   },
   {
-    slug: "power-utilities",
-    name: "Power & Utilities",
-    tagline: "Optimize power generation, grid management, and infrastructure safety.",
-    description:
-      "The power and utilities sector is undergoing a massive transformation — from fossil fuels to renewables, from centralized to distributed grids. LivNSense helps power generators and utilities optimize efficiency, reduce emissions, and monitor critical infrastructure safety using AI and digital twin technologies.",
-    heroImage: "https://vicasinfo.livnsense.com/media/industries/power-and-utilization.jpg",
-    cardImage: "https://vicasinfo.livnsense.com/media/industries/power-and-utilization.jpg",
+    slug: "historical-cultural",
+    name: "Historical & Cultural",
+    tagline: "Immersive storytelling and optimal site sequencing across time.",
+    description: "Cultural trips are often densely packed with museums, ruins, and local experiences. YatraGen optimizes geographical routing and ticketing to minimize time spent in lines and transit, allowing travelers to deeply immerse themselves in history.",
+    heroImage: "https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    cardImage: "https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=800",
     challenges: [
       {
-        title: "Grid Reliability",
-        description:
-          "Aging transmission infrastructure and variable renewable generation challenge grid stability.",
-        icon: "Zap",
+        title: "Overcrowding & Lines",
+        description: "Popular historical sites often suffer from massive queues and peak-hour overcrowding.",
+        icon: "Users",
       },
       {
-        title: "Emission Regulations",
-        description:
-          "Coal and gas-fired plants face increasingly stringent emission limits and carbon pricing mechanisms.",
-        icon: "Cloud",
+        title: "Geographical Sprawl",
+        description: "Jumping erratically between landmarks across a city wastes valuable vacation hours in transit.",
+        icon: "Map",
       },
       {
-        title: "Infrastructure Safety",
-        description:
-          "Substations, transmission lines, and generation assets require continuous safety monitoring.",
-        icon: "ShieldCheck",
+        title: "Information Overload",
+        description: "Tourists often struggle to contextualize multiple historical periods in a single day.",
+        icon: "BookOpen",
       },
     ],
     solutions: [
       {
-        title: "Plant Efficiency Optimization",
-        description:
-          "GreenOps optimizes combustion efficiency, heat rate, and auxiliary power consumption across thermal power plants.",
+        title: "Smart Crowd Avoidance",
+        description: "YatraGen uses predictive crowd analytics to schedule visits to major landmarks during their quietest windows.",
         keyPoints: [
-          "Boiler and turbine optimization",
-          "Heat rate improvement",
-          "Auxiliary power reduction",
+          "Peak-hour prediction modeling",
+          "Automated skip-the-line ticketing",
+          "Reverse-itinerary optimization",
         ],
-        image: "https://vicasinfo.livnsense.com/media/industries/power-and-utilization.jpg",
+        image: "https://images.pexels.com/photos/161853/eiffel-tower-paris-france-tower-161853.jpeg?auto=compress&cs=tinysrgb&w=800",
       },
       {
-        title: "Infrastructure Monitoring",
-        description:
-          "AI-powered surveillance monitors substations, transmission corridors, and generation assets for safety and security threats.",
+        title: "Chronological or Spatial Sequencing",
+        description: "The AI groups sites geographically to minimize transit time, or chronologically to create a coherent historical narrative.",
         keyPoints: [
-          "Substation intrusion detection",
-          "Transmission line vegetation encroachment",
-          "Asset condition monitoring",
+          "Transit-time minimization",
+          "Thematic day-planning",
+          "Integrated local transport routes",
         ],
-        image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
+        image: "https://images.pexels.com/photos/2444403/pexels-photo-2444403.jpeg?auto=compress&cs=tinysrgb&w=800",
       },
     ],
     stats: [
-      { value: "10%", label: "Improvement in Heat Rate" },
-      { value: "20%", label: "Reduction in Emissions" },
-      { value: "15%", label: "Auxiliary Power Savings" },
-      { value: "99.9%", label: "Grid Uptime Maintained" },
+      { value: "2hrs", label: "Daily Wait Time Saved" },
+      { value: "30%", label: "Reduction in Transit Time" },
+      { value: "100%", label: "Geographical Efficiency" },
+      { value: "4x", label: "More Sites Visited Comfortably" },
     ],
     products: [
       {
-        name: "GreenOps™",
-        description: "Power plant efficiency and emission optimization.",
-        href: "/products/greenops",
-      },
-      {
-        name: "VICAS™",
-        description: "Infrastructure safety and surveillance.",
-        href: "/products/vicas",
+        name: "YatraGen™",
+        description: "Geographical and temporal itinerary sequencing.",
+        href: "/products/yatragen",
       },
     ],
   },
+  {
+    slug: "backpacking-solo",
+    name: "Backpacking & Solo",
+    tagline: "Budget-optimized, flexible routing for independent explorers.",
+    description: "Solo backpackers thrive on spontaneity, budget efficiency, and social connections. YatraGen offers highly flexible, cost-optimized itineraries that adapt to last-minute hostel bookings, train schedules, and newly discovered local spots.",
+    heroImage: "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    cardImage: "https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=800",
+    challenges: [
+      {
+        title: "Budget Constraints",
+        description: "Backpackers need to maximize experiences while strictly adhering to daily financial limits.",
+        icon: "DollarSign",
+      },
+      {
+        title: "Last-Minute Changes",
+        description: "Rigid itineraries fail when solo travelers decide to stay longer in a city or join new friends.",
+        icon: "RefreshCw",
+      },
+      {
+        title: "Logistical Complexity",
+        description: "Navigating local buses, trains, and obscure routes requires immense research time.",
+        icon: "Compass",
+      },
+    ],
+    solutions: [
+      {
+        title: "Cost-Optimized Routing",
+        description: "YatraGen scans thousands of transit and hostel combinations to construct the cheapest possible overland routes.",
+        keyPoints: [
+          "Budget-cap adherence algorithms",
+          "Alternative transport integration (buses/trains)",
+          "Free activity recommendations",
+        ],
+        image: "https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&w=800",
+      },
+      {
+        title: "On-the-Fly Regeneration",
+        description: "When plans change, the AI instantly recalculates the rest of the trip to accommodate new dates and locations without breaking the budget.",
+        keyPoints: [
+          "Instant itinerary recalculation",
+          "Flexible cancellation tracking",
+          "Spontaneous detour incorporation",
+        ],
+        image: "https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=800",
+      },
+    ],
+    stats: [
+      { value: "40%", label: "Average Budget Savings" },
+      { value: "Seconds", label: "To Regenerate Altered Plans" },
+      { value: "50+", label: "Transit Networks Integrated" },
+      { value: "100%", label: "Solo Traveler Autonomy" },
+    ],
+    products: [
+      {
+        name: "YatraGen™",
+        description: "Dynamic route and budget optimization.",
+        href: "/products/yatragen",
+      },
+      {
+        name: "Live Menu Translation",
+        description: "Instant translation for local street food menus.",
+        href: "/products/yatragen",
+      },
+    ],
+  },
+  {
+    slug: "family-vacations",
+    name: "Family Vacations",
+    tagline: "Stress-free coordination for multi-generational group travel.",
+    description: "Planning for a family means balancing the energy levels of toddlers, the interests of teenagers, and the accessibility needs of grandparents. YatraGen takes the stress out of family holidays by generating harmonized schedules with built-in buffer times.",
+    heroImage: "https://images.pexels.com/photos/1153655/pexels-photo-1153655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    cardImage: "https://images.pexels.com/photos/1153655/pexels-photo-1153655.jpeg?auto=compress&cs=tinysrgb&w=800",
+    challenges: [
+      {
+        title: "Divergent Interests",
+        description: "Finding activities that simultaneously engage different age groups is traditionally exhausting.",
+        icon: "Users",
+      },
+      {
+        title: "Strict Routines",
+        description: "Families with young children need guaranteed meal times and nap windows.",
+        icon: "Clock",
+      },
+      {
+        title: "Logistical Nightmares",
+        description: "Coordinating transport, seating, and connected rooms for large groups is highly prone to error.",
+        icon: "AlertTriangle",
+      },
+    ],
+    solutions: [
+      {
+        title: "Multi-Persona Optimization",
+        description: "YatraGen evaluates the profiles of all family members and suggests composite activities or proximal split-itineraries.",
+        keyPoints: [
+          "Age-appropriate filtering",
+          "Simultaneous nearby activities",
+          "Accessibility routing",
+        ],
+        image: "https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg?auto=compress&cs=tinysrgb&w=800",
+      },
+      {
+        title: "Buffer-Integrated Scheduling",
+        description: "The AI automatically inserts buffer times for transit, meals, and rest, ensuring the family is never rushed.",
+        keyPoints: [
+          "Mandatory meal-time blocking",
+          "Paced transit calculations",
+          "Fatigue prevention alerts",
+        ],
+        image: "https://images.pexels.com/photos/1645028/pexels-photo-1645028.jpeg?auto=compress&cs=tinysrgb&w=800",
+      },
+    ],
+    stats: [
+      { value: "Zero", label: "Missed Nap Times" },
+      { value: "80%", label: "Less Planning Stress" },
+      { value: "100%", label: "Group Accessibility" },
+      { value: "5x", label: "Faster Group Bookings" },
+    ],
+    products: [
+      {
+        name: "YatraGen™",
+        description: "Multi-persona itinerary balancing.",
+        href: "/products/yatragen",
+      },
+    ],
+  },
+  {
+    slug: "cruises-yachting",
+    name: "Cruises & Yachting",
+    tagline: "Precision port-of-call planning and seamless maritime logistics.",
+    description: "Cruises and private yacht charters operate on strict maritime schedules. YatraGen ensures that shore excursions are flawlessly timed with docking windows, maximizing onshore experiences while guaranteeing zero missed departures.",
+    heroImage: "https://images.pexels.com/photos/8782354/pexels-photo-8782354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    cardImage: "https://images.pexels.com/photos/8782354/pexels-photo-8782354.jpeg?auto=compress&cs=tinysrgb&w=800",
+    challenges: [
+      {
+        title: "Strict Time Constraints",
+        description: "A delayed shore excursion can result in a traveler being left behind at port.",
+        icon: "Watch",
+      },
+      {
+        title: "Port Congestion",
+        description: "Multiple mega-ships docking simultaneously overwhelm local infrastructure and transport.",
+        icon: "Ship",
+      },
+      {
+        title: "Vendor Reliability",
+        description: "Finding reliable, punctual third-party tour operators at every new port is a gamble.",
+        icon: "CheckCircle",
+      },
+    ],
+    solutions: [
+      {
+        title: "Time-Gated Itinerary Builder",
+        description: "YatraGen creates shore excursions with hard stop times, factoring in local traffic and port security lines.",
+        keyPoints: [
+          "Hard-stop time enforcement",
+          "Traffic-aware return routing",
+          "Automated delay buffers",
+        ],
+        image: "https://images.pexels.com/photos/4072844/pexels-photo-4072844.jpeg?auto=compress&cs=tinysrgb&w=800",
+      },
+      {
+        title: "Congestion Avoidance",
+        description: "By tracking global cruise schedules, the AI routes travelers away from the primary crowded tourist traps to exclusive local experiences.",
+        keyPoints: [
+          "Multi-ship congestion tracking",
+          "Off-the-beaten-path routing",
+          "Verified local vendor integration",
+        ],
+        image: "https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-landscape.jpg?auto=compress&cs=tinysrgb&w=800",
+      },
+    ],
+    stats: [
+      { value: "0", label: "Missed Departures" },
+      { value: "45%", label: "More Time Onshore" },
+      { value: "100%", label: "Verified Operators" },
+      { value: "3x", label: "Less Port Congestion" },
+    ],
+    products: [
+      {
+        name: "YatraGen™",
+        description: "Time-gated shore excursion optimization.",
+        href: "/products/yatragen",
+      },
+    ],
+  }
 ];
 
 export function getIndustryBySlug(slug: string): Industry | undefined {

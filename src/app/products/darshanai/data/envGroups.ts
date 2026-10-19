@@ -12,7 +12,7 @@ type EnvGroup = {
 export const envGroups: EnvGroup[] = [
   {
     label: "Fixed Infrastructure",
-    speedClass: "vicas-env-track-slow",
+    speedClass: "darshanai-env-track-slow",
     cards: [
       {
         title: "Warehouses",
@@ -43,7 +43,7 @@ export const envGroups: EnvGroup[] = [
   },
   {
     label: "Mobile Operations",
-    speedClass: "vicas-env-track-fast",
+    speedClass: "darshanai-env-track-fast",
     cards: [
       {
         title: "Forklifts",

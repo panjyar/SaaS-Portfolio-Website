@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { Leaf, BarChart2, Shield, Zap } from "lucide-react";
 
-export default function GreenOpsSection() {
+export default function YatraGenAndDarshanAISection() {
   const capabilities = [
     { icon: <Zap className="w-6 h-6" />, text: "Energy optimization across industrial processes" },
     { icon: <Leaf className="w-6 h-6" />, text: "Carbon monitoring and decarbonization analytics" },
@@ -21,24 +21,24 @@ export default function GreenOpsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-[#00A755] font-bold tracking-wider uppercase text-sm mb-4">GreenOps™ Platform</h2>
+            <h2 className="text-[#FE9A00] font-bold tracking-wider uppercase text-sm mb-4">YatraGen and Darshan AI™ Platform</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              AI Platform for Industrial Efficiency & <span className="text-[#00A755]">Decarbonization</span>
+              AI Platform for Industrial Efficiency & <span className="text-[#FE9A00]">Decarbonization</span>
             </h3>
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              GreenOps™ is the world’s first deep-decarbonization platform designed to optimize industrial energy balance using Artificial Intelligence and Digital Twin technologies.
+              YatraGen and Darshan AI™ is the world’s first deep-decarbonization platform designed to optimize industrial energy balance using Artificial Intelligence and Digital Twin technologies.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
               {capabilities.map((cap, i) => (
                 <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                  <div className="text-[#00A755]">{cap.icon}</div>
+                  <div className="text-[#FE9A00]">{cap.icon}</div>
                   <p className="text-sm text-gray-300 font-medium">{cap.text}</p>
                 </div>
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-8 p-6 rounded-2xl bg-[#00A755]/10 border border-[#00A755]/20">
+            <div className="flex flex-wrap gap-8 p-6 rounded-2xl bg-[#FE9A00]/10 border border-[#FE9A00]/20">
               <div className="flex-1 min-w-[140px]">
                 <p className="text-2xl font-bold text-white mb-1">Low-E</p>
                 <p className="text-xs text-gray-400 uppercase tracking-widest">Energy Consumption</p>
@@ -68,7 +68,7 @@ export default function GreenOpsSection() {
               </div>
             </div>
             {/* Decorative glass elements */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#00A755]/20 blur-[80px] rounded-full" />
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#FE9A00]/20 blur-[80px] rounded-full" />
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/10 blur-[80px] rounded-full" />
           </motion.div>
         </div>

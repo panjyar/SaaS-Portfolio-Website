@@ -12,10 +12,10 @@ const geist = Geist({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 export const metadata: Metadata = {
-  title: "Livnsense GreenOps Pvt Ltd",
-  description: "Real-Time EHS Risk Intelligence — Powered by VICAS",
+  title: "Livnsense YatraGen and Darshan AI Pvt Ltd",
+  description: "Real-Time EHS Risk Intelligence — Powered by DarshanAI",
   icons: {
-     icon: "https://vicasinfo.livnsense.com/media/images/LivNSenseLogo.svg",
+     icon: "/images/travel_ai_logo.png",
   },
 };
 export default function RootLayout({

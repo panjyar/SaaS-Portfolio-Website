@@ -15,7 +15,7 @@ type OpenPositionsProps = {
   positions: Position[];
 };
 
-const primary = "#00A755";
+const primary = "#FE9A00";
 const cardBg = "#181818";
 const cardBorder = "#222";
 const highlight = "#181818";

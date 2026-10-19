@@ -23,7 +23,7 @@ export default function AboutPage() {
       <div>
         <h3 className="text-center text-lg font-medium tracking-tight md:text-2xl mb-6" style={{ color: "#b8b8b8" }}>
           Companies we{" "}
-          <span className="font-semibold" style={{ color: "#00A755" }}>
+          <span className="font-semibold" style={{ color: "#FE9A00" }}>
             collaborate
           </span>{" "}
           with.

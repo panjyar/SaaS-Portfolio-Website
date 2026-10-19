@@ -39,7 +39,7 @@ ${message}
       // HTML version
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; color: #333;">
-          <h2 style="color: #00A755;">New Contact Form Submission</h2>
+          <h2 style="color: #FE9A00;">New Contact Form Submission</h2>
           <table style="width: 100%; max-width: 600px; border-collapse: collapse;">
             <tr style="border-bottom: 1px solid #eee;">
               <td style="padding: 10px 0; font-weight: bold; width: 100px;">Name:</td>

@@ -103,7 +103,7 @@ function IndustryHero({ industry }: { industry: Industry }) {
           <div className="flex items-center gap-2 mb-6 text-sm text-white/50">
             <Link
               href="/industries"
-              className="hover:text-[#00A755] transition-colors"
+              className="hover:text-[#FE9A00] transition-colors"
             >
               Industries
             </Link>
@@ -137,8 +137,8 @@ function IndustryDescription({ industry }: { industry: Industry }) {
           transition={{ duration: 0.7 }}
         >
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-[2px] bg-[#00A755]" />
-            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#00A755]">
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
+            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#FE9A00]">
               Overview
             </span>
           </div>
@@ -176,11 +176,11 @@ function IndustryChallenges({
           transition={{ duration: 0.7 }}
         >
           <div className="flex items-center justify-center gap-3 mb-5">
-            <div className="w-8 h-[2px] bg-[#00A755]" />
-            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#00A755]">
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
+            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#FE9A00]">
               Industry Challenges
             </span>
-            <div className="w-8 h-[2px] bg-[#00A755]" />
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white tracking-tight">
             Key Challenges
@@ -191,16 +191,16 @@ function IndustryChallenges({
           {challenges.map((challenge, i) => (
             <motion.div
               key={i}
-              className="group relative rounded-2xl border border-white/[0.06] bg-[#0a0f14] p-8 overflow-hidden hover:border-[#00A755]/30 transition-all duration-500"
+              className="group relative rounded-2xl border border-white/[0.06] bg-[#0a0f14] p-8 overflow-hidden hover:border-[#FE9A00]/30 transition-all duration-500"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
               {/* Hover glow */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#00A755]/0 group-hover:bg-[#00A755]/5 blur-3xl rounded-full transition-all duration-700" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#FE9A00]/0 group-hover:bg-[#FE9A00]/5 blur-3xl rounded-full transition-all duration-700" />
 
               <div className="relative z-10">
-                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#00A755]/10 border border-[#00A755]/20 text-[#00A755] mb-6">
+                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[#FE9A00]/10 border border-[#FE9A00]/20 text-[#FE9A00] mb-6">
                   {iconMap[challenge.icon] || (
                     <AlertTriangle className="w-5 h-5" />
                   )}
@@ -256,11 +256,11 @@ function IndustrySolutions({
           transition={{ duration: 0.7 }}
         >
           <div className="flex items-center justify-center gap-3 mb-5">
-            <div className="w-8 h-[2px] bg-[#00A755]" />
-            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#00A755]">
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
+            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#FE9A00]">
               Our Solutions
             </span>
-            <div className="w-8 h-[2px] bg-[#00A755]" />
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white tracking-tight mb-5">
             How LivNSense
@@ -304,7 +304,7 @@ function SolutionRow({
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <div className="flex items-center gap-3 mb-5">
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl border border-[#00A755]/30 text-sm font-bold text-[#00A755] bg-[#00A755]/10">
+            <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl border border-[#FE9A00]/30 text-sm font-bold text-[#FE9A00] bg-[#FE9A00]/10">
               {String(index + 1).padStart(2, "0")}
             </span>
           </div>
@@ -326,7 +326,7 @@ function SolutionRow({
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
               >
-                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00A755] shrink-0" />
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#FE9A00] shrink-0" />
                 {point}
               </motion.li>
             ))}
@@ -353,14 +353,14 @@ function SolutionRow({
             {/* Border glow on hover */}
             <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
               style={{
-                boxShadow: `inset 0 0 0 1px rgba(0,167,85,0.2), 0 0 30px rgba(0,167,85,0.08)`,
+                boxShadow: `inset 0 0 0 1px rgba(254, 154, 0,0.2), 0 0 30px rgba(254, 154, 0,0.08)`,
               }}
             />
           </div>
 
           {/* Decorative glow */}
           <div
-            className="absolute -z-10 w-32 h-32 rounded-full bg-[#00A755] blur-[80px] opacity-15"
+            className="absolute -z-10 w-32 h-32 rounded-full bg-[#FE9A00] blur-[80px] opacity-15"
             style={{
               top: isReversed ? "auto" : "-20px",
               bottom: isReversed ? "-20px" : "auto",
@@ -382,7 +382,7 @@ function IndustryStats({ industry }: { industry: Industry }) {
   return (
     <section
       ref={ref}
-      className="py-20 relative overflow-hidden bg-[#00A755]/5 backdrop-blur-sm border-y border-white/[0.06]"
+      className="py-20 relative overflow-hidden bg-[#FE9A00]/5 backdrop-blur-sm border-y border-white/[0.06]"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -442,13 +442,13 @@ function IndustryProducts({ industry }: { industry: Industry }) {
             >
               <Link
                 href={product.href}
-                className="group block rounded-2xl border border-white/[0.06] bg-[#0a0f14] p-8 hover:border-[#00A755]/30 transition-all duration-500"
+                className="group block rounded-2xl border border-white/[0.06] bg-[#0a0f14] p-8 hover:border-[#FE9A00]/30 transition-all duration-500"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold text-[#00A755]">
+                  <h3 className="text-xl font-semibold text-[#FE9A00]">
                     {product.name}
                   </h3>
-                  <ArrowUpRight className="w-5 h-5 text-white/30 group-hover:text-[#00A755] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
+                  <ArrowUpRight className="w-5 h-5 text-white/30 group-hover:text-[#FE9A00] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
                 </div>
                 <p className="text-white/50 text-sm leading-relaxed">
                   {product.description}
@@ -469,7 +469,7 @@ function IndustryCTA({ name }: { name: string }) {
       <div
         className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `linear-gradient(to right, #00A755 1px, transparent 1px), linear-gradient(to bottom, #00A755 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(to right, #FE9A00 1px, transparent 1px), linear-gradient(to bottom, #FE9A00 1px, transparent 1px)`,
           backgroundSize: "4rem 4rem",
           maskImage:
             "radial-gradient(circle at center, black 30%, transparent 70%)",
@@ -505,7 +505,7 @@ function IndustryCTA({ name }: { name: string }) {
         >
           <Link
             href="/company/contact"
-            className="px-8 py-4 w-full sm:w-auto rounded-full bg-[#00A755] text-white font-bold text-lg hover:bg-[#008f48] transition-all duration-300 shadow-[0_0_20px_rgba(0,167,85,0.3)] hover:shadow-[0_0_30px_rgba(0,167,85,0.5)]"
+            className="px-8 py-4 w-full sm:w-auto rounded-full bg-[#FE9A00] text-white font-bold text-lg hover:bg-[#E68A00] transition-all duration-300 shadow-[0_0_20px_rgba(254, 154, 0,0.3)] hover:shadow-[0_0_30px_rgba(254, 154, 0,0.5)]"
           >
             Talk to an Expert
           </Link>
@@ -554,7 +554,7 @@ function RelatedIndustries({ currentSlug }: { currentSlug: string }) {
             >
               <Link
                 href={`/industries/${industry.slug}`}
-                className="group relative block rounded-2xl overflow-hidden aspect-[4/3] border border-white/[0.06] hover:border-[#00A755]/30 transition-all duration-500"
+                className="group relative block rounded-2xl overflow-hidden aspect-[4/3] border border-white/[0.06] hover:border-[#FE9A00]/30 transition-all duration-500"
               >
                 <Image
                   src={industry.cardImage}
@@ -568,7 +568,7 @@ function RelatedIndustries({ currentSlug }: { currentSlug: string }) {
                   <h3 className="text-lg font-semibold text-white">
                     {industry.name}
                   </h3>
-                  <ArrowUpRight className="w-4 h-4 text-white/50 group-hover:text-[#00A755] transition-colors duration-300" />
+                  <ArrowUpRight className="w-4 h-4 text-white/50 group-hover:text-[#FE9A00] transition-colors duration-300" />
                 </div>
               </Link>
             </motion.div>

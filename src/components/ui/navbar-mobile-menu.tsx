@@ -106,8 +106,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                         {/* Logo in mobile menu */}
                         <div className="mb-6">
                             <Image
-                                src="/images/lnslogo.png"
-                                alt="LivNSense Logo"
+                                src="/images/travel_ai_logo.png"
+                                alt="AI Travel Logo"
                                 width={110}
                                 height={30}
                                 className="object-contain"

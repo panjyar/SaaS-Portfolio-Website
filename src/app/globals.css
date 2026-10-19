@@ -3,7 +3,7 @@
 @import "shadcn/tailwind.css";
 
 @theme inline {
-  --color-brand-green: #00A755;
+  --color-brand-green: #FE9A00;
   --color-brand-bg: #010206;
   --color-brand-fg: #ffffff;
   --color-card-surface: #0f0f0f;
@@ -45,12 +45,12 @@
 :root {
   --muted: oklch(0.97 0 0);
   --muted-foreground: #b8b8b8;
-  --accent: #00A755;
-  --primary: #00A755;
+  --accent: #FE9A00;
+  --primary: #FE9A00;
   --primary-foreground: #ffffff;
   --border: oklch(0.922 0 0);
-  --ring: #00A755;
-  --nav-border: #00A755;
+  --ring: #FE9A00;
+  --nav-border: #FE9A00;
   --background: #010206;
   --foreground: #ffffff;
   --card: #0f0f0f;
@@ -70,63 +70,63 @@
   --radius: 0.625rem;
   --sidebar: #0f0f0f;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #00A755;
+  --sidebar-primary: #FE9A00;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: #00A755;
+  --sidebar-ring: #FE9A00;
   --destructive-foreground: var(--color-red-700);
   --info: var(--color-blue-500);
   --info-foreground: var(--color-blue-700);
-  --success: var(--color-emerald-500);
-  --success-foreground: var(--color-emerald-700);
+  --success: var(--color-orange-500);
+  --success-foreground: var(--color-orange-700);
   --warning: var(--color-amber-500);
   --warning-foreground: var(--color-amber-700);
 
   /* ========================================
-     VICAS Product Page — Color Variables
+     DarshanAI Product Page — Color Variables
      ======================================== */
-  --vicas-page-bg: #0a0a0a;                        /* Main dark background for sections */
-  --vicas-page-bg-alt: #0a0f0a;                     /* Hero section green-tinted dark bg */
-  --vicas-card-bg: #1a1d1f;                          /* Problem card surface background */
-  --vicas-card-bg-hover: #22262a;                    /* Problem card hover background */
-  --vicas-card-border: #2a2d30;                      /* Problem card default border */
-  --vicas-card-border-hover: #3a3d40;                /* Problem card border on hover */
-  --vicas-accent-red: #ef4444;                       /* Red accent for indicator dots */
-  --vicas-accent-red-glow: rgba(239, 68, 68, 0.25); /* Red glow shadow on hover */
-  --vicas-text-primary: #ffffff;                     /* Primary text color (white) */
-  --vicas-text-secondary: #b8b8b8;                   /* Secondary/muted text */
-  --vicas-text-label: #8a8f94;                       /* Small label text */
-  --vicas-section-label: #00c85a;                    /* Section label accent (e.g. WHY VICAS EXISTS) */
-  --vicas-metric-text: #ffffff;                      /* Metric counter number color */
-  --vicas-metric-label: #b8b8b8;                     /* Metric label text below counter */
-  --vicas-metrics-bg: #181E22;                       /* Metrics section background */
-  --vicas-metrics-divider: #2a2d30;                  /* Divider line in metrics */
-  --vicas-hero-green: #00c85a;                       /* Hero accent green text */
-  --vicas-hero-btn-primary: #00a755;                 /* Primary CTA button green */
-  --vicas-hero-btn-primary-hover: #008f48;           /* Primary CTA button hover */
-  --vicas-bullet-dot: #ef4444;                       /* Bullet point red dot */
-  --vicas-radar-ring-border: rgba(255, 255, 255, 0.18); /* Radar concentric ring border */
-  --vicas-radar-center-dot: rgba(0, 200, 80, 0.5);  /* Radar center dot color */
-  --vicas-radar-blip: #ff4040;                       /* Radar red blip dot */
-  --vicas-radar-blip-border: rgba(255, 60, 60, 0.5);/* Radar blip ring border */
-  --vicas-env-panel-bg: #14181a;
-  --vicas-env-panel-bg-dark: #101315;
-  --vicas-env-panel-border: rgba(255, 255, 255, 0.22);
-  --vicas-env-card-bg: #232729;
-  --vicas-env-card-border: rgba(255, 255, 255, 0.04);
-  --vicas-impact-card-bg: #171a1c;
-  --vicas-impact-card-bg-dark: #121517;
-  --vicas-impact-card-border: rgba(255, 255, 255, 0.22);
-  --vicas-impact-arrow-bg: rgba(255, 255, 255, 0.06);
-  --vicas-impact-arrow-border: rgba(255, 255, 255, 0.2);
+  --darshanai-page-bg: #0a0a0a;                        /* Main dark background for sections */
+  --darshanai-page-bg-alt: #0a0f0a;                     /* Hero section green-tinted dark bg */
+  --darshanai-card-bg: #1a1d1f;                          /* Problem card surface background */
+  --darshanai-card-bg-hover: #22262a;                    /* Problem card hover background */
+  --darshanai-card-border: #2a2d30;                      /* Problem card default border */
+  --darshanai-card-border-hover: #3a3d40;                /* Problem card border on hover */
+  --darshanai-accent-red: #ef4444;                       /* Red accent for indicator dots */
+  --darshanai-accent-red-glow: rgba(239, 68, 68, 0.25); /* Red glow shadow on hover */
+  --darshanai-text-primary: #ffffff;                     /* Primary text color (white) */
+  --darshanai-text-secondary: #b8b8b8;                   /* Secondary/muted text */
+  --darshanai-text-label: #8a8f94;                       /* Small label text */
+  --darshanai-section-label: #FE9A00;                    /* Section label accent (e.g. WHY DarshanAI EXISTS) */
+  --darshanai-metric-text: #ffffff;                      /* Metric counter number color */
+  --darshanai-metric-label: #b8b8b8;                     /* Metric label text below counter */
+  --darshanai-metrics-bg: #181E22;                       /* Metrics section background */
+  --darshanai-metrics-divider: #2a2d30;                  /* Divider line in metrics */
+  --darshanai-hero-primary: #FE9A00;                       /* Hero accent green text */
+  --darshanai-hero-btn-primary: #FE9A00;                 /* Primary CTA button green */
+  --darshanai-hero-btn-primary-hover: #E68A00;           /* Primary CTA button hover */
+  --darshanai-bullet-dot: #ef4444;                       /* Bullet point red dot */
+  --darshanai-radar-ring-border: rgba(255, 255, 255, 0.18); /* Radar concentric ring border */
+  --darshanai-radar-center-dot: rgba(254, 154, 0, 0.5);  /* Radar center dot color */
+  --darshanai-radar-blip: #ff4040;                       /* Radar red blip dot */
+  --darshanai-radar-blip-border: rgba(255, 60, 60, 0.5);/* Radar blip ring border */
+  --darshanai-env-panel-bg: #14181a;
+  --darshanai-env-panel-bg-dark: #101315;
+  --darshanai-env-panel-border: rgba(255, 255, 255, 0.22);
+  --darshanai-env-card-bg: #232729;
+  --darshanai-env-card-border: rgba(255, 255, 255, 0.04);
+  --darshanai-impact-card-bg: #171a1c;
+  --darshanai-impact-card-bg-dark: #121517;
+  --darshanai-impact-card-border: rgba(255, 255, 255, 0.22);
+  --darshanai-impact-arrow-bg: rgba(255, 255, 255, 0.06);
+  --darshanai-impact-arrow-border: rgba(255, 255, 255, 0.2);
  
-  --vicas-cta-bg: #0c0c0c;
-  --vicas-cta-bg-dark: #1c1d1e;
-  --vicas-cta-btn-secondary-border: rgba(0, 200, 90, 0.35);
-  --vicas-cta-btn-primary: #00a755;
-  --vicas-cta-btn-primary-dark: #007a3f;
+  --darshanai-cta-bg: #0c0c0c;
+  --darshanai-cta-bg-dark: #1c1d1e;
+  --darshanai-cta-btn-secondary-border: rgba(254, 154, 0, 0.35);
+  --darshanai-cta-btn-primary: #FE9A00;
+  --darshanai-cta-btn-primary-dark: #E68A00;
   
 }
 
@@ -181,7 +181,7 @@
   margin: 0 0 1.25rem 0;
   font-size: 1.3rem;
   font-weight: 500;
-  color: #00A755;
+  color: #FE9A00;
 }
 .office-desc {
   margin: 0;
@@ -223,7 +223,7 @@
 
 .footer-col-title {
   display: block;
-  color: #00A755;
+  color: #FE9A00;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -381,7 +381,7 @@
   margin-bottom: 1.2rem;
 }
 .our-approach__list strong {
-  color: #00A755;
+  color: #FE9A00;
   font-weight: 600;
 }
 .our-approach__final {
@@ -452,7 +452,7 @@
 }
 .careers-section__accent {
   display: block;
-  color: #00A755;
+  color: #FE9A00;
   font-size: 2.1rem;
   font-weight: 600;
   margin-top: 0.3em;
@@ -469,7 +469,7 @@
 .careers-section__gallery-item {
   /* background: #20252e; */
   border-radius: 0.6rem;
-  box-shadow: 0 4px 24px rgba(0, 167, 85, 0.2), 0 1.5px 13px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 24px rgba(254, 154, 0, 0.2), 0 1.5px 13px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   display: flex;
   align-items: flex-end;
@@ -487,7 +487,7 @@
 .careers-section__gallery-item:hover,
 .careers-section__gallery-item:focus-visible {
   transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 167, 85, 0.4), 0 0 20px rgba(0, 167, 85, 0.3);
+  box-shadow: 0 10px 30px rgba(254, 154, 0, 0.4), 0 0 20px rgba(254, 154, 0, 0.3);
   z-index: 10;
 }
 .gallery-item--small {
@@ -520,23 +520,23 @@
   margin-right: auto;
 }
 .careers-section__cta {
-  color: #00A755;
-  border: 1px solid #00A755;
+  color: #FE9A00;
+  border: 1px solid #FE9A00;
   border-radius: 0.3rem;
   font-weight: 600;
   text-decoration: none;
   font-size: 1.02rem;
   padding: 0.7rem 2.7rem;
   transition: background 0.16s, color 0.19s, box-shadow 0.2s;
-  box-shadow: 0 4px 24px rgba(0, 167, 85, 0.3);
+  box-shadow: 0 4px 24px rgba(254, 154, 0, 0.3);
   background: transparent;
   display: inline-block;
 }
 .careers-section__cta:hover,
 .careers-section__cta:focus {
-  background: #00A755;
+  background: #FE9A00;
   color: #ffffff;
-  box-shadow: 0 6px 16px rgba(0, 167, 85, 0.4);
+  box-shadow: 0 6px 16px rgba(254, 154, 0, 0.4);
   outline: none;
 }
 
@@ -586,7 +586,7 @@
   font-size: clamp(1.6rem, 2.5vw, 2.25rem);
   font-weight: 700;
   margin-bottom: 0.8rem;
-  color: #00A755;
+  color: #FE9A00;
 }
 
 .about-hero__feature-desc {
@@ -604,7 +604,7 @@
   max-width: 700px;
 }
 .highlight-green {
-  color: #00A755; /* green */
+  color: #FE9A00; /* green */
 }
 
 .default-white {
@@ -665,8 +665,8 @@
   --destructive-foreground: var(--color-red-400);
   --info: var(--color-blue-500);
   --info-foreground: var(--color-blue-400);
-  --success: var(--color-emerald-500);
-  --success-foreground: var(--color-emerald-400);
+  --success: var(--color-orange-500);
+  --success-foreground: var(--color-orange-400);
   --warning: var(--color-amber-500);
   --warning-foreground: var(--color-amber-400);
 }
@@ -795,8 +795,8 @@
   100% { transform: rotate(0deg) scale(1); }
 }
 
-/* VICAS Standard Container for consistent layout alignment */
-.vicas-container {
+/* DarshanAI Standard Container for consistent layout alignment */
+.darshanai-container {
   width: 100%;
   max-width: 1280px;
   margin-left: auto;
@@ -806,14 +806,14 @@
 }
 
 @media (min-width: 768px) {
-  .vicas-container {
+  .darshanai-container {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .vicas-container {
+  .darshanai-container {
     padding-left: 4rem;
     padding-right: 4rem;
   }

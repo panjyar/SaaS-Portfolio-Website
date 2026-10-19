@@ -1,24 +1,36 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 interface Frame {
   id: number
   video: string
-  label: string
+  label?: string
+  image?: string
   defaultPos: { x: number; y: number; w: number; h: number }
+  corner?: string
+  edgeHorizontal?: string
+  edgeVertical?: string
   mediaSize: number
+  borderThickness?: number
+  borderSize?: number
   isHovered: boolean
 }
 
 interface FrameComponentProps {
   video: string
-  label: string
+  label?: string
+  image?: string
   width: number | string
   height: number | string
   className?: string
+  corner?: string
+  edgeHorizontal?: string
+  edgeVertical?: string
   mediaSize: number
+  borderThickness?: number
+  borderSize?: number
   showFrame: boolean
   isHovered: boolean
 }
@@ -26,29 +38,26 @@ interface FrameComponentProps {
 function FrameComponent({
   video,
   label,
+  image,
   width,
   height,
   className = "",
+  corner,
+  edgeHorizontal,
+  edgeVertical,
   mediaSize,
+  borderThickness = 0,
+  borderSize = 100,
+  showFrame,
   isHovered,
 }: FrameComponentProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
     if (isHovered) {
-      if (videoRef.current) {
-        const playPromise = videoRef.current.play()
-        if (playPromise !== undefined) {
-          playPromise.catch((error) => {
-            // Ignore error from interrupting play() with pause() on fast un-hover
-          })
-        }
-      }
+      videoRef.current?.play()
     } else {
-      if (videoRef.current) {
-        videoRef.current.pause()
-        videoRef.current.currentTime = 0
-      }
+      videoRef.current?.pause()
     }
   }, [isHovered])
 
@@ -62,14 +71,16 @@ function FrameComponent({
       }}
     >
       <div className="relative w-full h-full overflow-hidden rounded-lg">
-        {/* Video layer */}
         <div
           className="absolute inset-0 flex items-center justify-center"
           style={{
             zIndex: 1,
             transition: "all 0.3s ease-in-out",
-            width: "100%",
-            height: "100%",
+            padding: showFrame ? `${borderThickness}px` : "0",
+            width: showFrame ? `${borderSize}%` : "100%",
+            height: showFrame ? `${borderSize}%` : "100%",
+            left: showFrame ? `${(100 - borderSize) / 2}%` : "0",
+            top: showFrame ? `${(100 - borderSize) / 2}%` : "0",
           }}
         >
           <div
@@ -83,6 +94,7 @@ function FrameComponent({
             <video
               className="w-full h-full object-cover"
               src={video}
+              poster={image}
               loop
               muted
               playsInline
@@ -91,25 +103,20 @@ function FrameComponent({
           </div>
         </div>
 
-        {/* Dark overlay + label */}
-        <div
-          className="absolute inset-0 flex items-center justify-center"
-          style={{
-            zIndex: 2,
-            background: isHovered
-              ? "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%)"
-              : "linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%)",
-            transition: "background 0.4s ease-in-out",
-          }}
-        >
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={isHovered ? "hovered" : "default"}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.3 }}
-              className="text-white font-semibold tracking-wide text-center px-3"
+        {/* Label overlay */}
+        {label && (
+          <div
+            className="absolute inset-0 flex items-end justify-start p-4"
+            style={{
+              zIndex: 2,
+              background: isHovered
+                ? "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%)"
+                : "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%)",
+              transition: "background 0.4s ease-in-out",
+            }}
+          >
+            <span
+              className="text-white font-semibold tracking-wide"
               style={{
                 fontSize: isHovered ? "1.35rem" : "1rem",
                 textShadow: "0 2px 12px rgba(0,0,0,0.6)",
@@ -117,19 +124,75 @@ function FrameComponent({
               }}
             >
               {label}
-            </motion.span>
-          </AnimatePresence>
-        </div>
+            </span>
+          </div>
+        )}
 
         {/* Green accent border on hover */}
         <div
           className="absolute inset-0 rounded-lg pointer-events-none"
           style={{
             zIndex: 3,
-            border: isHovered ? "2px solid rgba(0, 167, 85, 0.6)" : "2px solid transparent",
+            border: isHovered ? "2px solid rgba(254, 154, 0, 0.6)" : "2px solid transparent",
             transition: "border-color 0.3s ease-in-out",
           }}
         />
+
+        {showFrame && corner && edgeHorizontal && edgeVertical && (
+          <div className="absolute inset-0" style={{ zIndex: 4 }}>
+            <div
+              className="absolute top-0 left-0 w-16 h-16 bg-contain bg-no-repeat"
+              style={{ backgroundImage: `url(${corner})` }}
+            />
+            <div
+              className="absolute top-0 right-0 w-16 h-16 bg-contain bg-no-repeat"
+              style={{ backgroundImage: `url(${corner})`, transform: "scaleX(-1)" }}
+            />
+            <div
+              className="absolute bottom-0 left-0 w-16 h-16 bg-contain bg-no-repeat"
+              style={{ backgroundImage: `url(${corner})`, transform: "scaleY(-1)" }}
+            />
+            <div
+              className="absolute bottom-0 right-0 w-16 h-16 bg-contain bg-no-repeat"
+              style={{ backgroundImage: `url(${corner})`, transform: "scale(-1, -1)" }}
+            />
+
+            <div
+              className="absolute top-0 left-16 right-16 h-16"
+              style={{
+                backgroundImage: `url(${edgeHorizontal})`,
+                backgroundSize: "auto 64px",
+                backgroundRepeat: "repeat-x",
+              }}
+            />
+            <div
+              className="absolute bottom-0 left-16 right-16 h-16"
+              style={{
+                backgroundImage: `url(${edgeHorizontal})`,
+                backgroundSize: "auto 64px",
+                backgroundRepeat: "repeat-x",
+                transform: "rotate(180deg)",
+              }}
+            />
+            <div
+              className="absolute left-0 top-16 bottom-16 w-16"
+              style={{
+                backgroundImage: `url(${edgeVertical})`,
+                backgroundSize: "64px auto",
+                backgroundRepeat: "repeat-y",
+              }}
+            />
+            <div
+              className="absolute right-0 top-16 bottom-16 w-16"
+              style={{
+                backgroundImage: `url(${edgeVertical})`,
+                backgroundSize: "64px auto",
+                backgroundRepeat: "repeat-y",
+                transform: "scaleX(-1)",
+              }}
+            />
+          </div>
+        )}
       </div>
     </div>
   )
@@ -143,14 +206,13 @@ interface DynamicFrameLayoutProps {
   gapSize?: number
 }
 
-export function DynamicFrameLayout({
-  frames: initialFrames,
+export function DynamicFrameLayout({ 
+  frames, 
   className,
   showFrames = false,
   hoverSize = 6,
-  gapSize = 4,
+  gapSize = 4
 }: DynamicFrameLayoutProps) {
-  const [frames] = useState<Frame[]>(initialFrames)
   const [hovered, setHovered] = useState<{ row: number; col: number } | null>(null)
 
   const getRowSizes = () => {
@@ -203,10 +265,16 @@ export function DynamicFrameLayout({
             <FrameComponent
               video={frame.video}
               label={frame.label}
+              image={frame.image}
               width="100%"
               height="100%"
               className="absolute inset-0"
+              corner={frame.corner}
+              edgeHorizontal={frame.edgeHorizontal}
+              edgeVertical={frame.edgeVertical}
               mediaSize={frame.mediaSize}
+              borderThickness={frame.borderThickness}
+              borderSize={frame.borderSize}
               showFrame={showFrames}
               isHovered={hovered?.row === row && hovered?.col === col}
             />

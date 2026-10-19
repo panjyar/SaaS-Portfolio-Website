@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Allow hot-reloading from your network IP
+  // @ts-ignore - might be missing from some NextConfig types
+  allowedDevOrigins: ['192.168.56.1'],
 
   // Disable ESLint during build to avoid build breaks from lint errors
 
@@ -24,16 +27,14 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
       },
       {
-
         protocol: "https",
-
-        hostname: "vicasinfo.livnsense.com",
-
-        port: "",
-
-        pathname: "/media/**",
-
+        hostname: "pexels.com",
       },
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+      },
+
 
     ],
 

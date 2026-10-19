@@ -15,15 +15,15 @@ const HeroBackgroundGrid: React.FC = () => {
         }}
       />
       {/* Subtle glowing orbs to mimic the dynamic squares */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#00A755]/10 rounded-full blur-[100px]" />
-      <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-[#00A755]/5 rounded-full blur-[120px]" />
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#FE9A00]/10 rounded-full blur-[100px]" />
+      <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-[#FE9A00]/5 rounded-full blur-[120px]" />
 
       {/* A few green decorative squares with animations */}
-      <div className="absolute top-[20%] right-[30%] w-2 h-2 bg-[#00A755] opacity-60 shadow-[0_0_10px_#00A755] animate-pulse" />
-      <div className="absolute top-[50%] right-[30%] w-2 h-2 bg-[#00A755] opacity-60 shadow-[0_0_10px_#00A755] animate-pulse" />
-      <div className="absolute top-[60%] right-[15%] w-3 h-3 bg-[#00A755] opacity-40 shadow-[0_0_10px_#00A755] animate-subtle-spin" />
-      <div className="absolute bottom-[20%] right-[40%] w-2.5 h-2.5 bg-[#00A755] opacity-50 shadow-[0_0_10px_#00A755] animate-bounce" style={{ animationDuration: '6s' }} />
-      <div className="absolute top-[40%] right-[10%] w-1.5 h-1.5 bg-[#00A755]/40 shadow-[0_0_8px_#00A755]/20" />
+      <div className="absolute top-[20%] right-[30%] w-2 h-2 bg-[#FE9A00] opacity-60 shadow-[0_0_10px_#FE9A00] animate-pulse" />
+      <div className="absolute top-[50%] right-[30%] w-2 h-2 bg-[#FE9A00] opacity-60 shadow-[0_0_10px_#FE9A00] animate-pulse" />
+      <div className="absolute top-[60%] right-[15%] w-3 h-3 bg-[#FE9A00] opacity-40 shadow-[0_0_10px_#FE9A00] animate-subtle-spin" />
+      <div className="absolute bottom-[20%] right-[40%] w-2.5 h-2.5 bg-[#FE9A00] opacity-50 shadow-[0_0_10px_#FE9A00] animate-bounce" style={{ animationDuration: '6s' }} />
+      <div className="absolute top-[40%] right-[10%] w-1.5 h-1.5 bg-[#FE9A00]/40 shadow-[0_0_8px_#FE9A00]/20" />
 
       {/* Gradient to fade out the grid at the edges */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#010206] via-transparent to-[#010206]/40" />

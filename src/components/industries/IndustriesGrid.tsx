@@ -26,7 +26,7 @@ export const IndustriesGrid: React.FC = () => {
       />
 
       {/* Background glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#00A755]/5 blur-[180px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#FE9A00]/5 blur-[180px] rounded-full pointer-events-none" />
 
       <div ref={ref} className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         {/* Section header */}
@@ -75,7 +75,7 @@ function IndustryCard({
       <Link
         href={`/industries/${industry.slug}`}
         id={`industry-card-${industry.slug}`}
-        className="group relative block rounded-2xl overflow-hidden aspect-[4/3] border border-white/[0.06] hover:border-[#00A755]/30 transition-all duration-500"
+        className="group relative block rounded-2xl overflow-hidden aspect-[4/3] border border-white/[0.06] hover:border-[#FE9A00]/30 transition-all duration-500"
       >
         {/* Image */}
         <Image
@@ -90,7 +90,7 @@ function IndustryCard({
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 group-hover:from-black/95 group-hover:via-black/60 transition-all duration-500" />
 
         {/* Green glow on hover */}
-        <div className="absolute inset-0 bg-[#00A755]/0 group-hover:bg-[#00A755]/5 transition-all duration-500" />
+        <div className="absolute inset-0 bg-[#FE9A00]/0 group-hover:bg-[#FE9A00]/5 transition-all duration-500" />
 
         {/* Bottom content */}
         <div className="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end">
@@ -107,7 +107,7 @@ function IndustryCard({
             </div>
 
             {/* Arrow icon */}
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 group-hover:bg-[#00A755] group-hover:border-[#00A755] transition-all duration-300">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 group-hover:bg-[#FE9A00] group-hover:border-[#FE9A00] transition-all duration-300">
               <ArrowUpRight className="w-4 h-4 text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
             </div>
           </div>
@@ -115,7 +115,7 @@ function IndustryCard({
 
         {/* Top-left green accent dot */}
         <div className="absolute top-4 left-4">
-          <div className="w-2 h-2 rounded-full bg-[#00A755] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="w-2 h-2 rounded-full bg-[#FE9A00] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
       </Link>
     </motion.div>

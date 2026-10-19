@@ -11,7 +11,7 @@ export const IndustriesCTA: React.FC = () => {
       <div
         className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `linear-gradient(to right, #00A755 1px, transparent 1px), linear-gradient(to bottom, #00A755 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(to right, #FE9A00 1px, transparent 1px), linear-gradient(to bottom, #FE9A00 1px, transparent 1px)`,
           backgroundSize: "4rem 4rem",
           maskImage:
             "radial-gradient(circle at center, black 30%, transparent 70%)",
@@ -21,7 +21,7 @@ export const IndustriesCTA: React.FC = () => {
       />
 
       {/* Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-[#00A755]/8 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-[#FE9A00]/8 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
         <motion.div
@@ -31,11 +31,11 @@ export const IndustriesCTA: React.FC = () => {
           transition={{ duration: 0.7 }}
         >
           <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-8 h-[2px] bg-[#00A755]" />
-            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#00A755]">
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
+            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#FE9A00]">
               Get Started
             </span>
-            <div className="w-8 h-[2px] bg-[#00A755]" />
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
           </div>
 
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
@@ -66,7 +66,7 @@ export const IndustriesCTA: React.FC = () => {
           <Link
             href="/company/contact"
             id="industries-cta-demo"
-            className="px-8 py-4 w-full sm:w-auto rounded-full bg-[#00A755] text-white font-bold text-lg hover:bg-[#008f48] transition-all duration-300 shadow-[0_0_20px_rgba(0,167,85,0.3)] hover:shadow-[0_0_30px_rgba(0,167,85,0.5)]"
+            className="px-8 py-4 w-full sm:w-auto rounded-full bg-[#FE9A00] text-white font-bold text-lg hover:bg-[#E68A00] transition-all duration-300 shadow-[0_0_20px_rgba(254, 154, 0,0.3)] hover:shadow-[0_0_30px_rgba(254, 154, 0,0.5)]"
           >
             Book a Demo
           </Link>

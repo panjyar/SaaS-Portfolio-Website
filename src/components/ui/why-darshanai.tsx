@@ -58,7 +58,7 @@ const features = [
   },
 ];
 
-export default function WhyVicas() {
+export default function WhyDarshanAI() {
   const m1 = marqueeData.slice(0, marqueeData.length / 3);
   const m2 = marqueeData.slice(
     marqueeData.length / 3,
@@ -74,7 +74,7 @@ export default function WhyVicas() {
             Eliminating barriers to Industrial Safety with AI-Driven Intelligence
           </h2>
           <p className="max-w-2xl text-base md:text-lg text-neutral-700">
-            VICAS™ (Virtual Intelligence Creating Augmented Safety) replicates human perception to identify patterns and drive real-time decision-making in high-risk zones, overcoming the limitations of traditional safety methods.
+            DarshanAI™ (Virtual Intelligence Creating Augmented Safety) replicates human perception to identify patterns and drive real-time decision-making in high-risk zones, overcoming the limitations of traditional safety methods.
           </p>
           <div className="relative mx-auto mt-8 w-full max-w-4xl overflow-hidden">
             <div className="absolute left-0 z-10 h-full w-20 bg-gradient-to-r from-[#fefeec]" />
@@ -125,7 +125,7 @@ export default function WhyVicas() {
         </div>
         <div className="flex items-center justify-center">
           <h2 className="max-w-3xl font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-neutral-900 mt-10">
-            The VICAS Advantage
+            The DarshanAI Advantage
           </h2>
         </div>
         <div className="mt-20 grid grid-cols-1 divide-dashed divide-neutral-900/10 border-neutral-900/10 border-t border-dashed sm:grid-cols-2 sm:divide-x lg:grid-cols-3">

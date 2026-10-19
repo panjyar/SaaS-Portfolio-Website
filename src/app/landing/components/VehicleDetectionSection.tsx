@@ -122,7 +122,7 @@ export default function VehicleDetectionSection() {
   return ( 
     <section className="py-20 px-4 md:px-6 bg-[#010206] w-full relative z-10 overflow-hidden">
       {/* Subtle background gradients */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(0,167,85,0.06)_0%,_transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(254, 154, 0,0.06)_0%,_transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(0,100,255,0.04)_0%,_transparent_60%)]" />
 
       <div className="max-w-[1400px] mx-auto relative">
@@ -134,12 +134,12 @@ export default function VehicleDetectionSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-[#00A755]/10 text-[#00A755] border border-[#00A755]/20 mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-[#FE9A00]/10 text-[#FE9A00] border border-[#FE9A00]/20 mb-6">
               AI-Powered Vehicle Safety
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#ededed]">
               See How{" "}
-              <span className="text-[#00A755]">VICAS™</span>{" "}
+              <span className="text-[#FE9A00]">DarshanAI™</span>{" "}
               Detects Risks
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
@@ -163,7 +163,7 @@ export default function VehicleDetectionSection() {
                   className={cn(
                     "relative px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer text-center whitespace-nowrap",
                     isActive
-                      ? "bg-[#00A755] text-white shadow-[0_4px_20px_rgba(0,167,85,0.4)]"
+                      ? "bg-[#FE9A00] text-white shadow-[0_4px_20px_rgba(254, 154, 0,0.4)]"
                       : "text-gray-300 hover:text-white bg-transparent"
                   )}
                 >
@@ -183,7 +183,7 @@ export default function VehicleDetectionSection() {
                     className={cn(
                       "absolute inset-0 rounded-full blur-2xl transition-all duration-500",
                       isActive
-                        ? "bg-[#00A755]/40 scale-125"
+                        ? "bg-[#FE9A00]/40 scale-125"
                         : "bg-white/10 scale-100 group-hover:bg-white/20"
                     )}
                   /> */}
@@ -251,7 +251,7 @@ export default function VehicleDetectionSection() {
 
                 {/* Scan line animation */}
                 <motion.div
-                  className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00A755]/50 to-transparent pointer-events-none z-10"
+                  className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FE9A00]/50 to-transparent pointer-events-none z-10"
                   animate={{ top: ["0%", "100%"] }}
                   transition={{
                     duration: 4,
@@ -264,17 +264,17 @@ export default function VehicleDetectionSection() {
               {/* RIGHT: Detection Image */}
               <div className="relative rounded-2xl overflow-hidden bg-black border border-neutral-800/50 shadow-2xl">
                 {/* AI Detection badge */}
-                <div className="absolute top-4 left-4 z-20 flex items-center gap-2 bg-[#00A755]/20 backdrop-blur-md px-3 py-1.5 rounded-full border border-[#00A755]/30">
-                  <Eye className="w-3.5 h-3.5 text-[#00A755]" />
-                  <span className="text-xs font-semibold text-[#00A755] tracking-wider uppercase">
+                <div className="absolute top-4 left-4 z-20 flex items-center gap-2 bg-[#FE9A00]/20 backdrop-blur-md px-3 py-1.5 rounded-full border border-[#FE9A00]/30">
+                  <Eye className="w-3.5 h-3.5 text-[#FE9A00]" />
+                  <span className="text-xs font-semibold text-[#FE9A00] tracking-wider uppercase">
                     AI Detection
                   </span>
                 </div>
 
                 {/* Detection label */}
                 <div className="absolute bottom-4 left-4 right-4 z-20">
-                  <div className="bg-black/70 backdrop-blur-md px-4 py-2 rounded-lg border border-[#00A755]/20">
-                    <p className="text-xs text-[#00A755] font-medium uppercase tracking-wider mb-0.5">Detection Result</p>
+                  <div className="bg-black/70 backdrop-blur-md px-4 py-2 rounded-lg border border-[#FE9A00]/20">
+                    <p className="text-xs text-[#FE9A00] font-medium uppercase tracking-wider mb-0.5">Detection Result</p>
                     <p className="text-sm text-[#ededed] font-semibold">{activeVehicle.detectionLabel}</p>
                   </div>
                 </div>
@@ -295,9 +295,9 @@ export default function VehicleDetectionSection() {
                   className="absolute inset-0 rounded-2xl pointer-events-none z-10"
                   animate={{
                     boxShadow: [
-                      "inset 0 0 0px rgba(0, 167, 85, 0)",
-                      "inset 0 0 30px rgba(0, 167, 85, 0.08)",
-                      "inset 0 0 0px rgba(0, 167, 85, 0)",
+                      "inset 0 0 0px rgba(254, 154, 0, 0)",
+                      "inset 0 0 30px rgba(254, 154, 0, 0.08)",
+                      "inset 0 0 0px rgba(254, 154, 0, 0)",
                     ],
                   }}
                   transition={{ duration: 3, repeat: Infinity }}
@@ -321,7 +321,7 @@ export default function VehicleDetectionSection() {
                       "relative text-left p-4 rounded-xl transition-all duration-300 cursor-pointer group",
                       "border backdrop-blur-sm",
                       isActiveFeature
-                        ? "bg-[#0a1a10] border-[#00A755]/40 shadow-[0_0_20px_rgba(0,167,85,0.1)]"
+                        ? "bg-[#0a1a10] border-[#FE9A00]/40 shadow-[0_0_20px_rgba(254, 154, 0,0.1)]"
                         : "bg-[#0a0a0f]/80 border-neutral-800/40 hover:border-neutral-700"
                     )}
                   >
@@ -329,7 +329,7 @@ export default function VehicleDetectionSection() {
                     {isActiveFeature && (
                       <motion.div
                         layoutId="activeFeatureLine"
-                        className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#00A755] rounded-full"
+                        className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#FE9A00] rounded-full"
                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                       />
                     )}
@@ -339,7 +339,7 @@ export default function VehicleDetectionSection() {
                         className={cn(
                           "p-2 rounded-lg transition-colors flex-shrink-0",
                           isActiveFeature
-                            ? "bg-[#00A755]/15 text-[#00A755]"
+                            ? "bg-[#FE9A00]/15 text-[#FE9A00]"
                             : "bg-neutral-800/50 text-gray-400 group-hover:text-gray-300"
                         )}
                       >

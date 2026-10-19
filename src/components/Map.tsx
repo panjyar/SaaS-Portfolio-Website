@@ -7,72 +7,66 @@ export default function Map() {
       <div className="max-w-7xl mx-auto text-center">
         <p className="font-bold text-xl md:text-4xl text-white">
           Global{" "}
-          Intelligence Network
+          Destination Network
         </p>
         <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
-          LivNSense connects industrial assets across continents, delivering
-          real-time AI insights and predictive safety worldwide.
+          YatraGen connects travelers to destinations worldwide, delivering
+          real-time AI insights, optimized routes, and predictive safety globally.
         </p>
       </div>
       <WorldMap
-        lineColor="#00A755"
+        lineColor="#FE9A00"
         dots={[
-          // ── Bangalore Office → India connections ──
+          // ── India Hubs ──
           {
-            start: { lat: 1.99999, lng: 77.590082, label: "Bangalore" },
-            end:   { lat: 28.613939, lng: 77.209023, label: "New Delhi" },
-          },
-          {
-            start: { lat: 1.99999, lng: 77.590082, label: "Bangalore" },
-            end:   { lat: 11.001812, lng: 76.962842, label: "Coimbatore" },
+            start: { lat: 12.9716, lng: 77.5946, label: "Bangalore" },
+            end:   { lat: 28.6139, lng: 77.2090, label: "New Delhi" },
           },
 
-          // ── Bangalore Office → Middle East ──
+          // ── Bangalore → Middle East (Dubai) ──
           {
-            start: { lat: 1.99999, lng: 77.590082, label: "Bangalore" },
-            end:   { lat: 24.000249, lng: 53.999483, label: "UAE" },
-          },
-          {
-            start: { lat: 1.99999, lng: 77.590082, label: "Bangalore" },
-            end:   { lat: 24.453835, lng: 54.377401, label: "Abu Dhabi" },
-          },
-          {
-            start: { lat: 1.99999, lng: 77.590082, label: "Bangalore" },
-            end:   { lat: 21.000029, lng: 57.003690, label: "Oman" },
+            start: { lat: 12.9716, lng: 77.5946, label: "Bangalore" },
+            end:   { lat: 25.2048, lng: 55.2708, label: "Dubai" },
           },
 
-          // ── Bangalore Office → Europe ──
+          // ── Bangalore → Southeast Asia ──
           {
-            start: { lat: 1.99999, lng: 77.590082, label: "Bangalore" },
-            end:   { lat: 51.507446, lng: -0.127765, label: "London" },
+            start: { lat: 12.9716, lng: 77.5946, label: "Bangalore" },
+            end:   { lat: 1.3521, lng: 103.8198, label: "Singapore" },
+          },
+
+          // ── Bangalore → Europe ──
+          {
+            start: { lat: 12.9716, lng: 77.5946, label: "Bangalore" },
+            end:   { lat: 51.5074, lng: -0.1278, label: "London" },
           },
           {
-            start: { lat: 1.99999, lng: 77.590082, label: "Bangalore" },
-            end:   { lat: 39.326068, lng: -4.837979, label: "Spain" },
+            start: { lat: 12.9716, lng: 77.5946, label: "Bangalore" },
+            end:   { lat: 40.4168, lng: -3.7038, label: "Madrid" },
           },
 
           // ── Japan Office → Asia / Middle East ──
           {
-            start: { lat: 36.574844, lng: 139.239418, label: "Japan" },
-            end:   { lat: 1.99999, lng: 77.590082,  label: "Bangalore" },
+            start: { lat: 35.6762, lng: 139.6503, label: "Tokyo" },
+            end:   { lat: 1.3521, lng: 103.8198, label: "Singapore" },
           },
           {
-            start: { lat: 36.574844, lng: 139.239418, label: "Japan" },
-            end:   { lat: 24.000249, lng: 53.999483,  label: "UAE" },
+            start: { lat: 35.6762, lng: 139.6503, label: "Tokyo" },
+            end:   { lat: 25.2048, lng: 55.2708, label: "Dubai" },
           },
 
-          // ── Chicago / Woods Office → Americas & Europe ──
+          // ── Americas → Europe & Asia ──
           {
-            start: { lat: 41.875562, lng: -87.624421, label: "Chicago" },
-            end:   { lat: 32.776272, lng: -96.796856, label: "Dallas" },
+            start: { lat: 41.8781, lng: -87.6298, label: "Chicago" },
+            end:   { lat: 32.7767, lng: -96.7970, label: "Dallas" },
           },
           {
-            start: { lat: 41.875562, lng: -87.624421, label: "Chicago" },
-            end:   { lat: 51.507446, lng: -0.127765,  label: "London" },
+            start: { lat: 41.8781, lng: -87.6298, label: "Chicago" },
+            end:   { lat: 51.5074, lng: -0.1278,  label: "London" },
           },
           {
-            start: { lat: 41.875562, lng: -87.624421, label: "Chicago" },
-            end:   { lat: 1.99999, lng: 77.590082,  label: "Bangalore" },
+            start: { lat: 41.8781, lng: -87.6298, label: "Chicago" },
+            end:   { lat: 35.6762, lng: 139.6503, label: "Tokyo" },
           },
         ]}
       />

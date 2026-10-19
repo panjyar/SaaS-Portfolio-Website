@@ -1,11 +1,11 @@
-export interface VicasProblem {
+export interface DarshanAIProblem {
   id: string;
   title: string;
   description: string;
   bullets: string[];
 }
 
-export const vicasProblems: VicasProblem[] = [
+export const darshanaiProblems: DarshanAIProblem[] = [
   {
     id: "limited-visibility",
     title: "Limited Visibility",

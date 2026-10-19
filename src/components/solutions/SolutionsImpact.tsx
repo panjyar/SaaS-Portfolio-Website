@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 export const SolutionsImpact: React.FC = () => {
     const metrics = [
-        { label: "Reduction in Carbon Footprint", value: "20%" },
-        { label: "Hazard Detection Accuracy", value: "99.9%" },
-        { label: "Faster Quality Inspection", value: "3x" },
-        { label: "Energy Savings Across Plants", value: "15%" },
+        { label: "Reduction in Planning Time", value: "80%" },
+        { label: "Preference Matching Accuracy", value: "99.9%" },
+        { label: "Faster Group Coordination", value: "5x" },
+        { label: "Agency Revenue Lift", value: "35%" },
     ];
 
     return (

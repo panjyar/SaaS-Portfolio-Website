@@ -76,7 +76,7 @@ export const events = [
     location: "Bombay Exhibition Centre, Mumbai",
     type: "EVENT",
     image: "https://media.licdn.com/dms/image/v2/D5622AQE0eM4Kupy_bg/feedshare-shrink_2048_1536/B56Zicy9jsHUA0-/0/1754977266942?e=1762387200&v=beta&t=0DZ4yW0U79kcIgapKnmFh2rW3B86OYGhoZCpjiMEa-I",
-    description: `We at LivNSense GreenOps Private Limited, in collaboration with DFI, are proud to showcase our cutting-edge AI solutions designed to empower and reimagine safety in mining, factories, and heavy industries.`,
+    description: `We at LivNSense Private Limited, in collaboration with DFI, are proud to showcase our cutting-edge AI solutions designed to empower and reimagine safety in mining, factories, and heavy industries.`,
     pointstitle: `Our solutions focus on:`,
     points: `Real-time hazard detection using advanced AI-powered video and sensor analytics.
             Ensuring PPE compliance across industrial operations to safeguard workers.
@@ -96,7 +96,7 @@ export const events = [
     image: "https://media.licdn.com/dms/image/v2/D4D22AQERozG5WPlSSA/feedshare-shrink_800/B4DZih87ZtG8Ag-/0/1755063769535?e=1763596800&v=beta&t=EQHSvMVYdVfU1egIvX0ycRod1666wRrA_ccDBQ_jlMQ",
     description: `Day 2 at Automation India Expo 2026 was buzzing with energy as visitor footfall surged at our stall. Industry leaders and professionals explored the diverse applications of AI in mining 
             and industrial safety, witnessing firsthand how technology is transforming operational practices.`,
-    points: `In collaboration with DFI, LivNSense GreenOps Private Limited proudly showcased cutting-edge AI solutions designed to enhance safety across mining sites, factories, 
+    points: `In collaboration with DFI, LivNSense Private Limited proudly showcased cutting-edge AI solutions designed to enhance safety across mining sites, factories, 
             and heavy industries. Our demonstrations highlighted real-world applications where AI predicts risks, prevents accidents, and ensures safer workplaces.
             We were honored to host distinguished guests including Parvez Bearingwala (KHS Innovation & Engineering LLP), Mukul Chauhan (KEC International Ltd.), Sanjay Shembekar 
             (Lauritz Knudsen Electrical & Automation), and Jilesh Zaveri (P A Zaveri Energy Solutions LLP), among others, who engaged enthusiastically with our AI safety solutions, making the day truly special.`,
@@ -120,8 +120,8 @@ export const events = [
     image: "https://media.licdn.com/dms/image/v2/D5622AQE_Wr-F9JkAXg/feedshare-shrink_2048_1536/B56ZnNCl_JJ4Aw-/0/1760081678222?e=1762992000&v=beta&t=zD3vw6tvXmRreruOVPnPWqdW8ttQ7Nz2o1ZSHyRF7Pg",
     type: "EVENT",
     description: `LivNSense™, Day 2 was all about showcasing how Safety and Sustainability are deeply interconnected across industries.
-          VICAS™ demonstrated its impact across Traffic, Construction, 5G, and Industrial Workplaces, driving real-time safety intelligence and operational excellence.
-          GreenOps™ highlighted its role in greening the value chain, helping industries achieve measurable GHG emission reductions and move toward net-zero goals.
+          DarshanAI™ demonstrated its impact across Traffic, Construction, 5G, and Industrial Workplaces, driving real-time safety intelligence and operational excellence.
+          YatraGen and Darshan AI™ highlighted its role in greening the value chain, helping industries achieve measurable GHG emission reductions and move toward net-zero goals.
           Together, these platforms reflect our vision — enabling a Safer, Greener, and Smarter Industry powered by AI and Digital Twin technologies.`,
   },
   {
@@ -132,7 +132,7 @@ export const events = [
     type: "EVENT",
     description: `Days 3 & 4 marked an exciting conclusion to our IMC experience with LivNSense — filled with insightful conversations, engaging demos, and overwhelming interest from visitors and industry leaders.
           It’s been truly inspiring to showcase how our innovations in AI and Digital Twin technologies are shaping the future of smart cities, safety, and sustainability.
-          A heartfelt thank you to LivNSense GreenOps Private Limited for giving me this amazing opportunity to explore, learn, and represent our vision on such a grand stage.
+          A heartfelt thank you to LivNSense Private Limited for giving me this amazing opportunity to explore, learn, and represent our vision on such a grand stage.
           Grateful for all the interactions, ideas, and inspiration gathered over these four days. Here’s to more innovation, collaboration, and impact ahead!`,
     },
   {
@@ -181,7 +181,7 @@ export const awards = [
     Date: "January 2025",
     Given_By: "AIC-Synapses Innovation Foundation & Microsoft",
     Category: "Tech Sector Decarbonisation",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     img: "https://media.licdn.com/dms/image/v2/D5622AQGnsmYIBnXPLA/feedshare-shrink_800/feedshare-shrink_800/0/1732361932060?e=1763596800&v=beta&t=Ak5Ndnkd8u3dXy57o7wiurz7O8h4DXmxDXQ1dQHDoYU",
     href: "https://www.linkedin.com/posts/livnsense-technologies-pvt-ltd_waicf2025-aiinnovation-cleantech-activity-7297136207828856832-t1m0/?rcm=ACoAABoBou8BosXURIkJJnN5-mOVt_v5N26U4Vo"
   },
@@ -191,7 +191,7 @@ export const awards = [
     Date: "November 2024",
     Given_By: "YourStory",
     Category: "Sustainability",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "https://www.linkedin.com/posts/livnsense-technologies-pvt-ltd_tech30-techsparks2024-ai-activity-7245795738406830080-AVn4/?rcm=ACoAABoBou8BosXURIkJJnN5-mOVt_v5N26U4Vo",
     img: "https://media.licdn.com/dms/image/v2/D5622AQEJTidsoRf_8g/feedshare-shrink_1280/feedshare-shrink_1280/0/1727532320084?e=1763596800&v=beta&t=kIAStu2Dv_lTfW912So_4HIULKyVFtjptl5krL18AIQ"
   },{
@@ -200,7 +200,7 @@ export const awards = [
     Date: "March 2023",
     Given_By: "Ministry Of Home Affairs",
     Category: "Intelligent Traffic management-5G enabled AI cameras crime scene management including 3D(AR/VR)",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "linkedin.com/posts/livnsense-technologies-pvt-ltd_5g-vimarch2023-bprnd-activity-7174252975551373312-HdQV?rcm=ACoAABoBou8BosXURIkJJnN5-mOVt_v5N26U4Vo",
     img: "https://media.licdn.com/dms/image/v2/D4D22AQEYw80wO8bucg/feedshare-shrink_1280/feedshare-shrink_1280/0/1710437587731?e=1763596800&v=beta&t=3iPRyztgz9hQOihtjFQSW4yYbFu8ninmLWFirTIKkkM"
   },{
@@ -209,7 +209,7 @@ export const awards = [
     Date: "December 2023",
     Given_By: "Bharat Pitchathon",
     Category: "Industrial",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "linkedin.com/posts/livnsense-technologies-pvt-ltd_presenting-the-bharat-pitchathon-emerging-activity-7229136336320962562-5RUV?rcm=ACoAABoBou8BosXURIkJJnN5-mOVt_v5N26U4Vo",
     img: "https://media.licdn.com/dms/image/v2/D4E22AQF0cWQfYVZU8g/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1723551077954?e=1763596800&v=beta&t=Zd2giwoaxYlBQzxKPrZwZpjMMJqhgvBK-ev85qZEFPM"
   },{ 
@@ -218,7 +218,7 @@ export const awards = [
     Date: "July 2024",
     Given_By: "India Energy Storage Week (IESW)",
     Category: "Net Zero",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "linkedin.com/posts/livnsense-technologies-pvt-ltd_iesw-iesw2024-startupday-activity-7214276224179666945-xg2d?rcm=ACoAABoBou8BosXURIkJJnN5-mOVt_v5N26U4Vo",
     img: "https://media.licdn.com/dms/image/v2/D5622AQHVS-PrGzEloA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1719980760490?e=1763596800&v=beta&t=PdrO7IEzPhBtHBUo5MNJWXs0FopPOKElkRvyUa2EKeY"
   },{
@@ -227,7 +227,7 @@ export const awards = [
     Date: "November 2024",
     Given_By: "Startup Story",
     Category: "Excellence in Customer Service",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "https://www.linkedin.com/posts/livnsense-technologies-pvt-ltd_startupstory-ssea2024-startupstoryentrepreneurawards2024-activity-7245393389108506624-HElw/?rcm=ACoAABoBou8BosXURIkJJnN5-mOVt_v5N26U4Vo",
     img: "https://media.licdn.com/dms/image/v2/D5622AQE1YdN0t-VcdQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1727436395942?e=1763596800&v=beta&t=eXakMatJDG2pu7sLpfGm67HCrFqgdhEH9caoHF-P6X4"
   },{
@@ -236,7 +236,7 @@ export const awards = [
     Date: "December 2023",
     Given_By: "Nasscom",
     Category: "Sustainability",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7140258475909046272/",
     img: "https://media.licdn.com/dms/image/v2/D4D22AQE2e6XBlfDuDA/feedshare-shrink_1280/feedshare-shrink_1280/0/1702370278187?e=1763596800&v=beta&t=5IF6c_-_mJWQIJ4b-CP_lWlwwAGKLgrnO8cGi6X1SkE"
   },{
@@ -245,7 +245,7 @@ export const awards = [
     Date: "December 2023",
     Given_By: "Siliconindia",
     Category: "AI-Prowered industrial",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "https://www.linkedin.com/posts/livnsense-technologies-pvt-ltd_livnsense-greenops-deeptechstartups-activity-7253320751032803329-crMa/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoBou8BosXURIkJJnN5-mOVt_v5N26U4Vo",
     img: "https://media.licdn.com/dms/image/v2/D5622AQHvhLwxoyvF-A/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1729326424542?e=1763596800&v=beta&t=cPxhkBCtY-MQseX_FiGeAZwB6TAoEqLnZVoOLxBAvv0"
   },{
@@ -254,7 +254,7 @@ export const awards = [
     Date: "December 2023",
     Given_By: "WAICF- World AI Cannes Festival",
     Category: "AI-Powered industrial transformation",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "https://www.linkedin.com/posts/livnsense-technologies-pvt-ltd_waicf2025-aiinnovation-cleantech-activity-7297136207828856832-t1m0/?rcm=ACoAABoBou8BosXURIkJJnN5-mOVt_v5N26U4Vo",
     img: "https://media.licdn.com/dms/image/v2/D5622AQGG6qcB4Wt4Ew/feedshare-shrink_2048_1536/B56ZUSijI6HQAs-/0/1739772844609?e=1763596800&v=beta&t=tEsNhdH9gWtleUgKugaU9KS2WZDypwEVYGkzKteOlG4"
   },
@@ -264,7 +264,7 @@ export const awards = [
     Date: "February 2023",
     Given_By: "Elecrama",
     Category: "Climate tech-energy startup-future engine of decarbonization",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7034185253866848256/",
     img: "https://media.licdn.com/dms/image/v2/C4D22AQHfiJElCoLt-g/feedshare-shrink_1280/feedshare-shrink_1280/0/1677080452240?e=1763596800&v=beta&t=iOOmYHFfb0TJzJWMnCmblE46upqPpAPoEvNC1_ch6Ew"
   },
@@ -274,7 +274,7 @@ export const awards = [
     Date: "September 2022",
     Given_By: "Time cyber media",
     Category: "Industrial IOT",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "https://www.linkedin.com/feed/update/urn:li:activity:6970748066211463168/",
     img: "https://media.licdn.com/dms/image/v2/C4D22AQHw8R8jroQBdg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1661955848505?e=1763596800&v=beta&t=OdTU4vi72sD5zfzRryGyXpp7v0bY2YSADVRAVixnZIM"
   },
@@ -284,7 +284,7 @@ export const awards = [
     Date: "March 2023",
     Given_By: "Great company",
     Category: "Manufacturing",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7039835010467606528/",
     img: "https://media.licdn.com/dms/image/v2/C4D1FAQHP_QGv7iG0gA/feedshare-document-images_1920/feedshare-document-images_1920/1/1678427432418?e=1761782400&v=beta&t=HdHtIHMDxT34TGOJKx4N85lrMLGbTLp2E0yvJKx7C4I"
   },
@@ -294,7 +294,7 @@ export const awards = [
     Date: "April 2022",
     Given_By: "Intel - Yourstory",
     Category: "Deep tech startup ecosystem through high-impact collaboration",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     href: "https://www.intel.in/content/www/in/en/corporate/startup/overview.html",
     // img: "/Linked_IN Post/1645184835596.png"
   },
@@ -314,27 +314,27 @@ export const awards = [
     Date: "May 2021",
     Given_By: "SAS",
     Category: "Manufacturing, IOT and Industry winer",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // href: "https://www.linkedin.com/feed/update/urn:li:activity:6956225216096206849/",
     // img: "/Linked_IN Post/1645184835596.png"
   },
   {
     id: 16,
-    Title: "LivNSense wins the prestigious 9th Annual AEGIS Graham Bell Awards for Innovation in AI for COGNITIVE REACTORS, VICAS and WELDSENSE products",
+    Title: "LivNSense wins the prestigious 9th Annual AEGIS Graham Bell Awards for Innovation in AI for COGNITIVE REACTORS, DarshanAI and WELDSENSE products",
     Date: "February 2019",
     Given_By: "AEGIS Graham Bell",
-    Category: "Innovation in AI for COGNITIVE REACTORS, VICAS and WELDSENSE products",
-    Product: "GreenOps",
+    Category: "Innovation in AI for COGNITIVE REACTORS, DarshanAI and WELDSENSE products",
+    Product: "YatraGen and Darshan AI",
     // href: "https://www.linkedin.com/feed/update/urn:li:activity:6956225216096206849/",
     // img: "/Linked_IN Post/1645184835596.png"
   },
   {
     id: 17,
-    Title: "LivNSense ViCAS wins Liberty Mutual Safety Innovation Awards -2021 with honorable mention",
+    Title: "LivNSense DarshanAI wins Liberty Mutual Safety Innovation Awards -2021 with honorable mention",
     Date: "June 2021",
     Given_By: "Sponsored by Liberty Mutual Insurance and administered by CPWR",
     Category: "Innovation evidence-based technologies, work practices, and program (interventions) designed to reduce or eliminate construction hazards that lead to injuries and pain in the construction industry",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // href: "https://www.linkedin.com/feed/update/urn:li:activity:6956225216096206849/",
     // img: "/Linked_IN Post/1645184835596.png"
   },
@@ -344,17 +344,17 @@ export const awards = [
     Date: "February 2021",
     Given_By: "AEGIS Graham Bell",
     Category: "AI powered innovation for life science",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // href: "https://www.linkedin.com/feed/update/urn:li:activity:6956225216096206849/",
     // img: "/Linked_IN Post/1645184835596.png"
   },
   {
     id: 19,
-    Title: "LivNSense wins the prestigious 10th Annual AEGIS Graham Bell Awards for Innovation in AI for COGNITIVE REACTORS, VICAS and WELDSENSE products",
+    Title: "LivNSense wins the prestigious 10th Annual AEGIS Graham Bell Awards for Innovation in AI for COGNITIVE REACTORS, DarshanAI and WELDSENSE products",
     Date: "March 2020",
     Given_By: "AEGIS Graham Bell",
     Category: "AI",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // href: "https://www.linkedin.com/feed/update/urn:li:activity:6956225216096206849/",
     // img: "/Linked_IN Post/1645184835596.png"
   },
@@ -367,7 +367,7 @@ export const recognition = [
     Date: "May 2023",
     Given_By: "Honorable Prime Minister Shri Narendra Modi Ji",
     Category: "Smart Water Leakage Detection System",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // img: "/Linked_IN Post/1645184835596.png",
     href: "https://www.youtube.com/watch?v=_2iTBOL8geI",
   },
@@ -376,8 +376,8 @@ export const recognition = [
     Title: "Creating 10X Women Entrepreneurs",
     Date: "March 2023",
     Given_By: "TiE Delhi-NCR, Zinnov, Google, NetApp, and IANS",
-    Category: "GreenOps Operation Platform",
-    Product: "GreenOps",
+    Category: "YatraGen and Darshan AI Operation Platform",
+    Product: "YatraGen and Darshan AI",
     // img: "/Linked_IN Post/1645184835596.png",
     href: "https://zinnov.com/innovation/creating-10x-women-entrepreneurship-in-india-2023-report/",
   },
@@ -387,7 +387,7 @@ export const recognition = [
     Date: "March 2023",
     Given_By: "APAC insider",
     Category: "Industrial Iot & AI platform",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // img: "/Linked_IN Post/1645184835596.png",
     href: "https://apacinsider.digital/issues/q1-2023/24/",
   },
@@ -397,7 +397,7 @@ export const recognition = [
     Date: "February 2023",
     Given_By: "AIC sangam innovation foundation",
     Category: "Science and tech - Cleantech",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     img: "https://media.licdn.com/dms/image/v2/C4D22AQFJ0bGssIsGCw/feedshare-shrink_800/feedshare-shrink_800/0/1676111943058?e=1762387200&v=beta&t=Ql4kiZTM23q2e2rPYKXjg6kDdFAp2SSFBRMHCmUoB68",
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7030426965509554176/",
   },
@@ -407,7 +407,7 @@ export const recognition = [
     Date: "February 2023",
     Given_By: "SynerLeap",
     Category: "Innovation pitch - Cutting edge solutions",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // img: "https://media.licdn.com/dms/image/v2/C4D22AQFJ0bGssIsGCw/feedshare-shrink_800/feedshare-shrink_800/0/1676111943058?e=1762387200&v=beta&t=Ql4kiZTM23q2e2rPYKXjg6kDdFAp2SSFBRMHCmUoB68",
     href: "https://zinnov.com/innovation/creating-10x-women-entrepreneurship-in-india-2023-report/",
   },
@@ -417,7 +417,7 @@ export const recognition = [
     Date: "February 2023",
     Given_By: "TechXchange UK",
     Category: "Mature CleanTech startup of India",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // img: "https://media.licdn.com/dms/image/v2/C4D22AQFJ0bGssIsGCw/feedshare-shrink_800/feedshare-shrink_800/0/1676111943058?e=1762387200&v=beta&t=Ql4kiZTM23q2e2rPYKXjg6kDdFAp2SSFBRMHCmUoB68",
     href: "https://apacinsider.digital/issues/q1-2023/24/",
   },
@@ -427,7 +427,7 @@ export const recognition = [
     Date: "January 2023",
     Given_By: "Accenture",
     Category: "Sustainable Value Accelerator Program",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // img: "https://media.licdn.com/dms/image/v2/C4D22AQFJ0bGssIsGCw/feedshare-shrink_800/feedshare-shrink_800/0/1676111943058?e=1762387200&v=beta&t=Ql4kiZTM23q2e2rPYKXjg6kDdFAp2SSFBRMHCmUoB68",
     href: "https://www.linkedin.com/feed/update/urn:li:activity:7030426965509554176/",
   },
@@ -447,7 +447,7 @@ export const recognition = [
     Date: "January 2023",
     Given_By: "EAI Energy Alternatives India",
     Category: "CleanTech",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // img: "https://media.licdn.com/dms/image/v2/C4D22AQFJ0bGssIsGCw/feedshare-shrink_800/feedshare-shrink_800/0/1676111943058?e=1762387200&v=beta&t=Ql4kiZTM23q2e2rPYKXjg6kDdFAp2SSFBRMHCmUoB68",
     href: "https://apacinsider.digital/issues/q1-2023/24/",
   },
@@ -467,7 +467,7 @@ export const recognition = [
     Date: "December 2022",
     Given_By: "WSHAisa",
     Category: "Digital Safety - wide range of issues, including Environmental Sustainability",
-    Product: "GreenOps",
+    Product: "YatraGen and Darshan AI",
     // img: "https://media.licdn.com/dms/image/v2/C4D22AQFJ0bGssIsGCw/feedshare-shrink_800/feedshare-shrink_800/0/1676111943058?e=1762387200&v=beta&t=Ql4kiZTM23q2e2rPYKXjg6kDdFAp2SSFBRMHCmUoB68",
     href: "https://zinnov.com/innovation/creating-10x-women-entrepreneurship-in-india-2023-report/",
   },

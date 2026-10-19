@@ -1,64 +1,64 @@
 "use client";
 
-import { Zap, Activity, Leaf, Eye, Shield, FileText } from "lucide-react";
+import { Zap, Map, Compass, Eye, Shield, FileText } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Marquee } from "@/components/ui/marquee";
 
 const marqueeData = [
-  "Energy Optimization",
-  "Process Efficiency",
-  "Emissions Reduction",
-  "Operational Visibility",
-  "Asset Lifecycle Extension",
-  "Regulatory Reporting",
-  "Digital Twin Simulation",
+  "Smart Itineraries",
+  "Dynamic Routing",
+  "Automated Bookings",
+  "Personalized Recommendations",
   "Real-Time Adjustments",
-  "Carbon Tracking",
-  "Throughput Maximization",
-  "Anomaly Detection",
+  "Pricing Optimization",
+  "Cultural Context",
+  "Group Management",
+  "Luxury Upgrades",
+  "Traveler Satisfaction",
+  "Agency Efficiency",
   "Continuous Intelligence"
 ];
 
 const features = [
   {
-    title: "Energy Optimization",
+    title: "Smart Itineraries",
     description:
-      "Reduce energy consumption across high-load systems such as kilns, furnaces, and process heating units.",
+      "Automatically generate personalized, detailed travel plans that match your clients' unique preferences and constraints.",
+    icon: Compass,
+  },
+  {
+    title: "Dynamic Routing",
+    description:
+      "Adjust schedules instantly during flight disruptions or weather events to keep travelers happy and on track.",
+    icon: Map,
+  },
+  {
+    title: "Pricing Optimization",
+    description:
+      "Identify the best deals on flights, hotels, and experiences in real-time to maximize agency margins.",
     icon: Zap,
   },
   {
-    title: "Process Efficiency",
+    title: "Cultural Context",
     description:
-      "Improve throughput and reduce variability by optimizing process parameters in real time.",
-    icon: Activity,
-  },
-  {
-    title: "Emissions Reduction",
-    description:
-      "Lower carbon emissions through better energy utilization and process optimization.",
-    icon: Leaf,
-  },
-  {
-    title: "Operational Visibility",
-    description:
-      "Gain real-time insights into inefficiencies, bottlenecks, and optimization opportunities.",
+      "Provide authentic local experiences and insights without language barriers using our advanced NLP engine.",
     icon: Eye,
   },
   {
-    title: "Asset Lifecycle Extension",
+    title: "Group Management",
     description:
-      "Extend machinery lifespan by minimizing thermal and mechanical stress through optimized load balancing.",
+      "Coordinate large groups seamlessly with automated room allocations and aligned flight schedules.",
     icon: Shield,
   },
   {
-    title: "Regulatory Reporting",
+    title: "Automated Bookings",
     description:
-      "Automate carbon and energy compliance reporting with granular, verifiable data streams.",
+      "Transform hours of manual data entry into seconds of automated booking confirmations and reporting.",
     icon: FileText,
   },
 ];
 
-export default function WhyGreenOps() {
+export default function WhyYatraGen() {
   const m1 = marqueeData.slice(0, marqueeData.length / 3);
   const m2 = marqueeData.slice(
     marqueeData.length / 3,
@@ -71,11 +71,10 @@ export default function WhyGreenOps() {
       <div className="mx-auto max-w-full">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-center space-y-4 px-5 text-center md:px-10">
           <h2 className="max-w-3xl font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-neutral-900 uppercase">
-            Continuously Optimizing Energy, Efficiency, and Emissions in Real Time
-            
+            Continuously Optimizing Travel Operations in Real Time
           </h2>
           <p className="max-w-2xl text-base md:text-lg text-neutral-700">
-            GreenOps™ integrates AI and digital twin models to drive continuous improvements across all facets of industrial operations.
+            YatraGen™ integrates AI models to drive continuous improvements across all facets of itinerary building and customer experience.
           </p>
           <div className="relative mx-auto mt-8 w-full max-w-4xl overflow-hidden">
             <div className="absolute left-0 z-10 h-full w-20 bg-gradient-to-r from-[#fefeec]" />
@@ -126,7 +125,7 @@ export default function WhyGreenOps() {
         </div>
          <div className="flex items-center justify-center">
           <h2 className="max-w-3xl font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-neutral-900 mt-10">
-            The GreenOps™ Advantage
+            The YatraGen™ Advantage
           </h2>
         </div>
 

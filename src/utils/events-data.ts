@@ -6,7 +6,7 @@ export const events = [
     location: "Bombay Exhibition Centre, Mumbai",
     type: "EVENT",
     image: "https://media.licdn.com/dms/image/v2/D5622AQE0eM4Kupy_bg/feedshare-shrink_2048_1536/B56Zicy9jsHUA0-/0/1754977266942?e=1762387200&v=beta&t=0DZ4yW0U79kcIgapKnmFh2rW3B86OYGhoZCpjiMEa-I",
-    description: `We at LivNSense GreenOps Private Limited, in collaboration with DFI, are proud to showcase our cutting-edge AI solutions designed to empower and reimagine safety in mining, factories, and heavy industries.`,
+    description: `We at LivNSense Private Limited, in collaboration with DFI, are proud to showcase our cutting-edge AI solutions designed to empower and reimagine safety in mining, factories, and heavy industries.`,
     pointstitle: `Our solutions focus on:`,
     points: `Real-time hazard detection using advanced AI-powered video and sensor analytics.
             Ensuring PPE compliance across industrial operations to safeguard workers.
@@ -26,7 +26,7 @@ export const events = [
     image: "https://media.licdn.com/dms/image/v2/D4D22AQERozG5WPlSSA/feedshare-shrink_800/B4DZih87ZtG8Ag-/0/1755063769535?e=1763596800&v=beta&t=EQHSvMVYdVfU1egIvX0ycRod1666wRrA_ccDBQ_jlMQ",
     description: `Day 2 at Automation India Expo 2026 was buzzing with energy as visitor footfall surged at our stall. Industry leaders and professionals explored the diverse applications of AI in mining 
             and industrial safety, witnessing firsthand how technology is transforming operational practices.`,
-    points: `In collaboration with DFI, LivNSense GreenOps Private Limited proudly showcased cutting-edge AI solutions designed to enhance safety across mining sites, factories, 
+    points: `In collaboration with DFI, LivNSense Private Limited proudly showcased cutting-edge AI solutions designed to enhance safety across mining sites, factories, 
             and heavy industries. Our demonstrations highlighted real-world applications where AI predicts risks, prevents accidents, and ensures safer workplaces.
             We were honored to host distinguished guests including Parvez Bearingwala (KHS Innovation & Engineering LLP), Mukul Chauhan (KEC International Ltd.), Sanjay Shembekar 
             (Lauritz Knudsen Electrical & Automation), and Jilesh Zaveri (P A Zaveri Energy Solutions LLP), among others, who engaged enthusiastically with our AI safety solutions, making the day truly special.`,
@@ -50,8 +50,8 @@ export const events = [
     image: "https://media.licdn.com/dms/image/v2/D5622AQE_Wr-F9JkAXg/feedshare-shrink_2048_1536/B56ZnNCl_JJ4Aw-/0/1760081678222?e=1762992000&v=beta&t=zD3vw6tvXmRreruOVPnPWqdW8ttQ7Nz2o1ZSHyRF7Pg",
     type: "EVENT",
     description: `LivNSense™, Day 2 was all about showcasing how Safety and Sustainability are deeply interconnected across industries.
-          VICAS™ demonstrated its impact across Traffic, Construction, 5G, and Industrial Workplaces, driving real-time safety intelligence and operational excellence.
-          GreenOps™ highlighted its role in greening the value chain, helping industries achieve measurable GHG emission reductions and move toward net-zero goals.
+          DarshanAI™ demonstrated its impact across Traffic, Construction, 5G, and Industrial Workplaces, driving real-time safety intelligence and operational excellence.
+          YatraGen and Darshan AI™ highlighted its role in greening the value chain, helping industries achieve measurable GHG emission reductions and move toward net-zero goals.
           Together, these platforms reflect our vision — enabling a Safer, Greener, and Smarter Industry powered by AI and Digital Twin technologies.`,
   },
   {
@@ -62,7 +62,7 @@ export const events = [
     type: "EVENT",
     description: `Days 3 & 4 marked an exciting conclusion to our IMC experience with LivNSense — filled with insightful conversations, engaging demos, and overwhelming interest from visitors and industry leaders.
           It's been truly inspiring to showcase how our innovations in AI and Digital Twin technologies are shaping the future of smart cities, safety, and sustainability.
-          A heartfelt thank you to LivNSense GreenOps Private Limited for giving me this amazing opportunity to explore, learn, and represent our vision on such a grand stage.
+          A heartfelt thank you to LivNSense Private Limited for giving me this amazing opportunity to explore, learn, and represent our vision on such a grand stage.
           Grateful for all the interactions, ideas, and inspiration gathered over these four days. Here's to more innovation, collaboration, and impact ahead!`,
     },
   {

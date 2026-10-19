@@ -16,7 +16,7 @@ export const SolutionsSynergy: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 relative mt-20">
                     {/* Background Connector Line */}
-                    <div className="hidden md:block absolute top-1/2 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-green-500/50 via-transparent to-blue-500/50 -translate-y-1/2 z-0">
+                    <div className="hidden md:block absolute top-1/2 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-orange-500/50 via-transparent to-blue-500/50 -translate-y-1/2 z-0">
                         <motion.div 
                             className="w-1/4 h-full bg-accent blur-sm"
                             animate={{ x: ["0%", "400%"] }}
@@ -24,13 +24,13 @@ export const SolutionsSynergy: React.FC = () => {
                         />
                     </div>
 
-                    {/* GreenOps Side */}
+                    {/* YatraGen and Darshan AI Side */}
                     <div className="relative z-10 flex flex-col items-center">
                         <motion.div 
-                            className="w-32 h-32 rounded-3xl bg-green-500/10 border border-green-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(34,197,94,0.2)]"
+                            className="w-32 h-32 rounded-3xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(34,197,94,0.2)]"
                             whileHover={{ scale: 1.05 }}
                         >
-                            <h3 className="text-2xl font-black text-green-500 tracking-wider">GreenOps</h3>
+                            <h3 className="text-2xl font-black text-orange-500 tracking-wider">YatraGen and Darshan AI</h3>
                         </motion.div>
                         <ul className="text-left space-y-4">
                             {[
@@ -47,20 +47,20 @@ export const SolutionsSynergy: React.FC = () => {
                                     transition={{ delay: i * 0.1 }}
                                     className="flex items-center gap-3 text-muted-foreground"
                                 >
-                                    <div className="w-1.5 h-1.5 rounded-full bg-green-500" />
+                                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
                                     {item}
                                 </motion.li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* VICAS Side */}
+                    {/* DarshanAI Side */}
                     <div className="relative z-10 flex flex-col items-center">
                         <motion.div 
                             className="w-32 h-32 rounded-3xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.2)]"
                             whileHover={{ scale: 1.05 }}
                         >
-                            <h3 className="text-2xl font-black text-blue-500 tracking-wider">VICAS</h3>
+                            <h3 className="text-2xl font-black text-blue-500 tracking-wider">DarshanAI</h3>
                         </motion.div>
                         <ul className="text-left space-y-4">
                             {[

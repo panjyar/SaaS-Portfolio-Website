@@ -7,14 +7,14 @@ const teamMembers = [
     role: "Co-Founder & Chairman",
     description: "Visionary leader driving the strategic direction of LivNSense.",
     // Using an abstract placeholder since actual images aren't provided
-    image: "https://vicasinfo.livnsense.com/media/Avnish.png",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400",
     clipId: "clip-another1"
   },
   {
     name: "Priyanka Kumar",
     role: "Co-Founder & COO",
     description: "Focuses on operational excellence and scaling product delivery.",
-    image: "https://vicasinfo.livnsense.com/media/team/PriyankaKumar-1.jpg",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400",
     clipId: "clip-another2"
   },
   {
@@ -78,7 +78,7 @@ const OurTeamSection = () => {
               <div key={idx} className="group relative max-w-[280px] mx-auto w-full">
                 {/* Image Container with SVG clipPath */}
                 <div 
-                  className="relative w-full aspect-[4/5] bg-[#0a0a0a] rounded-xl overflow-hidden mb-6 transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(0,167,85,0.15)]"
+                  className="relative w-full aspect-[4/5] bg-[#0a0a0a] rounded-xl overflow-hidden mb-6 transition-all duration-500 group-hover:shadow-[0_0_30px_rgba(254, 154, 0,0.15)]"
                   style={{ clipPath: `url(#${member.clipId})` }}
                 >
                   <Image
@@ -95,10 +95,10 @@ const OurTeamSection = () => {
                 
                 {/* Text Content */}
                 <div className="text-center sm:text-left">
-                  <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#00A755] transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#FE9A00] transition-colors duration-300">
                     {member.name}
                   </h3>
-                  <p className="text-sm font-semibold text-[#00A755] mb-4 uppercase tracking-wider">
+                  <p className="text-sm font-semibold text-[#FE9A00] mb-4 uppercase tracking-wider">
                     {member.role}
                   </p>
                   <p className="text-gray-400 text-sm leading-relaxed font-light">

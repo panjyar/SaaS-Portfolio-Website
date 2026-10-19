@@ -106,7 +106,7 @@ export const Contact2 = ({
           <div className="mx-auto flex max-w-screen-md flex-col gap-6 rounded-lg border p-10 bg-black/50 text-white backdrop-blur-md">
             
             {success && (
-              <div className="bg-green-500/20 border border-green-500 text-green-400 p-4 rounded-md">
+              <div className="bg-orange-500/20 border border-orange-500 text-orange-400 p-4 rounded-md">
                 {success}
               </div>
             )}

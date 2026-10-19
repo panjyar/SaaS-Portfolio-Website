@@ -75,7 +75,7 @@ const Hero: React.FC = React.memo(() => {
           {galleryItems}
         </div>
         <p className="careers-section__desc">
-          As a team of battle-tested GreenOps and VICAS Ninjas, with years of
+          As a team of battle-tested YatraGen and Darshan AI and DarshanAI Ninjas, with years of
           experience driving workplace safety, decarbonization, and energy
           optimization for global industries, we’re always on the lookout for
           exceptional developers, data scientists, and innovators.

@@ -11,10 +11,10 @@ const ValueCard: React.FC<ValueCardProps> = ({ title, description, className }) 
   return (
     <div className={cn(
       "group relative flex flex-col justify-center items-center text-center p-8 md:p-12 min-h-[300px] transition-colors duration-500 overflow-hidden cursor-pointer",
-      "bg-[#0a0a0a] hover:bg-[#00A755]",
+      "bg-[#0a0a0a] hover:bg-[#FE9A00]",
       className
     )}>
-      <h3 className="text-2xl font-semibold text-[#00A755] group-hover:text-[#010206] transition-colors duration-500 max-w-[250px] z-10">
+      <h3 className="text-2xl font-semibold text-[#FE9A00] group-hover:text-[#010206] transition-colors duration-500 max-w-[250px] z-10">
         {title}
       </h3>
       {description && (
@@ -26,18 +26,18 @@ const ValueCard: React.FC<ValueCardProps> = ({ title, description, className }) 
       {/* Geometric Line Motif at Bottom */}
       <div className="absolute bottom-8 left-0 right-0 flex items-center justify-center pointer-events-none z-0">
         {/* Left Line */}
-        <div className="flex-1 h-px bg-[#00A755] group-hover:bg-[#010206] transition-colors duration-500 opacity-50" />
+        <div className="flex-1 h-px bg-[#FE9A00] group-hover:bg-[#010206] transition-colors duration-500 opacity-50" />
         {/* Circles */}
         <div className="flex items-center -mx-1">
-           <div className="w-8 h-8 rounded-full border border-[#00A755] group-hover:border-[#010206] flex items-end justify-center overflow-hidden transition-colors duration-500">
-             <div className="w-full h-1/2 bg-[#00A755] group-hover:bg-[#010206] transition-colors duration-500" />
+           <div className="w-8 h-8 rounded-full border border-[#FE9A00] group-hover:border-[#010206] flex items-end justify-center overflow-hidden transition-colors duration-500">
+             <div className="w-full h-1/2 bg-[#FE9A00] group-hover:bg-[#010206] transition-colors duration-500" />
            </div>
-           <div className="w-8 h-8 rounded-full border border-[#00A755] group-hover:border-[#010206] -ml-4 flex items-start justify-center overflow-hidden transition-colors duration-500">
+           <div className="w-8 h-8 rounded-full border border-[#FE9A00] group-hover:border-[#010206] -ml-4 flex items-start justify-center overflow-hidden transition-colors duration-500">
              <div className="w-full h-1/2 bg-transparent" />
            </div>
         </div>
         {/* Right Line */}
-        <div className="flex-1 h-px bg-[#00A755] group-hover:bg-[#010206] transition-colors duration-500 opacity-50" />
+        <div className="flex-1 h-px bg-[#FE9A00] group-hover:bg-[#010206] transition-colors duration-500 opacity-50" />
       </div>
     </div>
   );

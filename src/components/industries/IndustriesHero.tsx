@@ -36,7 +36,7 @@ export const IndustriesHero: React.FC = () => {
       </div>
 
       {/* Decorative glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#00A755]/8 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#FE9A00]/8 blur-[150px] rounded-full pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-20 max-w-5xl px-6 text-center mt-20">
@@ -47,11 +47,11 @@ export const IndustriesHero: React.FC = () => {
         >
           {/* Tag */}
           <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-8 h-[2px] bg-[#00A755]" />
-            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#00A755]">
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
+            <span className="text-xs font-bold tracking-[0.25em] uppercase text-[#FE9A00]">
               Industries
             </span>
-            <div className="w-8 h-[2px] bg-[#00A755]" />
+            <div className="w-8 h-[2px] bg-[#FE9A00]" />
           </div>
 
           <h1 className="text-center font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.1]">

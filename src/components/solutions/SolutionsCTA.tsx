@@ -25,7 +25,7 @@ export const SolutionsCTA: React.FC = () => {
                     viewport={{ once: true }}
                     className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight"
                 >
-                    Ready to transform your plant operations?
+                    Ready to transform your travel offerings?
                 </motion.h2>
                 <motion.p 
                     initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export const SolutionsCTA: React.FC = () => {
                     transition={{ delay: 0.1 }}
                     className="text-xl text-neutral-400 mb-10 max-w-2xl mx-auto"
                 >
-                    Join the industry leaders deploying LivNSense solutions to achieve zero-carbon and zero-harm facilities.
+                    Join the leading agencies and modern travelers deploying YatraGen to build perfectly optimized itineraries.
                 </motion.p>
                 <motion.div 
                     initial={{ opacity: 0, scale: 0.9 }}

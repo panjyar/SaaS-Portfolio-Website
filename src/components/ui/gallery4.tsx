@@ -72,7 +72,7 @@ const Gallery4 = ({
                     <div className="mb-4 text-gray-300 drop-shadow-md text-base/relaxed">
                       {item.description}
                     </div>
-                    <a href={item.href || "#"} className="flex items-center text-sm font-medium text-[#00A755] pointer-events-auto">
+                    <a href={item.href || "#"} className="flex items-center text-sm font-medium text-[#FE9A00] pointer-events-auto">
                       Read more{" "}
                       <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
                     </a>

@@ -7,8 +7,8 @@ import { SolutionsImpact } from "@/components/solutions/SolutionsImpact";
 import { SolutionsCTA } from "@/components/solutions/SolutionsCTA";
 
 export const metadata = {
-    title: "Solutions | LivNSense",
-    description: "Intelligent solutions for a sustainable, safe industrial future. Empowering heavy industries with AI, Edge Computing, and Digital Twins.",
+    title: "Solutions | YatraGen",
+    description: "Intelligent solutions for modern travel. Empowering travel agencies and explorers with AI itinerary generation.",
 };
 
 export default function SolutionsPage() {

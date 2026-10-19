@@ -9,7 +9,7 @@ const AboutLivnsense = () => {
           <div className="z-10">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
               {/* Hello, we&apos;re */}
-               <span className="text-[#00A755]">LivNSense</span>
+               <span className="text-[#FE9A00]">LivNSense</span>
             </h2>
             <p className="text-xl md:text-2xl font-light leading-relaxed mb-8">
               We&apos;re building the AI brain for industry
@@ -23,38 +23,38 @@ const AboutLivnsense = () => {
           {/* Right Graphics (Intersecting Circles) */}
           <div className="relative h-[400px] w-full hidden lg:flex items-center justify-center z-10">
             {/* Circle 1: Nodes */}
-            <div className="absolute left-0 w-64 h-64 rounded-full border border-[#00A755] opacity-80 flex items-center justify-center overflow-hidden mix-blend-screen">
+            <div className="absolute left-0 w-64 h-64 rounded-full border border-[#FE9A00] opacity-80 flex items-center justify-center overflow-hidden mix-blend-screen">
               <div className="w-full h-full relative">
                 {/* Decorative vertical lines with dots */}
-                <div className="absolute left-1/4 top-0 bottom-0 w-px bg-[#00A755]/40" />
-                <div className="absolute left-1/2 top-0 bottom-0 w-px bg-[#00A755]/40" />
-                <div className="absolute left-3/4 top-0 bottom-0 w-px bg-[#00A755]/40" />
-                <div className="absolute left-1/4 top-[20%] w-3 h-3 rounded-full bg-[#00A755] -ml-1.5" />
-                <div className="absolute left-1/2 top-[40%] w-3 h-3 rounded-full bg-[#00A755] -ml-1.5" />
-                <div className="absolute left-3/4 top-[60%] w-3 h-3 rounded-full bg-[#00A755] -ml-1.5" />
-                <div className="absolute left-1/4 top-[80%] w-3 h-3 rounded-full bg-[#00A755] -ml-1.5" />
+                <div className="absolute left-1/4 top-0 bottom-0 w-px bg-[#FE9A00]/40" />
+                <div className="absolute left-1/2 top-0 bottom-0 w-px bg-[#FE9A00]/40" />
+                <div className="absolute left-3/4 top-0 bottom-0 w-px bg-[#FE9A00]/40" />
+                <div className="absolute left-1/4 top-[20%] w-3 h-3 rounded-full bg-[#FE9A00] -ml-1.5" />
+                <div className="absolute left-1/2 top-[40%] w-3 h-3 rounded-full bg-[#FE9A00] -ml-1.5" />
+                <div className="absolute left-3/4 top-[60%] w-3 h-3 rounded-full bg-[#FE9A00] -ml-1.5" />
+                <div className="absolute left-1/4 top-[80%] w-3 h-3 rounded-full bg-[#FE9A00] -ml-1.5" />
               </div>
             </div>
 
             {/* Circle 2: Industrial Background */}
-            <div className="absolute left-32 z-10 w-72 h-72 rounded-full border border-[#00A755] flex items-center justify-center overflow-hidden shadow-[0_0_30px_rgba(0,167,85,0.2)]">
-              <div className="w-full h-full bg-gradient-to-tr from-[#00A755]/20 to-transparent relative">
+            <div className="absolute left-32 z-10 w-72 h-72 rounded-full border border-[#FE9A00] flex items-center justify-center overflow-hidden shadow-[0_0_30px_rgba(254, 154, 0,0.2)]">
+              <div className="w-full h-full bg-gradient-to-tr from-[#FE9A00]/20 to-transparent relative">
                 {/* Simulated industrial image effect */}
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-overlay" />
-                <div className="absolute inset-0 bg-[#00A755] mix-blend-color opacity-20" />
+                <div className="absolute inset-0 bg-[#FE9A00] mix-blend-color opacity-20" />
               </div>
             </div>
 
             {/* Circle 3: Concentric Arcs */}
-            <div className="absolute left-72 w-64 h-64 rounded-full border border-[#00A755] opacity-80 flex items-center justify-center overflow-hidden mix-blend-screen">
+            <div className="absolute left-72 w-64 h-64 rounded-full border border-[#FE9A00] opacity-80 flex items-center justify-center overflow-hidden mix-blend-screen">
               <div className="w-full h-full relative flex items-center">
-                <div className="absolute w-full h-full border border-[#00A755] rounded-full scale-90" />
-                <div className="absolute w-full h-full border border-[#00A755] rounded-full scale-75" />
-                <div className="absolute w-full h-full border border-[#00A755] rounded-full scale-50" />
-                <div className="absolute w-full h-full border border-[#00A755] rounded-full scale-25" />
+                <div className="absolute w-full h-full border border-[#FE9A00] rounded-full scale-90" />
+                <div className="absolute w-full h-full border border-[#FE9A00] rounded-full scale-75" />
+                <div className="absolute w-full h-full border border-[#FE9A00] rounded-full scale-50" />
+                <div className="absolute w-full h-full border border-[#FE9A00] rounded-full scale-25" />
                 {/* Vertical blocker to make them look like arcs on the left side of the circle */}
                 <div className="absolute right-0 top-0 bottom-0 w-1/2 bg-[#010206]" />
-                <div className="absolute right-1/2 top-0 bottom-0 w-px bg-[#00A755]" />
+                <div className="absolute right-1/2 top-0 bottom-0 w-px bg-[#FE9A00]" />
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ const AboutLivnsense = () => {
 
         {/* Motion blur / effects */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-full bg-gradient-to-r from-transparent via-[#00A755]/10 to-transparent blur-3xl -skew-y-3" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-full bg-gradient-to-r from-transparent via-[#FE9A00]/10 to-transparent blur-3xl -skew-y-3" />
           <div className="absolute inset-x-0 top-0 border-t border-white/5" />
           <div className="absolute inset-x-0 bottom-0 border-b border-white/5" />
         </div>
@@ -93,7 +93,7 @@ const AboutLivnsense = () => {
 
           <div className="space-y-6 pt-1 md:pt-14">
             <p className="leading-relaxed">
-Its proprietary platforms, GreenOps and VICAS, deliver real-time intelligence, predictive insights, and optimization across manufacturing, oil & gas, mining, construction, logistics, and infrastructure, enabling customers worldwide to achieve measurable improvements in performance, reliability, and decarbonization.
+Its proprietary platforms, YatraGen and Darshan AI and DarshanAI, deliver real-time intelligence, predictive insights, and optimization across manufacturing, oil & gas, mining, construction, logistics, and infrastructure, enabling customers worldwide to achieve measurable improvements in performance, reliability, and decarbonization.
  
             </p>
           </div>

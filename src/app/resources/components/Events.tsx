@@ -22,7 +22,7 @@ export default function Events({ limit }: EventsProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.2, ease: "easeOut" }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#00A755]">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#FE9A00]">
             Events
           </h1>
           {/* <p className="text-white/60 max-w-3xl text-lg">
@@ -47,13 +47,13 @@ export default function Events({ limit }: EventsProps) {
               }}
               whileHover={{
                 scale: 1.05,
-                borderColor: "#00A755",
-                boxShadow: "0 0 40px rgba(0, 167, 85, 0.25)",
+                borderColor: "#FE9A00",
+                boxShadow: "0 0 40px rgba(254, 154, 0, 0.25)",
                 transition: { type: "spring", stiffness: 300, damping: 20 },
               }}
             >
               {/* Hover Gradient Glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00A755]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FE9A00]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <Link href={`/resources/events/${event.id}`} className="relative z-10 flex flex-col h-full">
                 {/* Image */}
@@ -67,7 +67,7 @@ export default function Events({ limit }: EventsProps) {
 
                 {/* Text */}
                 <div className="flex-1">
-                  <h2 className="text-xl font-bold mb-2 text-[#00A755] group-hover:text-white transition-colors duration-300 line-clamp-2">
+                  <h2 className="text-xl font-bold mb-2 text-[#FE9A00] group-hover:text-white transition-colors duration-300 line-clamp-2">
                     {event.title}
                   </h2>
                   <div className="text-white/60 text-sm space-y-1 group-hover:text-white/80 transition-colors duration-300">
@@ -92,7 +92,7 @@ export default function Events({ limit }: EventsProps) {
               </Link>
 
               {/* Bottom Line Hover Animation */}
-              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#00A755] to-emerald-400 w-0 group-hover:w-full transition-all duration-500 ease-out" />
+              <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#FE9A00] to-orange-400 w-0 group-hover:w-full transition-all duration-500 ease-out" />
             </motion.div>
           ))}
         </div>

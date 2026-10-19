@@ -48,7 +48,7 @@ const Feature = ({
       {image && (
         <>
           <div 
-            className="absolute inset-0 bg-cover bg-center z-0 opacity-20 group-hover/feature:opacity-40 transition-opacity duration-500" 
+            className="absolute inset-0 bg-cover bg-center z-0 opacity-40 group-hover/feature:opacity-70 transition-opacity duration-500" 
             style={{ backgroundImage: `url(${image})` }}
           />
           {/* Always-on dark gradient for text readability */}
@@ -65,7 +65,7 @@ const Feature = ({
         {icon}
       </div>
       <div className="text-xl font-bold mb-2 relative z-10 px-10">
-        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-700 group-hover/feature:bg-[#00A755] transition-all duration-200 origin-center" />
+        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-700 group-hover/feature:bg-[#FE9A00] transition-all duration-200 origin-center" />
         <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-100">
           {title}
         </span>
